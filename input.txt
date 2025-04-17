@@ -1,0 +1,4 @@
+1	This	This	PRON	PRON	_	4	nsubj	_	_
+2	is	is	VERB	VERB	_	4	cop	    _	_
+3	a	a	DET	DET	_	4	det	    _	_
+4	pen	pen	NOUN	NOUN	_	0	root	_	_
