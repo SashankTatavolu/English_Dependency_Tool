@@ -25,7 +25,7 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 COPY . .
 
 # Expose port Flask runs on
-EXPOSE 5000
+EXPOSE 5002
 
 # Run the Flask app
 CMD ["python", "app.py"]

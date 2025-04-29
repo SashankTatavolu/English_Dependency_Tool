@@ -7,20 +7,21 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import jwt
 import datetime
 from functools import wraps
+from flask_cors import CORS
 
 # Initialize Flask app
 app = Flask(__name__)
+CORS(app, origins=["http://10.4.16.167:8083"], supports_credentials=True)
+# CORS(app)
 
 # Configure secret key for JWT
 app.config['SECRET_KEY'] = 'your_secret_key_here'  # Replace with a strong secret key in production
 
 # MongoDB URI
-app.config["MONGO_URI"] = "mongodb://localhost:27017/conllu-editor"
+# app.config["MONGO_URI"] = "mongodb://localhost:27017/conllu-editor"
+app.config["MONGO_URI"] = "mongodb://10.4.16.167:27018/conllu-editor"
 mongo = PyMongo(app)
 
-# Handle CORS
-from flask_cors import CORS
-CORS(app)
 
 # Authentication decorator
 def token_required(f):
@@ -138,7 +139,6 @@ def get_profile(current_user):
     }
     return jsonify(user_info), 200
 
-# Example of using the token_required decorator with an existing endpoint
 @app.route('/api/tokens/upload', methods=['POST'])
 @token_required
 def upload_tokens(current_user):
@@ -147,44 +147,36 @@ def upload_tokens(current_user):
         return jsonify({"error": "No file provided"}), 400
 
     file_content = file.read().decode('utf-8')
-    
+
     # Split content into sentences based on sent_id tags
     sentences = []
     current_sentence = {"tokens": [], "sent_id": None, "user_id": str(current_user['_id'])}
-    
+
     lines = file_content.strip().split('\n')
-    
+
     for line in lines:
         line = line.strip()
-        
-        # Skip empty lines
         if not line:
             continue
-        
-        # Check for sentence ID
+
+        # Match sentence start tag
         sent_id_match = re.match(r'<sent_id=(.+)>', line)
         if sent_id_match:
-            # If we already have tokens in the current sentence, save it
             if current_sentence["tokens"]:
                 sentences.append(current_sentence)
                 current_sentence = {"tokens": [], "sent_id": None, "user_id": str(current_user['_id'])}
-            
-            # Set new sentence ID
             current_sentence["sent_id"] = sent_id_match.group(1)
             continue
-        
-        # Check if it's an end tag
+
         if line == "</sent_id>":
             continue
-        
-        # Handle token lines (not comments)
+
         if not line.startswith("#"):
             columns = line.split("\t")
-            if len(columns) >= 8:  # Ensure we have at least the essential columns
-                # If the columns are less than 10, pad with empty strings
+            if len(columns) >= 8:
                 while len(columns) < 10:
                     columns.append("_")
-                
+
                 token = {
                     "ID": columns[0],
                     "FORM": columns[1],
@@ -192,18 +184,18 @@ def upload_tokens(current_user):
                     "UPOS": columns[3],
                     "XPOS": columns[4],
                     "FEATS": columns[5],
-                    "HEAD": columns[6],
-                    "DEPREL": columns[7],
-                    "DEPS": columns[8],
-                    "MISC": columns[9]
+                    "HEAD_PANINIAN": columns[6],
+                    "DEPREL_PANINIAN": columns[7],
+                    "HEAD_UD": columns[8],
+                    "DEPREL_UD": columns[9]
                 }
                 current_sentence["tokens"].append(token)
-    
-    # Don't forget to add the last sentence
+
+    # Append last sentence if needed
     if current_sentence["tokens"]:
         sentences.append(current_sentence)
-    
-    # If no sentences with sent_id were found, try to parse as a single sentence without sent_id
+
+    # Handle case with no <sent_id> tags
     if not sentences and file_content.strip():
         tokens = []
         for line in file_content.strip().split('\n'):
@@ -212,7 +204,6 @@ def upload_tokens(current_user):
                 if len(columns) >= 8:
                     while len(columns) < 10:
                         columns.append("_")
-                    
                     tokens.append({
                         "ID": columns[0],
                         "FORM": columns[1],
@@ -220,23 +211,19 @@ def upload_tokens(current_user):
                         "UPOS": columns[3],
                         "XPOS": columns[4],
                         "FEATS": columns[5],
-                        "HEAD": columns[6],
-                        "DEPREL": columns[7],
-                        "DEPS": columns[8],
-                        "MISC": columns[9]
+                        "HEAD_PANINIAN": columns[6],
+                        "DEPREL_PANINIAN": columns[7],
+                        "HEAD_UD": columns[8],
+                        "DEPREL_UD": columns[9]
                     })
-        
+
         if tokens:
             sentences.append({"tokens": tokens, "sent_id": "Sentence 1", "user_id": str(current_user['_id'])})
-    
+
     # Save all sentences to MongoDB
     token_collection = mongo.db.sentences
-    inserted_ids = []
-    
-    for sentence in sentences:
-        result = token_collection.insert_one(sentence)
-        inserted_ids.append(str(result.inserted_id))
-    
+    inserted_ids = [str(token_collection.insert_one(sentence).inserted_id) for sentence in sentences]
+
     return jsonify({
         "message": f"{len(sentences)} sentences uploaded and stored successfully",
         "sentence_ids": inserted_ids,
@@ -304,4 +291,4 @@ def update_token(current_user, sentence_id, token_id):
 
 # Run the Flask app
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(host='0.0.0.0', port=5003, debug=True)

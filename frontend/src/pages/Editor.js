@@ -1,4 +1,340 @@
-// src/pages/Editor.js
+
+// // src/pages/Editor.js
+// import React, { useState, useEffect, useRef } from 'react';
+// import axios from 'axios';
+// import * as d3 from 'd3';
+// import Viz from 'viz.js';
+// import { Autocomplete, TextField } from '@mui/material';
+// import { Module, render } from 'viz.js/full.render.js';
+// import {
+//   Container,
+//   Typography,
+//   Box,
+//   Button,
+//   Paper,
+//   Table,
+//   TableBody,
+//   TableCell,
+//   TableContainer,
+//   TableHead,
+//   TableRow,
+//   Select,
+//   MenuItem,
+//   Grid,
+//   List,
+//   ListItem,
+//   ListItemButton,
+//   ListItemText,
+//   Divider,
+//   Stack,
+//   CircularProgress
+// } from '@mui/material';
+// import { LoadingButton } from '@mui/lab';
+
+// const API_URL = process.env.REACT_APP_API_URL;
+
+// // Component to render the Graphviz dependency tree
+// const DependencyTreeViz = ({ tokens }) => {
+//   const containerRef = useRef(null);
+
+//   useEffect(() => {
+//     if (!tokens || tokens.length === 0 || !containerRef.current) return;
+
+//     const dot = generateDotFromTokens(tokens);
+//     const viz = new Viz({ Module, render });
+
+//     viz.renderSVGElement(dot)
+//       .then(element => {
+//         while (containerRef.current.firstChild) {
+//           containerRef.current.removeChild(containerRef.current.firstChild);
+//         }
+//         containerRef.current.appendChild(element);
+//         const svg = d3.select(element);
+//         svg.attr('width', '100%')
+//            .attr('height', '100%')
+//            .attr('preserveAspectRatio', 'xMidYMid meet');
+//       })
+//       .catch(error => {
+//         console.error('Error rendering graph:', error);
+//       });
+//   }, [tokens]);
+
+//   // Use Paninian columns for the tree visualization
+//   const generateDotFromTokens = (tokens) => {
+//     let dotLines = [
+//       'digraph G {',
+//       '  rankdir=TB;',
+//       '  node [shape=box, style=filled, fillcolor=white, fontname="Arial"];',
+//       '  edge [fontname="Arial", fontsize=10];',
+//       '  ROOT [label="ROOT", shape=diamond, style=filled, fillcolor=lightgrey];'
+//     ];
+
+//     tokens.forEach(token => {
+//       dotLines.push(`  node${token.ID} [label="${token.FORM}\\n(${token.UPOS})"];`);
+//     });
+
+//     tokens.forEach(token => {
+//       // Use HEAD_PANINIAN instead of HEAD
+//       const head = token.HEAD_PANINIAN === '0' ? 'ROOT' : `node${token.HEAD_PANINIAN}`;
+//       dotLines.push(`  ${head} -> node${token.ID} [label="${token.DEPREL_PANINIAN || ''}"];`);
+//     });
+
+//     dotLines.push('}');
+//     return dotLines.join('\n');
+//   };
+
+//   return (
+//     <Box ref={containerRef} sx={{ width: '100%', height: '100%', overflow: 'auto' }} />
+//   );
+// };
+
+// const Editor = () => {
+//   const [allSentences, setAllSentences] = useState([]);
+//   const [selectedSentence, setSelectedSentence] = useState(null);
+//   const [loading, setLoading] = useState(false);
+//   const [deprelOptions, setDeprelOptions] = useState([]);
+
+//   // Predefined static DEPREL options
+//   const STATIC_DEPREL_OPTIONS = [
+//     "-", "card", "dem", "dur", "extent", "freq", "intf", "jk1",
+//     "k1", "k1as", "k1s", "k2", "k2g", "k2p", "k2s", "k2as",
+//     "k3", "k3as", "k4", "k4a", "k4as", "k5", "k5as", "k5prk",
+//     "k7", "k7a", "k7as", "k7p", "k7t", "krvn", "main", "mk1",
+//     "mod", "neg", "ord", "pk1", "quant", "quantless", "quantmore",
+//     "rad", "rask1", "rask2", "rask3", "rask4", "rask5", "rask7",
+//     "rasnegk1", "rasnegk2", "rbks", "rblak", "rblpk", "rblsk",
+//     "rcdelim", "rcelab", "rcloc", "rcprop", "rcsamAnakAla", "rd",
+//     "rdl", "re", "rh", "rhh", "rk", "rmeas", "rn", "rp", "rprop",
+//     "r6", "rpk", "rs", "rsma", "rsm", "rsk", "rt", "ru", "rv",
+//     "rvks", "vIpsA", "vkvn"
+//   ];
+
+//   useEffect(() => {
+//     fetchAllSentences();
+//   }, []);
+
+//   // Update DEPREL options whenever a sentence is selected
+//   useEffect(() => {
+//     if (selectedSentence && selectedSentence.tokens) {
+//       // Extract unique DEPREL values from the current sentence
+//       const existingDeprels = new Set();
+//       selectedSentence.tokens.forEach(token => {
+//         if (token.DEPREL_PANINIAN && token.DEPREL_PANINIAN !== '') {
+//           existingDeprels.add(token.DEPREL_PANINIAN);
+//         }
+//       });
+
+//       // Combine existing DEPRELs with static options, removing duplicates
+//       const combinedOptions = [...existingDeprels, ...STATIC_DEPREL_OPTIONS];
+//       const uniqueOptions = [...new Set(combinedOptions)].sort();
+      
+//       setDeprelOptions(uniqueOptions);
+//     }
+//   }, [selectedSentence]);
+
+//   const fetchAllSentences = async () => {
+//     try {
+//       const res = await axios.get(`${API_URL}/api/sentences`);
+//       setAllSentences(res.data);
+//     } catch (error) {
+//       console.error('Error fetching sentences:', error);
+//     }
+//   };
+
+//   const handleFileChange = async (e) => {
+//     const file = e.target.files[0];
+//     if (!file) return;
+
+//     setLoading(true);
+//     const formData = new FormData();
+//     formData.append('file', file);
+
+//     try {
+//       const res = await axios.post(`${API_URL}/api/tokens/upload`, formData, {
+//         headers: { 'Content-Type': 'multipart/form-data' },
+//       });
+
+//       fetchAllSentences();
+//       if (res.data.sentence_ids?.length > 0) {
+//         handleSentenceSelect(res.data.sentence_ids[0]);
+//       }
+//     } catch (error) {
+//       console.error('Error uploading file:', error);
+//     } finally {
+//       setLoading(false);
+//     }
+//   };
+
+//   const handleSentenceSelect = async (sentenceId) => {
+//     setLoading(true);
+//     try {
+//       const res = await axios.get(`${API_URL}/api/sentences/${sentenceId}`);
+//       setSelectedSentence(res.data);
+//     } catch (error) {
+//       console.error('Error fetching sentence details:', error);
+//     } finally {
+//       setLoading(false);
+//     }
+//   };
+
+//   const handleDropdownChange = async (tokenId, field, value) => {
+//     if (!selectedSentence) return;
+
+//     try {
+//       const res = await axios.put(
+//         `${API_URL}/api/tokens/${selectedSentence._id}/token/${tokenId}`,
+//         { [field]: value }
+//       );
+//       setSelectedSentence(res.data);
+//     } catch (error) {
+//       console.error('Error updating token:', error);
+//     }
+//   };
+
+//   return (
+//     <Container maxWidth="xl" sx={{ mt: 4 }}>
+//       <Typography variant="h4" gutterBottom>
+//         CoNLL-U Syntax Tree Editor
+//       </Typography>
+
+//       <Stack direction="row" spacing={2} sx={{ mb: 3 }} alignItems="center">
+//         <LoadingButton
+//           variant="contained"
+//           component="label"
+//           loading={loading}
+//         >
+//           Upload CoNLL-U File
+//           <input type="file" hidden accept=".txt,.conllu" onChange={handleFileChange} />
+//         </LoadingButton>
+//         <Typography variant="body2" color="text.secondary">
+//           Accepts .conllu or .txt format
+//         </Typography>
+//       </Stack>
+
+//       <Grid container spacing={3}>
+//         <Grid item xs={3}>
+//           <Paper sx={{ p: 2, height: '100%', overflowY: 'auto' }}>
+//             <Typography variant="h6">Sentence List</Typography>
+//             <Divider sx={{ my: 1 }} />
+//             <List dense>
+//               {allSentences.length === 0 ? (
+//                 <ListItem><ListItemText primary="No sentences available" /></ListItem>
+//               ) : (
+//                 allSentences.map(sentence => (
+//                   <ListItem key={sentence._id} disablePadding>
+//                     <ListItemButton
+//                       selected={selectedSentence?._id === sentence._id}
+//                       onClick={() => handleSentenceSelect(sentence._id)}
+//                     >
+//                       <ListItemText primary={sentence.sent_id || `Sentence ${sentence._id.slice(0, 6)}...`} />
+//                     </ListItemButton>
+//                   </ListItem>
+//                 ))
+//               )}
+//             </List>
+//           </Paper>
+//         </Grid>
+
+//         <Grid item xs={9}>
+//           {loading ? (
+//             <Box display="flex" justifyContent="center" alignItems="center" height="400px">
+//               <CircularProgress />
+//             </Box>
+//           ) : selectedSentence ? (
+//             <>
+//               <Typography variant="h6" gutterBottom>
+//                 {selectedSentence.sent_id ? `Sentence: ${selectedSentence.sent_id}` : 'Sentence Details'}
+//               </Typography>
+
+//               <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+//                 <Box sx={{ width: '100%' }}>
+//                   <TableContainer component={Paper} elevation={3}>
+//                     <Table size="small" sx={{ tableLayout: 'auto' }}>
+//                       <TableHead>
+//                         <TableRow>
+//                           <TableCell align="center">ID</TableCell>
+//                           <TableCell align="center">FORM</TableCell>
+//                           <TableCell align="center">LEMMA</TableCell>
+//                           <TableCell align="center">UPOS</TableCell>
+//                           <TableCell align="center">XPOS</TableCell>
+//                           <TableCell align="center">FEATS</TableCell>
+//                           <TableCell align="center">HEAD_PANINIAN</TableCell>
+//                           <TableCell align="center">DEPREL_PANINIAN</TableCell>
+//                           <TableCell align="center">HEAD_UD</TableCell>
+//                           <TableCell align="center">DEPREL_UD</TableCell>
+//                         </TableRow>
+//                       </TableHead>
+//                       <TableBody>
+//                         {selectedSentence.tokens && selectedSentence.tokens.map((token) => (
+//                           <TableRow key={token.ID}>
+//                             <TableCell align="center">{token.ID}</TableCell>
+//                             <TableCell align="center">{token.FORM}</TableCell>
+//                             <TableCell align="center">{token.LEMMA}</TableCell>
+//                             <TableCell align="center">{token.UPOS}</TableCell>
+//                             <TableCell align="center">{token.XPOS}</TableCell>
+//                             <TableCell align="center">{token.FEATS}</TableCell>
+//                             <TableCell align="center">
+//                               <Select
+//                                 size="small"
+//                                 value={token.HEAD_PANINIAN || "0"}
+//                                 onChange={(e) => handleDropdownChange(token.ID, 'HEAD_PANINIAN', e.target.value)}
+//                               >
+//                                 {selectedSentence.tokens.map((opt) => (
+//                                   <MenuItem key={opt.ID} value={opt.ID}>{opt.ID}</MenuItem>
+//                                 ))}
+//                                 <MenuItem value="0">0 (root)</MenuItem>
+//                               </Select>
+//                             </TableCell>
+//                             <TableCell align="center">
+//                               <Autocomplete
+//                                 size="small"
+//                                 options={deprelOptions}
+//                                 value={token.DEPREL_PANINIAN || ''}
+//                                 onChange={(e, newValue) => {
+//                                   handleDropdownChange(token.ID, 'DEPREL_PANINIAN', newValue || '');
+//                                 }}
+//                                 renderInput={(params) => (
+//                                   <TextField {...params} variant="standard" placeholder="DEPREL" />
+//                                 )}
+//                                 sx={{ width: 150 }}
+//                                 freeSolo
+//                               />
+//                             </TableCell>
+//                             <TableCell align="center">{token.HEAD_UD}</TableCell>
+//                             <TableCell align="center">{token.DEPREL_UD}</TableCell>
+//                           </TableRow>
+//                         ))}
+//                       </TableBody>
+//                     </Table>
+//                   </TableContainer>
+//                 </Box>
+
+//                 {/* Dependency tree */}
+//                 <Box sx={{ minHeight: 400, mt: 2 }}>
+//                   <Typography variant="h6">Dependency Tree (Paninian View)</Typography>
+//                   {selectedSentence.tokens?.length > 0 ? (
+//                     <DependencyTreeViz tokens={selectedSentence.tokens} />
+//                   ) : (
+//                     <Typography align="center" variant="body1" sx={{ pt: 10 }}>
+//                       No tokens available to display in tree
+//                     </Typography>
+//                   )}
+//                 </Box>
+//               </Box>
+//             </>
+//           ) : (
+//             <Typography variant="body1">
+//               Please select a sentence from the list or upload a new file
+//             </Typography>
+//           )}
+//         </Grid>
+//       </Grid>
+//     </Container>
+//   );
+// };
+
+// export default Editor;
+
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import * as d3 from 'd3';
@@ -26,9 +362,13 @@ import {
   ListItemText,
   Divider,
   Stack,
-  CircularProgress
+  CircularProgress,
+  Snackbar,
+  Alert
 } from '@mui/material';
 import { LoadingButton } from '@mui/lab';
+
+const API_URL = process.env.REACT_APP_API_URL;
 
 // Component to render the Graphviz dependency tree
 const DependencyTreeViz = ({ tokens }) => {
@@ -56,6 +396,7 @@ const DependencyTreeViz = ({ tokens }) => {
       });
   }, [tokens]);
 
+  // Use Paninian columns for the tree visualization
   const generateDotFromTokens = (tokens) => {
     let dotLines = [
       'digraph G {',
@@ -70,8 +411,9 @@ const DependencyTreeViz = ({ tokens }) => {
     });
 
     tokens.forEach(token => {
-      const head = token.HEAD === '0' ? 'ROOT' : `node${token.HEAD}`;
-      dotLines.push(`  ${head} -> node${token.ID} [label="${token.DEPREL || ''}"];`);
+      // Use HEAD_PANINIAN instead of HEAD
+      const head = token.HEAD_PANINIAN === '0' ? 'ROOT' : `node${token.HEAD_PANINIAN}`;
+      dotLines.push(`  ${head} -> node${token.ID} [label="${token.DEPREL_PANINIAN || ''}"];`);
     });
 
     dotLines.push('}');
@@ -86,18 +428,66 @@ const DependencyTreeViz = ({ tokens }) => {
 const Editor = () => {
   const [allSentences, setAllSentences] = useState([]);
   const [selectedSentence, setSelectedSentence] = useState(null);
+  const [editedTokens, setEditedTokens] = useState({});
   const [loading, setLoading] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [deprelOptions, setDeprelOptions] = useState([]);
+  const [snackbar, setSnackbar] = useState({
+    open: false,
+    message: '',
+    severity: 'success'
+  });
+
+  // Predefined static DEPREL options
+  const STATIC_DEPREL_OPTIONS = [
+    "-", "card", "dem", "dur", "extent", "freq", "intf", "jk1",
+    "k1", "k1as", "k1s", "k2", "k2g", "k2p", "k2s", "k2as",
+    "k3", "k3as", "k4", "k4a", "k4as", "k5", "k5as", "k5prk",
+    "k7", "k7a", "k7as", "k7p", "k7t", "krvn", "main", "mk1",
+    "mod", "neg", "ord", "pk1", "quant", "quantless", "quantmore",
+    "rad", "rask1", "rask2", "rask3", "rask4", "rask5", "rask7",
+    "rasnegk1", "rasnegk2", "rbks", "rblak", "rblpk", "rblsk",
+    "rcdelim", "rcelab", "rcloc", "rcprop", "rcsamAnakAla", "rd",
+    "rdl", "re", "rh", "rhh", "rk", "rmeas", "rn", "rp", "rprop",
+    "r6", "rpk", "rs", "rsma", "rsm", "rsk", "rt", "ru", "rv",
+    "rvks", "vIpsA", "vkvn"
+  ];
 
   useEffect(() => {
     fetchAllSentences();
   }, []);
 
+  // Reset editedTokens when selecting a new sentence
+  useEffect(() => {
+    setEditedTokens({});
+  }, [selectedSentence?._id]);
+
+  // Update DEPREL options whenever a sentence is selected
+  useEffect(() => {
+    if (selectedSentence && selectedSentence.tokens) {
+      // Extract unique DEPREL values from the current sentence
+      const existingDeprels = new Set();
+      selectedSentence.tokens.forEach(token => {
+        if (token.DEPREL_PANINIAN && token.DEPREL_PANINIAN !== '') {
+          existingDeprels.add(token.DEPREL_PANINIAN);
+        }
+      });
+
+      // Combine existing DEPRELs with static options, removing duplicates
+      const combinedOptions = [...existingDeprels, ...STATIC_DEPREL_OPTIONS];
+      const uniqueOptions = [...new Set(combinedOptions)].sort();
+      
+      setDeprelOptions(uniqueOptions);
+    }
+  }, [selectedSentence]);
+
   const fetchAllSentences = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/sentences');
+      const res = await axios.get(`${API_URL}/api/sentences`);
       setAllSentences(res.data);
     } catch (error) {
       console.error('Error fetching sentences:', error);
+      showSnackbar('Failed to fetch sentences', 'error');
     }
   };
 
@@ -110,7 +500,7 @@ const Editor = () => {
     formData.append('file', file);
 
     try {
-      const res = await axios.post('http://localhost:5000/api/tokens/upload', formData, {
+      const res = await axios.post(`${API_URL}/api/tokens/upload`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
 
@@ -118,8 +508,10 @@ const Editor = () => {
       if (res.data.sentence_ids?.length > 0) {
         handleSentenceSelect(res.data.sentence_ids[0]);
       }
+      showSnackbar('File uploaded successfully', 'success');
     } catch (error) {
       console.error('Error uploading file:', error);
+      showSnackbar('Error uploading file', 'error');
     } finally {
       setLoading(false);
     }
@@ -128,43 +520,87 @@ const Editor = () => {
   const handleSentenceSelect = async (sentenceId) => {
     setLoading(true);
     try {
-      const res = await axios.get(`http://localhost:5000/api/sentences/${sentenceId}`);
+      const res = await axios.get(`${API_URL}/api/sentences/${sentenceId}`);
       setSelectedSentence(res.data);
     } catch (error) {
       console.error('Error fetching sentence details:', error);
+      showSnackbar('Failed to fetch sentence details', 'error');
     } finally {
       setLoading(false);
     }
   };
 
-  const handleDropdownChange = async (tokenId, field, value) => {
-    if (!selectedSentence) return;
+  const handleInputChange = (tokenId, field, value) => {
+    setEditedTokens(prev => ({
+      ...prev,
+      [tokenId]: {
+        ...prev[tokenId],
+        [field]: value
+      }
+    }));
+  };
 
+  const saveChanges = async () => {
+    if (!selectedSentence || Object.keys(editedTokens).length === 0) return;
+
+    setSaving(true);
     try {
-      const res = await axios.put(
-        `http://localhost:5000/api/tokens/${selectedSentence._id}/token/${tokenId}`,
-        { [field]: value }
-      );
+      const updates = Object.entries(editedTokens).map(([tokenId, changes]) => {
+        return axios.put(
+          `${API_URL}/api/tokens/${selectedSentence._id}/token/${tokenId}`,
+          changes
+        );
+      });
+
+      await Promise.all(updates);
+      
+      // Fetch updated sentence data
+      const res = await axios.get(`${API_URL}/api/sentences/${selectedSentence._id}`);
       setSelectedSentence(res.data);
+      
+      // Clear edited tokens
+      setEditedTokens({});
+      showSnackbar('Changes saved successfully', 'success');
     } catch (error) {
-      console.error('Error updating token:', error);
+      console.error('Error saving changes:', error);
+      showSnackbar('Failed to save changes', 'error');
+    } finally {
+      setSaving(false);
     }
   };
 
-  const DEPREL_OPTIONS = [
-    "-", "advmod", "amod", "aux", "card", "case", "cc", "conj", "cop", "dem",
-  "det", "dur", "extent", "freq", "intf", "jk1", "k1", "k1as", "k1s", "k2",
-  "k2as", "k2g", "k2p", "k2s", "k3", "k3as", "k4", "k4a", "k4as", "k5",
-  "k5as", "k5prk", "k7", "k7a", "k7as", "k7p", "k7t", "krvn", "main",
-  "mk1", "mod", "neg", "nsubj", "obj", "obl", "ord", "pk1", "punct",
-  "quant", "quantless", "quantmore", "rad", "rask1", "rask2", "rask3",
-  "rask4", "rask5", "rask7", "rasnegk1", "rasnegk2", "rbks", "rblak",
-  "rblpk", "rblsk", "rcdelim", "rcelab", "rcloc", "rcprop", "rcsamAnakAla",
-  "rd", "rdl", "re", "rh", "rhh", "rk", "rmeas", "rn", "root", "rp",
-  "rprop", "r6", "rpk", "rs", "rsma", "rsk", "rsm", "rt", "ru", "rv",
-  "rvks", "TAM", "vIpsA", "vkvn"
-  ];
-  
+  const getTokenValue = (token, field) => {
+    // Return edited value if exists, otherwise return original value
+    if (editedTokens[token.ID] && editedTokens[token.ID][field] !== undefined) {
+      return editedTokens[token.ID][field];
+    }
+    return token[field] || '';
+  };
+
+  const showSnackbar = (message, severity = 'success') => {
+    setSnackbar({
+      open: true,
+      message,
+      severity
+    });
+  };
+
+  const handleCloseSnackbar = () => {
+    setSnackbar(prev => ({ ...prev, open: false }));
+  };
+
+  // Check if there are any unsaved changes
+  const hasUnsavedChanges = Object.keys(editedTokens).length > 0;
+
+  // Preview tokens for visualization that includes unsaved changes
+  const previewTokens = selectedSentence?.tokens 
+    ? selectedSentence.tokens.map(token => {
+        if (editedTokens[token.ID]) {
+          return { ...token, ...editedTokens[token.ID] };
+        }
+        return token;
+      })
+    : [];
 
   return (
     <Container maxWidth="xl" sx={{ mt: 4 }}>
@@ -212,91 +648,135 @@ const Editor = () => {
 
         <Grid item xs={9}>
           {loading ? (
-            <Typography>Loading...</Typography>
+            <Box display="flex" justifyContent="center" alignItems="center" height="400px">
+              <CircularProgress />
+            </Box>
           ) : selectedSentence ? (
             <>
-              <Typography variant="h6" gutterBottom>
-                {selectedSentence.sent_id ? `Sentence: ${selectedSentence.sent_id}` : 'Sentence Details'}
-              </Typography>
+              <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 2, alignItems: 'center' }}>
+                <Typography variant="h6">
+                  {selectedSentence.sent_id ? `Sentence: ${selectedSentence.sent_id}` : 'Sentence Details'}
+                </Typography>
+                <LoadingButton 
+                  variant="contained" 
+                  color="primary" 
+                  onClick={saveChanges}
+                  disabled={!hasUnsavedChanges}
+                  loading={saving}
+                >
+                  Save Changes
+                </LoadingButton>
+              </Box>
 
               <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-
-              <Box sx={{ width: '100%' }}>
-                <TableContainer component={Paper} elevation={3}>
-                  <Table size="small" sx={{ tableLayout: 'auto' }}>
-                    <TableHead>
-                      <TableRow>
-                        {["ID", "FORM", "LEMMA", "UPOS", "XPOS", "FEATS", "HEAD", "DEPREL", "DEPS", "MISC"].map((head) => (
-                          <TableCell key={head} align="center">{head}</TableCell>
-                        ))}
-                      </TableRow>
-                    </TableHead>
-                    <TableBody>
-                      {selectedSentence.tokens && selectedSentence.tokens.map((token) => (
-                        <TableRow key={token.ID}>
-                          <TableCell align="center">{token.ID}</TableCell>
-                          <TableCell align="center">{token.FORM}</TableCell>
-                          <TableCell align="center">{token.LEMMA}</TableCell>
-                          <TableCell align="center">{token.UPOS}</TableCell>
-                          <TableCell align="center">{token.XPOS}</TableCell>
-                          <TableCell align="center">{token.FEATS}</TableCell>
-                          <TableCell align="center">
-                            <Select
-                              size="small"
-                              value={token.HEAD || "0"}
-                              onChange={(e) => handleDropdownChange(token.ID, 'HEAD', e.target.value)}
-                            >
-                              {selectedSentence.tokens.map((opt) => (
-                                <MenuItem key={opt.ID} value={opt.ID}>{opt.ID}</MenuItem>
-                              ))}
-                              <MenuItem value="0">0 (root)</MenuItem>
-                            </Select>
-                          </TableCell>
-                          <TableCell align="center">
-                            <Autocomplete
-                              size="small"
-                              options={DEPREL_OPTIONS}
-                              value={token.DEPREL || ''}
-                              onChange={(e, newValue) => {
-                                handleDropdownChange(token.ID, 'DEPREL', newValue || '');
-                              }}
-                              renderInput={(params) => (
-                                <TextField {...params} variant="standard" placeholder="DEPREL" />
-                              )}
-                              sx={{ width: 150 }}
-                            />
-                          </TableCell>
-                          <TableCell align="center">{token.DEPS}</TableCell>
-                          <TableCell align="center">{token.MISC}</TableCell>
+                <Box sx={{ width: '100%' }}>
+                  <TableContainer component={Paper} elevation={3}>
+                    <Table size="small" sx={{ tableLayout: 'auto' }}>
+                      <TableHead>
+                        <TableRow>
+                          <TableCell align="center">ID</TableCell>
+                          <TableCell align="center">FORM</TableCell>
+                          <TableCell align="center">LEMMA</TableCell>
+                          <TableCell align="center">UPOS</TableCell>
+                          <TableCell align="center">XPOS</TableCell>
+                          <TableCell align="center">FEATS</TableCell>
+                          <TableCell align="center">HEAD_PANINIAN</TableCell>
+                          <TableCell align="center">DEPREL_PANINIAN</TableCell>
+                          <TableCell align="center">HEAD_UD</TableCell>
+                          <TableCell align="center">DEPREL_UD</TableCell>
                         </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
-                </TableContainer>
-              </Box>
+                      </TableHead>
+                      <TableBody>
+                        {selectedSentence.tokens && selectedSentence.tokens.map((token) => {
+                          // Check if token has been edited
+                          const isEdited = editedTokens[token.ID] !== undefined;
+                          
+                          return (
+                            <TableRow 
+                              key={token.ID} 
+                              sx={{ 
+                                backgroundColor: isEdited ? 'rgba(255, 243, 224, 0.4)' : 'inherit' 
+                              }}
+                            >
+                              <TableCell align="center">{token.ID}</TableCell>
+                              <TableCell align="center">{token.FORM}</TableCell>
+                              <TableCell align="center">{token.LEMMA}</TableCell>
+                              <TableCell align="center">{token.UPOS}</TableCell>
+                              <TableCell align="center">{token.XPOS}</TableCell>
+                              <TableCell align="center">{token.FEATS}</TableCell>
+                              <TableCell align="center">
+                                <Select
+                                  size="small"
+                                  value={getTokenValue(token, 'HEAD_PANINIAN') || "0"}
+                                  onChange={(e) => handleInputChange(token.ID, 'HEAD_PANINIAN', e.target.value)}
+                                >
+                                  {selectedSentence.tokens.map((opt) => (
+                                    <MenuItem key={opt.ID} value={opt.ID}>{opt.ID}</MenuItem>
+                                  ))}
+                                  <MenuItem value="0">0 (root)</MenuItem>
+                                </Select>
+                              </TableCell>
+                              <TableCell align="center">
+                                <Autocomplete
+                                  size="small"
+                                  options={deprelOptions}
+                                  value={getTokenValue(token, 'DEPREL_PANINIAN')}
+                                  onChange={(e, newValue) => {
+                                    handleInputChange(token.ID, 'DEPREL_PANINIAN', newValue || '');
+                                  }}
+                                  renderInput={(params) => (
+                                    <TextField {...params} variant="standard" placeholder="DEPREL" />
+                                  )}
+                                  sx={{ width: 150 }}
+                                  freeSolo
+                                />
+                              </TableCell>
+                              <TableCell align="center">{token.HEAD_UD}</TableCell>
+                              <TableCell align="center">{token.DEPREL_UD}</TableCell>
+                            </TableRow>
+                          );
+                        })}
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
+                </Box>
 
-              {/* Dependency tree */}
-              <Box sx={{ minHeight: 400, mt: 2 }}>
-                <Typography variant="h6">Dependency Tree</Typography>
-                {selectedSentence.tokens?.length > 0 ? (
-                  <DependencyTreeViz tokens={selectedSentence.tokens} />
-                ) : (
-                  <Typography align="center" variant="body1" sx={{ pt: 10 }}>
-                    No tokens available to display in tree
+                {/* Dependency tree with preview changes */}
+                <Box sx={{ minHeight: 400, mt: 2 }}>
+                  <Typography variant="h6">
+                    Dependency Tree (Paninian View)
+                    {hasUnsavedChanges && ' - Preview with unsaved changes'}
                   </Typography>
-                )}
+                  {previewTokens?.length > 0 ? (
+                    <DependencyTreeViz tokens={previewTokens} />
+                  ) : (
+                    <Typography align="center" variant="body1" sx={{ pt: 10 }}>
+                      No tokens available to display in tree
+                    </Typography>
+                  )}
+                </Box>
               </Box>
-            </Box>
-          </>
-        ) : (
-          <Typography variant="body1">
-            Please select a sentence from the list or upload a new file
-          </Typography>
-        )}
+            </>
+          ) : (
+            <Typography variant="body1">
+              Please select a sentence from the list or upload a new file
+            </Typography>
+          )}
+        </Grid>
       </Grid>
-    </Grid>
-  </Container>
-);
+
+      <Snackbar 
+        open={snackbar.open} 
+        autoHideDuration={6000} 
+        onClose={handleCloseSnackbar}
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+      >
+        <Alert onClose={handleCloseSnackbar} severity={snackbar.severity} sx={{ width: '100%' }}>
+          {snackbar.message}
+        </Alert>
+      </Snackbar>
+    </Container>
+  );
 };
 
 export default Editor;

@@ -1,0 +1,883 @@
+I<sent_id=Geo_nios_10ch_0001a>
+1	In	In	IN	IN	_	4	case	_	_
+2	the	the	DT	DT	_	4	det	_	_
+3	previous	previous	JJ	JJ	_	4	mod	_	_
+4	lesson	lesson	NN	NN	_	7	k7	_	_
+5	we	we	PRP	PRP	_	7	k1	_	_
+6	have	have	VBP	VBP	_	7	TAM	_	_
+7	studied	studied	VBN	VBN	_	0	main	_	_
+8	this	this	DT	DT	_	7	k2	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0001b>
+1	That	That	DT	DT	_	8	nsubj:pass	_	_
+2	the	the	DT	DT	_	3	det	_	_
+3	air	air	NN	NN	_	1	dep	_	_
+4	surrounding	surrounding	VBG	VBG	_	1	acl	_	_
+5	the	the	DT	DT	_	6	det	_	_
+6	earth	earth	NN	NN	_	4	k2	_	_
+7	is	is	VBZ	VBZ	_	8	aux:pass	_	_
+8	called	called	VBN	VBN	_	0	main	_	_
+9	the	the	DT	DT	_	10	det	_	_
+10	atmosphere	atmosphere	NN	NN	_	8	k2	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0002>
+1	The	The	DT	DT	_	2	det	_	_
+2	atmosphere	atmosphere	NN	NN	_	4	nsubj:pass	_	_
+3	is	is	VBZ	VBZ	_	4	aux:pass	_	_
+4	made	made	VBN	VBN	_	0	main	_	_
+5	up	up	RP	RP	_	4	compound:prt	_	_
+6	of	of	IN	IN	_	8	case	_	_
+7	different	different	JJ	JJ	_	8	mod	_	_
+8	types	types	NNS	NNS	_	4	obl:of	_	_
+8	types	types	NNS	NNS	_	20	k1	_	_
+9	of	of	IN	IN	_	10	case	_	_
+10	gasses	gasses	NNS	NNS	_	8	r6	_	_
+12	water	water	NN	NN	_	13	compound	_	_
+13	vapour	vapour	NN	NN	_	8	r6	_	_
+13	vapour	vapour	NN	NN	_	10	conj:and	_	_
+14	and	and	CC	CC	_	16	cc	_	_
+15	dust	dust	NN	NN	_	16	compound	_	_
+16	particles	particles	NNS	NNS	_	8	r6	_	_
+16	particles	particles	NNS	NNS	_	10	conj:and	_	_
+18	which	which	WDT	WDT	_	8	ref	_	_
+19	is	is	VBZ	VBZ	_	20	cop	_	_
+20	essential	essential	JJ	JJ	_	8	acl:relcl	_	_
+21	for	for	IN	IN	_	22	case	_	_
+22	survival	survival	NN	NN	_	20	obl:for	_	_
+23	of	of	IN	IN	_	27	case	_	_
+24	plant	plant	NN	NN	_	27	compound	_	_
+25	and	and	CC	CC	_	26	cc	_	_
+26	animal	animal	NN	NN	_	24	conj:and	_	_
+26	animal	animal	NN	NN	_	27	compound	_	_
+27	life	life	NN	NN	_	22	r6	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0004a>
+1	Have	Have	VBP	VBP	_	4	TAM	_	_
+2	you	you	PRP	PRP	_	4	k1	_	_
+3	ever	ever	RB	RB	_	4	advmod	_	_
+4	thought	thought	VBN	VBN	_	0	main	_	_
+5	this	this	DT	DT	_	4	k2	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0004b>
+1	That	That	DT	DT	_	5	k1	_	_
+1	That	That	DT	DT	_	10	k1	_	_
+2	what	what	WP	WP	_	1	ref	_	_
+3	is	is	VBZ	VBZ	_	5	cop	_	_
+4	the	the	DT	DT	_	5	det	_	_
+5	source	source	NN	NN	_	1	acl:relcl	_	_
+6	of	of	IN	IN	_	7	case	_	_
+7	heat	heat	NN	NN	_	5	r6	_	_
+8	and	and	CC	CC	_	9	cc	_	_
+9	energy	energy	NN	NN	_	5	r6	_	_
+9	energy	energy	NN	NN	_	7	conj:and	_	_
+10	received	received	VBD	VBD	_	0	main	_	_
+11	on	on	IN	IN	_	13	case	_	_
+12	the	the	DT	DT	_	13	det	_	_
+13	surface	surface	NN	NN	_	10	obl:on	_	_
+14	of	of	IN	IN	_	16	case	_	_
+15	the	the	DT	DT	_	16	det	_	_
+16	earth	earth	NN	NN	_	13	r6	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0005>
+1	Why	Why	WRB	WRB	_	4	advmod	_	_
+2	does	does	VBZ	VBZ	_	4	TAM	_	_
+3	earth	earth	NN	NN	_	4	k1	_	_
+4	’s	’s	VB	VB	_	0	main	_	_
+5	surface	surface	NN	NN	_	6	k1	_	_
+5	surface	surface	NN	NN	_	12	k1	_	_
+6	get	get	VB	VB	_	4	ccomp	_	_
+7	warm	warm	JJ	JJ	_	6	k2	_	_
+8	during	during	IN	IN	_	10	case	_	_
+9	the	the	DT	DT	_	10	det	_	_
+10	day	day	NN	NN	_	7	obl:during	_	_
+11	and	and	CC	CC	_	12	cc	_	_
+12	cool	cool	VB	VB	_	4	ccomp	_	_
+12	cool	cool	VB	VB	_	6	conj:and	_	_
+13	down	down	RP	RP	_	12	compound:prt	_	_
+14	during	during	IN	IN	_	16	case	_	_
+15	the	the	DT	DT	_	16	det	_	_
+16	night	night	NN	NN	_	12	obl:during	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0006>
+1	Let	Let	VB	VB	_	0	main	_	_
+2	us	us	PRP	PRP	_	3	k1	_	_
+3	find	find	VB	VB	_	1	ccomp	_	_
+4	answer	answer	NN	NN	_	3	k2	_	_
+5	to	to	IN	IN	_	7	case	_	_
+6	all	all	PDT	PDT	_	7	det:predet	_	_
+7	these	these	DT	DT	_	3	obl:to	_	_
+8	and	and	CC	CC	_	11	cc	_	_
+9	other	other	JJ	JJ	_	11	mod	_	_
+10	related	related	JJ	JJ	_	11	mod	_	_
+11	questions	questions	NNS	NNS	_	3	obl:to	_	_
+11	questions	questions	NNS	NNS	_	7	conj:and	_	_
+12	in	in	IN	IN	_	14	case	_	_
+13	this	this	DT	DT	_	14	det	_	_
+14	lesson	lesson	NN	NN	_	11	nmod:in	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0007>
+1	After	After	IN	IN	_	2	mark	_	_
+2	studying	studying	VBG	VBG	_	9	advcl	_	_
+3	this	this	DT	DT	_	4	det	_	_
+4	lesson	lesson	NN	NN	_	2	k2	_	_
+6	you	you	PRP	PRP	_	9	k1	_	_
+6	you	you	PRP	PRP	_	11	nsubj:xsubj	_	_
+6	you	you	PRP	PRP	_	17	nsubj:xsubj	_	_
+7	will	will	MD	MD	_	9	TAM	_	_
+8	be	be	VB	VB	_	9	cop	_	_
+9	able	able	JJ	JJ	_	0	main	_	_
+10	to	to	TO	TO	_	11	mark	_	_
+11	explain	explain	VB	VB	_	9	k2	_	_
+12	the	the	DT	DT	_	13	det	_	_
+13	importance	importance	NN	NN	_	11	k2	_	_
+14	of	of	IN	IN	_	15	case	_	_
+15	insolation	insolation	NN	NN	_	13	r6	_	_
+16	and	and	CC	CC	_	17	cc	_	_
+17	establish	establish	VB	VB	_	9	k2	_	_
+17	establish	establish	VB	VB	_	11	conj:and	_	_
+18	relationship	relationship	NN	NN	_	17	k2	_	_
+19	between	between	IN	IN	_	20	case	_	_
+20	angle	angle	NN	NN	_	18	nmod:between	_	_
+21	of	of	IN	IN	_	22	case	_	_
+22	incidence	incidence	NN	NN	_	20	r6	_	_
+23	of	of	IN	IN	_	26	case	_	_
+24	sun	sun	NN	NN	_	26	compound	_	_
+25	’s	’s	NN	NN	_	26	compound	_	_
+26	rays	rays	NNS	NNS	_	22	r6	_	_
+27	and	and	CC	CC	_	32	cc	_	_
+28	the	the	DT	DT	_	29	det	_	_
+29	intensity	intensity	NN	NN	_	32	k1	_	_
+30	of	of	IN	IN	_	31	case	_	_
+31	heat	heat	NN	NN	_	29	r6	_	_
+32	received	received	VBD	VBD	_	9	conj:and	_	_
+33	from	from	IN	IN	_	34	case	_	_
+34	them	them	PRP	PRP	_	32	k5	_	_
+35	at	at	IN	IN	_	37	case	_	_
+36	a	a	DT	DT	_	37	det	_	_
+37	place	place	NN	NN	_	32	obl:at	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0008>
+1	After	After	IN	IN	_	2	mark	_	_
+2	studying	studying	VBG	VBG	_	9	advcl	_	_
+3	this	this	DT	DT	_	4	det	_	_
+4	lesson	lesson	NN	NN	_	2	k2	_	_
+6	you	you	PRP	PRP	_	9	k1	_	_
+6	you	you	PRP	PRP	_	11	nsubj:xsubj	_	_
+7	will	will	MD	MD	_	9	TAM	_	_
+8	be	be	VB	VB	_	9	cop	_	_
+9	able	able	JJ	JJ	_	0	main	_	_
+10	to	to	TO	TO	_	11	mark	_	_
+11	explain	explain	VB	VB	_	9	k2	_	_
+12	the	the	DT	DT	_	14	det	_	_
+13	different	different	JJ	JJ	_	14	mod	_	_
+14	processes	processes	NNS	NNS	_	11	k2	_	_
+15	involved	involved	VBN	VBN	_	14	acl	_	_
+16	in	in	IN	IN	_	17	mark	_	_
+17	heating	heating	VBG	VBG	_	15	advcl	_	_
+18	and	and	CC	CC	_	19	cc	_	_
+19	cooling	cooling	VBG	VBG	_	15	advcl	_	_
+19	cooling	cooling	VBG	VBG	_	17	conj:and	_	_
+20	of	of	IN	IN	_	22	case	_	_
+21	the	the	DT	DT	_	22	det	_	_
+22	atmosphere	atmosphere	NN	NN	_	17	obl:of	_	_
+24	conduction	conduction	NN	NN	_	15	dep	_	_
+26	convection	convection	NN	NN	_	15	dep	_	_
+26	convection	convection	NN	NN	_	24	conj:and	_	_
+28	radiation	radiation	NN	NN	_	15	dep	_	_
+28	radiation	radiation	NN	NN	_	24	conj:and	_	_
+29	and	and	CC	CC	_	30	cc	_	_
+30	advection	advection	NN	NN	_	15	dep	_	_
+30	advection	advection	NN	NN	_	24	conj:and	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0009>
+1	After	After	IN	IN	_	2	mark	_	_
+2	studying	studying	VBG	VBG	_	9	advcl	_	_
+3	this	this	DT	DT	_	4	det	_	_
+4	lesson	lesson	NN	NN	_	2	k2	_	_
+6	you	you	PRP	PRP	_	9	k1	_	_
+6	you	you	PRP	PRP	_	11	nsubj:xsubj	_	_
+7	will	will	MD	MD	_	9	TAM	_	_
+8	be	be	VB	VB	_	9	cop	_	_
+9	able	able	JJ	JJ	_	0	main	_	_
+10	to	to	TO	TO	_	11	mark	_	_
+11	explain	explain	VB	VB	_	9	k2	_	_
+12	the	the	DT	DT	_	14	det	_	_
+13	heat	heat	NN	NN	_	14	compound	_	_
+14	budget	budget	NN	NN	_	11	k2	_	_
+15	with	with	IN	IN	_	17	case	_	_
+16	the	the	DT	DT	_	17	det	_	_
+17	help	help	NN	NN	_	11	k3	_	_
+18	of	of	IN	IN	_	20	case	_	_
+19	a	a	DT	DT	_	20	det	_	_
+20	diagram	diagram	NN	NN	_	17	r6	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0010>
+1	After	After	IN	IN	_	2	mark	_	_
+2	studying	studying	VBG	VBG	_	9	advcl	_	_
+3	this	this	DT	DT	_	4	det	_	_
+4	lesson	lesson	NN	NN	_	2	k2	_	_
+6	you	you	PRP	PRP	_	9	k1	_	_
+6	you	you	PRP	PRP	_	11	nsubj:xsubj	_	_
+7	will	will	MD	MD	_	9	TAM	_	_
+8	be	be	VB	VB	_	9	cop	_	_
+9	able	able	JJ	JJ	_	0	main	_	_
+10	to	to	TO	TO	_	11	mark	_	_
+11	differentiate	differentiate	VB	VB	_	9	k2	_	_
+12	between	between	IN	IN	_	14	case	_	_
+13	solar	solar	JJ	JJ	_	14	mod	_	_
+14	radiation	radiation	NN	NN	_	11	obl:between	_	_
+15	and	and	CC	CC	_	17	cc	_	_
+16	terrestrial	terrestrial	JJ	JJ	_	17	mod	_	_
+17	radiation	radiation	NN	NN	_	11	obl:between	_	_
+17	radiation	radiation	NN	NN	_	14	conj:and	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0011>
+1	After	After	IN	IN	_	2	mark	_	_
+2	studying	studying	VBG	VBG	_	9	advcl	_	_
+3	this	this	DT	DT	_	4	det	_	_
+4	lesson	lesson	NN	NN	_	2	k2	_	_
+6	you	you	PRP	PRP	_	9	k1	_	_
+6	you	you	PRP	PRP	_	11	nsubj:xsubj	_	_
+7	will	will	MD	MD	_	9	TAM	_	_
+8	be	be	VB	VB	_	9	cop	_	_
+9	able	able	JJ	JJ	_	0	main	_	_
+10	to	to	TO	TO	_	11	mark	_	_
+11	explain	explain	VB	VB	_	9	k2	_	_
+12	the	the	DT	DT	_	13	det	_	_
+13	causes	causes	NNS	NNS	_	11	k2	_	_
+14	of	of	IN	IN	_	16	case	_	_
+15	global	global	JJ	JJ	_	16	mod	_	_
+16	warming	warming	NN	NN	_	13	r6	_	_
+17	and	and	CC	CC	_	19	cc	_	_
+18	its	its	PRP$	PRP$	_	19	r6	_	_
+19	effects	effects	NNS	NNS	_	13	r6	_	_
+19	effects	effects	NNS	NNS	_	16	conj:and	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0012>
+1	After	After	IN	IN	_	2	mark	_	_
+2	studying	studying	VBG	VBG	_	9	advcl	_	_
+3	this	this	DT	DT	_	4	det	_	_
+4	lesson	lesson	NN	NN	_	2	k2	_	_
+6	you	you	PRP	PRP	_	9	k1	_	_
+6	you	you	PRP	PRP	_	11	nsubj:xsubj	_	_
+7	will	will	MD	MD	_	9	TAM	_	_
+8	be	be	VB	VB	_	9	cop	_	_
+9	able	able	JJ	JJ	_	0	main	_	_
+10	to	to	TO	TO	_	11	mark	_	_
+11	explain	explain	VB	VB	_	9	k2	_	_
+12	the	the	DT	DT	_	14	det	_	_
+13	various	various	JJ	JJ	_	14	mod	_	_
+14	factors	factors	NNS	NNS	_	11	k2	_	_
+15	affecting	affecting	VBG	VBG	_	11	k2	_	_
+16	the	the	DT	DT	_	18	det	_	_
+17	horizontal	horizontal	JJ	JJ	_	18	mod	_	_
+18	distribution	distribution	NN	NN	_	15	k2	_	_
+19	of	of	IN	IN	_	20	case	_	_
+20	temperature	temperature	NN	NN	_	18	r6	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0013>
+1	After	After	IN	IN	_	2	mark	_	_
+2	studying	studying	VBG	VBG	_	9	advcl	_	_
+3	this	this	DT	DT	_	4	det	_	_
+4	lesson	lesson	NN	NN	_	2	k2	_	_
+6	you	you	PRP	PRP	_	9	k1	_	_
+6	you	you	PRP	PRP	_	11	nsubj:xsubj	_	_
+7	will	will	MD	MD	_	9	TAM	_	_
+8	be	be	VB	VB	_	9	cop	_	_
+9	able	able	JJ	JJ	_	0	main	_	_
+10	to	to	TO	TO	_	11	mark	_	_
+11	explain	explain	VB	VB	_	9	k2	_	_
+12	with	with	IN	IN	_	14	case	_	_
+13	the	the	DT	DT	_	14	det	_	_
+14	help	help	NN	NN	_	11	k3	_	_
+15	of	of	IN	IN	_	16	case	_	_
+16	map	map	NN	NN	_	14	r6	_	_
+18	the	the	DT	DT	_	20	det	_	_
+19	main	main	JJ	JJ	_	20	mod	_	_
+20	characteristics	characteristics	NNS	NNS	_	16	appos	_	_
+21	of	of	IN	IN	_	23	case	_	_
+22	temperature	temperature	NN	NN	_	23	compound	_	_
+23	distribution	distribution	NN	NN	_	20	r6	_	_
+24	in	in	IN	IN	_	26	case	_	_
+25	the	the	DT	DT	_	26	det	_	_
+26	world	world	NN	NN	_	11	k7	_	_
+27	in	in	IN	IN	_	29	case	_	_
+28	the	the	DT	DT	_	29	det	_	_
+29	month	month	NN	NN	_	26	nmod:in	_	_
+30	of	of	IN	IN	_	31	case	_	_
+31	January	January	NNP	NNP	_	29	r6	_	_
+32	and	and	CC	CC	_	33	cc	_	_
+33	July	July	NNP	NNP	_	29	r6	_	_
+33	July	July	NNP	NNP	_	31	conj:and	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0014>
+1	After	After	IN	IN	_	2	mark	_	_
+2	studying	studying	VBG	VBG	_	9	advcl	_	_
+3	this	this	DT	DT	_	4	det	_	_
+4	lesson	lesson	NN	NN	_	2	k2	_	_
+6	you	you	PRP	PRP	_	9	k1	_	_
+6	you	you	PRP	PRP	_	11	nsubj:xsubj	_	_
+7	will	will	MD	MD	_	9	TAM	_	_
+8	be	be	VB	VB	_	9	cop	_	_
+9	able	able	JJ	JJ	_	0	main	_	_
+10	to	to	TO	TO	_	11	mark	_	_
+11	explain	explain	VB	VB	_	9	k2	_	_
+12	the	the	DT	DT	_	13	det	_	_
+13	conditions	conditions	NNS	NNS	_	11	k2	_	_
+13	conditions	conditions	NNS	NNS	_	19	k7	_	_
+14	in	in	IN	IN	_	15	case	_	_
+15	which	which	WDT	WDT	_	13	ref	_	_
+16	inversion	inversion	NN	NN	_	19	k1	_	_
+17	of	of	IN	IN	_	18	case	_	_
+18	temperature	temperature	NN	NN	_	16	r6	_	_
+19	occurs	occurs	VBZ	VBZ	_	13	acl:relcl	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0015>
+1	The	The	DT	DT	_	2	det	_	_
+2	sun	sun	NN	NN	_	6	k1	_	_
+3	is	is	VBZ	VBZ	_	6	cop	_	_
+4	the	the	DT	DT	_	6	det	_	_
+5	primary	primary	JJ	JJ	_	6	mod	_	_
+6	source	source	NN	NN	_	0	main	_	_
+7	of	of	IN	IN	_	8	case	_	_
+8	energy	energy	NN	NN	_	6	r6	_	_
+9	on	on	IN	IN	_	11	case	_	_
+10	the	the	DT	DT	_	11	det	_	_
+11	earth	earth	NN	NN	_	8	nmod:on	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0016>
+1	This	This	DT	DT	_	2	det	_	_
+2	energy	energy	NN	NN	_	4	nsubj:pass	_	_
+3	is	is	VBZ	VBZ	_	4	aux:pass	_	_
+4	radiated	radiated	VBN	VBN	_	0	main	_	_
+5	in	in	IN	IN	_	7	case	_	_
+6	all	all	DT	DT	_	7	det	_	_
+7	directions	directions	NNS	NNS	_	4	k7	_	_
+8	into	into	IN	IN	_	9	case	_	_
+9	space	space	NN	NN	_	4	obl:into	_	_
+10	through	through	IN	IN	_	12	case	_	_
+11	short	short	JJ	JJ	_	12	mod	_	_
+12	waves	waves	NNS	NNS	_	4	obl:through	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0017>
+1	This	This	DT	DT	_	3	nsubj:pass	_	_
+2	is	is	VBZ	VBZ	_	3	aux:pass	_	_
+3	known	known	VBN	VBN	_	0	main	_	_
+4	as	as	IN	IN	_	6	case	_	_
+5	solar	solar	JJ	JJ	_	6	mod	_	_
+6	radiation	radiation	NN	NN	_	3	obl:as	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0018>
+1	Only	Only	RB	RB	_	3	advmod	_	_
+2	two	two	CD	CD	_	3	card	_	_
+3	billionths	billionths	NNS	NNS	_	34	k1	_	_
+4	or	or	CC	CC	_	7	cc	_	_
+6	two	two	CD	CD	_	7	card	_	_
+7	units	units	NNS	NNS	_	3	conj:or	_	_
+7	units	units	NNS	NNS	_	34	k1	_	_
+8	of	of	IN	IN	_	9	case	_	_
+9	energy	energy	NN	NN	_	7	r6	_	_
+10	out	out	RP	RP	_	9	dep	_	_
+11	of	of	IN	IN	_	20	case	_	_
+12	1	1	CD	CD	_	20	card	_	_
+14	00	00	CD	CD	_	20	card	_	_
+16	00	00	CD	CD	_	20	card	_	_
+18	00	00	CD	CD	_	20	card	_	_
+20	000	000	CD	CD	_	9	r6	_	_
+21	units	units	NNS	NNS	_	20	dep	_	_
+22	of	of	IN	IN	_	23	case	_	_
+23	energy	energy	NN	NN	_	7	r6	_	_
+24	radiated	radiated	VBN	VBN	_	23	acl	_	_
+25	by	by	IN	IN	_	27	case	_	_
+26	the	the	DT	DT	_	27	det	_	_
+27	sun	sun	NN	NN	_	24	obl:by	_	_
+29	of	of	IN	IN	_	33	case	_	_
+30	the	the	DT	DT	_	33	det	_	_
+31	total	total	JJ	JJ	_	33	mod	_	_
+32	solar	solar	JJ	JJ	_	33	mod	_	_
+33	radiation	radiation	NN	NN	_	7	r6	_	_
+34	reaches	reaches	VBZ	VBZ	_	0	main	_	_
+35	the	the	DT	DT	_	38	det	_	_
+36	earth	earth	NN	NN	_	38	compound	_	_
+37	’s	’s	NN	NN	_	38	compound	_	_
+38	surface	surface	NN	NN	_	34	k2	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0020a>
+1	This	This	DT	DT	_	3	det	_	_
+2	small	small	JJ	JJ	_	3	mod	_	_
+3	proportion	proportion	NN	NN	_	10	k1	_	_
+4	of	of	IN	IN	_	6	case	_	_
+5	solar	solar	JJ	JJ	_	6	mod	_	_
+6	radiation	radiation	NN	NN	_	3	r6	_	_
+7	is	is	VBZ	VBZ	_	10	cop	_	_
+8	of	of	IN	IN	_	10	case	_	_
+9	great	great	JJ	JJ	_	10	mod	_	_
+10	importance	importance	NN	NN	_	0	main	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0020b>
+1	As	As	IN	IN	_	7	mark	_	_
+2	it	it	PRP	PRP	_	7	k1	_	_
+3	is	is	VBZ	VBZ	_	7	cop	_	_
+4	the	the	DT	DT	_	7	det	_	_
+5	only	only	JJ	JJ	_	7	mod	_	_
+6	major	major	JJ	JJ	_	7	mod	_	_
+7	source	source	NN	NN	_	0	main	_	_
+8	of	of	IN	IN	_	9	case	_	_
+9	energy	energy	NN	NN	_	7	r6	_	_
+10	on	on	IN	IN	_	12	case	_	_
+11	the	the	DT	DT	_	12	det	_	_
+12	earth	earth	NN	NN	_	9	nmod:on	_	_
+13	for	for	IN	IN	_	14	case	_	_
+14	most	most	JJS	JJS	_	12	nmod:for	_	_
+15	of	of	IN	IN	_	20	case	_	_
+16	the	the	DT	DT	_	20	det	_	_
+17	physical	physical	JJ	JJ	_	20	mod	_	_
+18	and	and	CC	CC	_	19	cc	_	_
+19	biological	biological	JJ	JJ	_	17	conj:and	_	_
+19	biological	biological	JJ	JJ	_	20	mod	_	_
+20	phenomena	phenomena	NN	NN	_	14	r6	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0021>
+1	Incoming	Incoming	VBG	VBG	_	8	csubj:pass	_	_
+2	solar	solar	JJ	JJ	_	3	mod	_	_
+3	radiation	radiation	NN	NN	_	1	k2	_	_
+4	through	through	IN	IN	_	6	case	_	_
+5	short	short	JJ	JJ	_	6	mod	_	_
+6	waves	waves	NNS	NNS	_	1	obl:through	_	_
+7	is	is	VBZ	VBZ	_	8	aux:pass	_	_
+8	termed	termed	VBN	VBN	_	0	main	_	_
+9	as	as	IN	IN	_	10	case	_	_
+10	insolation	insolation	NN	NN	_	8	obl:as	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0022a>
+1	The	The	DT	DT	_	2	det	_	_
+2	amount	amount	NN	NN	_	14	k1	_	_
+3	of	of	IN	IN	_	4	case	_	_
+4	insolation	insolation	NN	NN	_	2	r6	_	_
+5	received	received	VBN	VBN	_	4	acl	_	_
+6	on	on	IN	IN	_	11	case	_	_
+7	the	the	DT	DT	_	11	det	_	_
+8	earth	earth	NN	NN	_	11	compound	_	_
+10	s	s	NN	NN	_	11	compound	_	_
+11	surface	surface	NN	NN	_	5	obl:on	_	_
+12	is	is	VBZ	VBZ	_	14	cop	_	_
+13	far	far	RB	RB	_	14	advmod	_	_
+14	less	less	JJR	JJR	_	0	main	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0022b>
+1	than	than	IN	IN	_	4	mark	_	_
+2	that	that	DT	DT	_	4	nsubj:pass	_	_
+3	is	is	VBZ	VBZ	_	4	aux:pass	_	_
+4	radiated	radiated	VBN	VBN	_	0	main	_	_
+5	from	from	IN	IN	_	7	case	_	_
+6	the	the	DT	DT	_	7	det	_	_
+7	sun	sun	NN	NN	_	4	k5	_	_
+8	because	because	RB	RB	_	12	case	_	_
+9	of	of	IN	IN	_	8	fixed	_	_
+10	the	the	DT	DT	_	12	det	_	_
+11	small	small	JJ	JJ	_	12	mod	_	_
+12	size	size	NN	NN	_	7	nmod:because_of	_	_
+13	of	of	IN	IN	_	15	case	_	_
+14	the	the	DT	DT	_	15	det	_	_
+15	earth	earth	NN	NN	_	12	r6	_	_
+16	and	and	CC	CC	_	18	cc	_	_
+17	its	its	PRP$	PRP$	_	18	r6	_	_
+18	distance	distance	NN	NN	_	12	r6	_	_
+18	distance	distance	NN	NN	_	15	conj:and	_	_
+19	from	from	IN	IN	_	21	case	_	_
+20	the	the	DT	DT	_	21	det	_	_
+21	sun	sun	NN	NN	_	4	k5	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0023>
+1	Moreover	Moreover	RB	RB	_	16	advmod	_	_
+2	water	water	NN	NN	_	3	compound	_	_
+3	vapour	vapour	NN	NN	_	12	compound	_	_
+5	dust	dust	NN	NN	_	6	compound	_	_
+6	particles	particles	NNS	NNS	_	3	conj:and	_	_
+6	particles	particles	NNS	NNS	_	12	compound	_	_
+8	ozone	ozone	NN	NN	_	3	conj:and	_	_
+8	ozone	ozone	NN	NN	_	12	compound	_	_
+9	and	and	CC	CC	_	11	cc	_	_
+10	other	other	JJ	JJ	_	11	mod	_	_
+11	gases	gases	NNS	NNS	_	3	conj:and	_	_
+11	gases	gases	NNS	NNS	_	12	compound	_	_
+12	present	present	NN	NN	_	16	k1	_	_
+13	in	in	IN	IN	_	15	case	_	_
+14	the	the	DT	DT	_	15	det	_	_
+15	atmosphere	atmosphere	NN	NN	_	12	nmod:in	_	_
+16	absorb	absorb	VBP	VBP	_	0	main	_	_
+17	a	a	DT	DT	_	19	det	_	_
+18	small	small	JJ	JJ	_	19	mod	_	_
+19	amount	amount	NN	NN	_	16	k2	_	_
+20	of	of	IN	IN	_	21	case	_	_
+21	insolation	insolation	NN	NN	_	19	r6	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0024>
+1	Sun	Sun	NNP	NNP	_	5	k1	_	_
+2	is	is	VBZ	VBZ	_	5	cop	_	_
+3	the	the	DT	DT	_	5	det	_	_
+4	primary	primary	JJ	JJ	_	5	mod	_	_
+5	source	source	NN	NN	_	0	main	_	_
+6	of	of	IN	IN	_	7	case	_	_
+7	energy	energy	NN	NN	_	5	r6	_	_
+8	on	on	IN	IN	_	9	case	_	_
+9	earth	earth	NN	NN	_	7	nmod:on	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0025>
+1	Insolation	Insolation	NNP	NNP	_	6	k1	_	_
+2	is	is	VBZ	VBZ	_	6	cop	_	_
+3	the	the	DT	DT	_	6	det	_	_
+4	incoming	incoming	JJ	JJ	_	6	mod	_	_
+5	solar	solar	JJ	JJ	_	6	mod	_	_
+6	radiation	radiation	NN	NN	_	0	main	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0026H>
+1	Factors	Factors	NNS	NNS	_	0	main	_	_
+2	influencing	influencing	VBG	VBG	_	1	acl	_	_
+3	Insolation	Insolation	NNP	NNP	_	2	k2	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0027>
+1	The	The	DT	DT	_	2	det	_	_
+2	amount	amount	NN	NN	_	13	k1	_	_
+3	of	of	IN	IN	_	4	case	_	_
+4	insolation	insolation	NN	NN	_	2	r6	_	_
+5	received	received	VBN	VBN	_	4	acl	_	_
+6	on	on	IN	IN	_	10	case	_	_
+7	the	the	DT	DT	_	10	det	_	_
+8	earth	earth	NN	NN	_	10	compound	_	_
+9	’s	’s	NN	NN	_	10	compound	_	_
+10	surface	surface	NN	NN	_	5	obl:on	_	_
+11	is	is	VBZ	VBZ	_	13	cop	_	_
+12	not	not	RB	RB	_	13	advmod	_	_
+13	uniform	uniform	JJ	JJ	_	0	main	_	_
+14	everywhere	everywhere	RB	RB	_	13	advmod	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0028>
+1	It	It	PRP	PRP	_	2	k1	_	_
+2	varies	varies	VBZ	VBZ	_	0	main	_	_
+3	from	from	IN	IN	_	4	case	_	_
+4	place	place	NN	NN	_	2	k5	_	_
+5	to	to	IN	IN	_	6	case	_	_
+6	place	place	NN	NN	_	4	nmod:to	_	_
+8	from	from	IN	IN	_	9	case	_	_
+10	to	to	IN	IN	_	11	case	_	_
+11	time	time	NN	NN	_	2	obl:to	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0030>
+1	Insolation	Insolation	NNP	NNP	_	3	k1	_	_
+1	Insolation	Insolation	NNP	NNP	_	7	k1	_	_
+2	is	is	VBZ	VBZ	_	3	cop	_	_
+3	more	more	JJR	JJR	_	0	main	_	_
+4	in	in	IN	IN	_	5	case	_	_
+5	summers	summers	NNS	NNS	_	3	k7	_	_
+6	and	and	CC	CC	_	7	cc	_	_
+7	less	less	JJR	JJR	_	3	conj:and	_	_
+8	in	in	IN	IN	_	9	case	_	_
+9	winters	winters	NNS	NNS	_	3	k7	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0031>
+1	The	The	DT	DT	_	3	det	_	_
+2	following	following	VBG	VBG	_	3	mod	_	_
+3	factors	factors	NNS	NNS	_	4	k1	_	_
+4	influence	influence	VBP	VBP	_	0	main	_	_
+5	the	the	DT	DT	_	6	det	_	_
+6	amount	amount	NN	NN	_	9	k1	_	_
+7	of	of	IN	IN	_	8	case	_	_
+8	insolation	insolation	NN	NN	_	6	r6	_	_
+9	received	received	VBD	VBD	_	4	ccomp	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0035T>
+1	The	The	DT	DT	_	2	det	_	_
+2	Angle	Angle	NNP	NNP	_	0	main	_	_
+3	of	of	IN	IN	_	4	case	_	_
+4	Incidence	Incidence	NNP	NNP	_	2	r6	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0035a>
+1	Since	Since	IN	IN	_	3	case	_	_
+2	the	the	DT	DT	_	3	det	_	_
+3	earth	earth	NN	NN	_	5	obl:since	_	_
+4	is	is	VBZ	VBZ	_	5	cop	_	_
+5	round	round	JJ	JJ	_	0	main	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0035b>
+1	the	the	DT	DT	_	4	det	_	_
+2	sun	sun	NN	NN	_	4	compound	_	_
+3	’s	’s	NN	NN	_	4	compound	_	_
+4	rays	rays	NNS	NNS	_	5	k1	_	_
+5	strike	strike	VBP	VBP	_	0	main	_	_
+6	the	the	DT	DT	_	7	det	_	_
+7	surface	surface	NN	NN	_	5	k2	_	_
+8	at	at	IN	IN	_	10	case	_	_
+9	different	different	JJ	JJ	_	10	mod	_	_
+10	angles	angles	NNS	NNS	_	5	obl:at	_	_
+11	at	at	IN	IN	_	13	case	_	_
+12	different	different	JJ	JJ	_	13	mod	_	_
+13	places	places	NNS	NNS	_	10	nmod:at	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0036>
+1	The	The	DT	DT	_	2	det	_	_
+2	angle	angle	NN	NN	_	21	nsubj:pass	_	_
+3	formed	formed	VBN	VBN	_	2	acl	_	_
+4	by	by	IN	IN	_	8	case	_	_
+5	the	the	DT	DT	_	8	det	_	_
+6	sun	sun	NN	NN	_	8	compound	_	_
+7	’s	’s	NN	NN	_	8	compound	_	_
+8	ray	ray	NN	NN	_	3	obl:by	_	_
+9	with	with	IN	IN	_	11	case	_	_
+10	the	the	DT	DT	_	11	det	_	_
+11	tangent	tangent	NN	NN	_	3	k3	_	_
+12	of	of	IN	IN	_	16	case	_	_
+13	the	the	DT	DT	_	16	det	_	_
+14	earth	earth	NN	NN	_	16	compound	_	_
+15	’s	’s	NN	NN	_	16	compound	_	_
+16	circle	circle	NN	NN	_	11	r6	_	_
+17	at	at	IN	IN	_	19	case	_	_
+18	a	a	DT	DT	_	19	det	_	_
+19	point	point	NN	NN	_	3	obl:at	_	_
+20	is	is	VBZ	VBZ	_	21	aux:pass	_	_
+21	called	called	VBN	VBN	_	0	main	_	_
+22	angle	angle	NN	NN	_	21	k2	_	_
+23	of	of	IN	IN	_	24	case	_	_
+24	incidence	incidence	NN	NN	_	22	r6	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0037>
+1	It	It	PRP	PRP	_	2	k1	_	_
+2	influences	influences	VBZ	VBZ	_	0	main	_	_
+3	the	the	DT	DT	_	4	det	_	_
+4	insolation	insolation	NN	NN	_	2	k2	_	_
+5	in	in	IN	IN	_	7	case	_	_
+6	two	two	CD	CD	_	7	card	_	_
+7	ways	ways	NNS	NNS	_	4	nmod:in	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0039a>
+1	The	The	DT	DT	_	2	det	_	_
+2	angle	angle	NN	NN	_	6	k1	_	_
+3	of	of	IN	IN	_	4	case	_	_
+4	incidence	incidence	NN	NN	_	2	r6	_	_
+5	is	is	VBZ	VBZ	_	6	cop	_	_
+6	large	large	JJ	JJ	_	0	main	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0039b>
+1	Hence	Hence	RB	RB	_	5	advmod	_	_
+3	they	they	PRP	PRP	_	5	nsubj:pass	_	_
+4	are	are	VBP	VBP	_	5	aux:pass	_	_
+5	concentrated	concentrated	VBN	VBN	_	0	main	_	_
+6	in	in	IN	IN	_	9	case	_	_
+7	a	a	DT	DT	_	9	det	_	_
+8	smaller	smaller	JJR	JJR	_	9	mod	_	_
+9	area	area	NN	NN	_	5	k7	_	_
+11	giving	giving	VBG	VBG	_	5	k2	_	_
+12	more	more	JJR	JJR	_	13	mod	_	_
+13	amount	amount	NN	NN	_	11	k2	_	_
+14	of	of	IN	IN	_	15	case	_	_
+15	insolation	insolation	NN	NN	_	13	r6	_	_
+16	at	at	IN	IN	_	18	case	_	_
+17	that	that	DT	DT	_	18	det	_	_
+18	place	place	NN	NN	_	11	obl:at	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0040a>
+1	If	If	IN	IN	_	6	mark	_	_
+2	the	the	DT	DT	_	4	det	_	_
+3	sun	sun	NN	NN	_	4	compound	_	_
+4	’	’	NN	NN	_	6	k1	_	_
+5	s	s	VBZ	VBZ	_	6	cop	_	_
+6	rays	rays	NNS	NNS	_	8	k1	_	_
+7	are	are	VBP	VBP	_	8	cop	_	_
+8	oblique	oblique	JJ	JJ	_	0	main	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0040b>
+1	Angle	Angle	NNP	NNP	_	5	k1	_	_
+2	of	of	IN	IN	_	3	case	_	_
+3	incidence	incidence	NN	NN	_	1	r6	_	_
+4	is	is	VBZ	VBZ	_	5	cop	_	_
+5	small	small	JJ	JJ	_	0	main	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0041>
+1	Sun	Sun	NNP	NNP	_	3	compound	_	_
+2	’s	’s	NN	NN	_	3	compound	_	_
+3	rays	rays	NNS	NNS	_	4	k1	_	_
+3	rays	rays	NNS	NNS	_	6	nsubj:xsubj	_	_
+4	have	have	VBP	VBP	_	0	main	_	_
+5	to	to	TO	TO	_	6	mark	_	_
+6	heat	heat	VB	VB	_	4	k2	_	_
+7	up	up	RP	RP	_	6	compound:prt	_	_
+8	a	a	DT	DT	_	10	det	_	_
+9	greater	greater	JJR	JJR	_	10	mod	_	_
+10	area	area	NN	NN	_	6	k2	_	_
+12	resulting	resulting	VBG	VBG	_	18	k1	_	_
+13	in	in	IN	IN	_	15	case	_	_
+14	less	less	JJR	JJR	_	15	mod	_	_
+15	amount	amount	NN	NN	_	12	k7	_	_
+16	of	of	IN	IN	_	17	case	_	_
+17	insolation	insolation	NN	NN	_	15	r6	_	_
+18	received	received	VBD	VBD	_	4	parataxis	_	_
+19	there	there	RB	RB	_	18	advmod	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0045H>
+1	Duration	Duration	VB	VB	_	0	main	_	_
+2	of	of	IN	IN	_	4	case	_	_
+3	the	the	DT	DT	_	4	det	_	_
+4	day	day	NN	NN	_	1	obl:of	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0045>
+1	Duration	Duration	NNP	NNP	_	5	k1	_	_
+2	of	of	IN	IN	_	4	case	_	_
+3	the	the	DT	DT	_	4	det	_	_
+4	day	day	NN	NN	_	1	r6	_	_
+5	varies	varies	VBZ	VBZ	_	0	main	_	_
+6	from	from	IN	IN	_	7	case	_	_
+7	place	place	NN	NN	_	5	k5	_	_
+8	to	to	IN	IN	_	9	case	_	_
+9	place	place	NN	NN	_	7	nmod:to	_	_
+10	and	and	CC	CC	_	11	cc	_	_
+11	season	season	NN	NN	_	7	nmod:to	_	_
+11	season	season	NN	NN	_	9	conj:and	_	_
+12	to	to	IN	IN	_	13	case	_	_
+13	season	season	NN	NN	_	5	obl:to	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0046>
+1	It	It	PRP	PRP	_	2	k1	_	_
+2	decides	decides	VBZ	VBZ	_	0	main	_	_
+3	the	the	DT	DT	_	4	det	_	_
+4	amount	amount	NN	NN	_	2	k2	_	_
+5	of	of	IN	IN	_	6	case	_	_
+6	insolation	insolation	NN	NN	_	4	r6	_	_
+7	received	received	VBN	VBN	_	6	acl	_	_
+8	on	on	IN	IN	_	11	case	_	_
+9	earth	earth	NN	NN	_	11	compound	_	_
+10	’s	’s	NN	NN	_	11	compound	_	_
+11	surface	surface	NN	NN	_	7	obl:on	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0047>
+1	The	The	DT	DT	_	2	dep	_	_
+2	longer	longer	RBR	RBR	_	13	advmod	_	_
+3	the	the	DT	DT	_	4	det	_	_
+4	duration	duration	NN	NN	_	13	k1	_	_
+5	of	of	IN	IN	_	7	case	_	_
+6	the	the	DT	DT	_	7	det	_	_
+7	day	day	NN	NN	_	4	r6	_	_
+9	the	the	DT	DT	_	10	det	_	_
+10	greater	greater	JJR	JJR	_	7	appos	_	_
+11	is	is	VBZ	VBZ	_	13	cop	_	_
+12	the	the	DT	DT	_	13	det	_	_
+13	amount	amount	NN	NN	_	0	main	_	_
+14	of	of	IN	IN	_	15	case	_	_
+15	insolation	insolation	NN	NN	_	13	r6	_	_
+16	received	received	VBN	VBN	_	15	acl	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0048>
+1	Conversely	Conversely	RB	RB	_	8	advmod	_	_
+2	shorter	shorter	JJR	JJR	_	4	mod	_	_
+3	the	the	DT	DT	_	4	det	_	_
+4	duration	duration	NN	NN	_	8	k1	_	_
+5	of	of	IN	IN	_	7	case	_	_
+6	the	the	DT	DT	_	7	det	_	_
+7	day	day	NN	NN	_	4	r6	_	_
+8	leads	leads	VBZ	VBZ	_	0	main	_	_
+9	to	to	IN	IN	_	10	case	_	_
+10	receipt	receipt	NN	NN	_	8	obl:to	_	_
+11	of	of	IN	IN	_	13	case	_	_
+12	less	less	JJR	JJR	_	13	mod	_	_
+13	insolation	insolation	NN	NN	_	10	r6	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0049H>
+1	Transparency	Transparency	NN	NN	_	0	main	_	_
+2	of	of	IN	IN	_	4	case	_	_
+3	the	the	DT	DT	_	4	det	_	_
+4	atmosphere	atmosphere	NN	NN	_	1	r6	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0049>
+1	Transparency	Transparency	NN	NN	_	6	k1	_	_
+2	of	of	IN	IN	_	4	case	_	_
+3	the	the	DT	DT	_	4	det	_	_
+4	atmosphere	atmosphere	NN	NN	_	1	r6	_	_
+5	also	also	RB	RB	_	6	advmod	_	_
+6	determines	determines	VBZ	VBZ	_	0	main	_	_
+7	the	the	DT	DT	_	8	det	_	_
+8	amount	amount	NN	NN	_	6	k2	_	_
+9	of	of	IN	IN	_	10	case	_	_
+10	insolation	insolation	NN	NN	_	8	r6	_	_
+11	reaching	reaching	VBG	VBG	_	10	acl	_	_
+12	the	the	DT	DT	_	15	det	_	_
+13	earth	earth	NN	NN	_	15	compound	_	_
+14	’s	’s	NN	NN	_	15	compound	_	_
+15	surface	surface	NN	NN	_	11	k2	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0050a>
+1	The	The	DT	DT	_	2	det	_	_
+2	transparency	transparency	NN	NN	_	3	k1	_	_
+3	depends	depends	VBZ	VBZ	_	0	main	_	_
+4	upon	upon	IN	IN	_	6	case	_	_
+5	cloud	cloud	NN	NN	_	6	compound	_	_
+6	cover	cover	NN	NN	_	3	obl:upon	_	_
+8	its	its	PRP$	PRP$	_	9	r6	_	_
+9	thickness	thickness	NN	NN	_	3	obl:upon	_	_
+9	thickness	thickness	NN	NN	_	6	conj:and	_	_
+11	dust	dust	NN	NN	_	12	compound	_	_
+12	particles	particles	NNS	NNS	_	3	obl:upon	_	_
+12	particles	particles	NNS	NNS	_	6	conj:and	_	_
+13	and	and	CC	CC	_	15	cc	_	_
+14	water	water	NN	NN	_	15	compound	_	_
+15	vapour	vapour	NN	NN	_	3	obl:upon	_	_
+15	vapour	vapour	NN	NN	_	6	conj:and	_	_
+</sent_id>
+
+<sent_id=Geo_nios_10ch_0050b>
+1	they	they	PRP	PRP	_	2	k1	_	_
+1	they	they	PRP	PRP	_	4	k1	_	_
+1	they	they	PRP	PRP	_	6	k1	_	_
+2	reflect	reflect	VB	VB	_	0	main	_	_
+4	absorb	absorb	VB	VB	_	2	conj:or	_	_
+5	or	or	CC	CC	_	6	cc	_	_
+6	transmit	transmit	VB	VB	_	2	conj:or	_	_
+7	insolation	insolation	NN	NN	_	2	k2	_	_
+</sent_id>
