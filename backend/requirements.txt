@@ -4,3 +4,4 @@ flask_cors
 werkzeug
 pymongo
 PyJWT
+graphviz

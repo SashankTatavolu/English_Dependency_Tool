@@ -11,15 +11,15 @@ from flask_cors import CORS
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app, origins=["http://10.4.16.167:8083"], supports_credentials=True)
-# CORS(app)
+# CORS(app, origins=["http://10.4.16.167:8083"], supports_credentials=True)
+CORS(app)
 
 # Configure secret key for JWT
 app.config['SECRET_KEY'] = 'your_secret_key_here'  # Replace with a strong secret key in production
 
 # MongoDB URI
-# app.config["MONGO_URI"] = "mongodb://localhost:27017/conllu-editor"
-app.config["MONGO_URI"] = "mongodb://10.4.16.167:27018/conllu-editor"
+app.config["MONGO_URI"] = "mongodb://localhost:27017/conllu-editor"
+# app.config["MONGO_URI"] = "mongodb://10.4.16.167:27018/conllu-editor"
 mongo = PyMongo(app)
 
 

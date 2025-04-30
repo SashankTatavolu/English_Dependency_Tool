@@ -1,132 +1,166 @@
-# English Dependency Tool with Syntax Tree Visualization
+🌐 English Dependency Tool (EDT) – With Syntax Tree Visualization
+This tool lets you upload, view, and edit English sentences in CoNLL-U format and see their syntax trees. It has:
 
-This project is a web-based EDT editor designed for easy annotation and visualization of syntactic structures. It features a React frontend and a Flask backend, with JWT authentication, MongoDB integration, and Graphviz-powered syntax tree rendering.
+A interface (React)
 
-## 🚀 Features
+A smart backend that stores your data (Flask + MongoDB)
 
-- Upload, view, and edit CoNLL-U formatted files
-- Syntax tree visualization using Graphviz and D3
-- JWT-based authentication (Register/Login)
-- Editable token tables (columns 1–10, including 7 & 8)
-- Sentence-level viewing and editing
-- RESTful API powered by Flask
-- MongoDB for storing sentence and user data
+Graphical syntax trees powered by Graphviz
 
----
+✅ What Can This Tool Do?
 
-## 🧱 Tech Stack
+Upload and view CoNLL-U files (used in linguistic research)
 
-| Frontend   | Backend   | Database  | Visualization         |
-|------------|-----------|-----------|------------------------|
-| React + Material UI | Flask (Python) | MongoDB   | Graphviz + react-d3-tree |
+Edit sentence structures and word details
 
----
+View sentences as tree diagrams
 
-## 🛠️ MongoDB Installation & Setup
+Sign up and log in (your data is safe!)
 
-### 1. Install MongoDB (Ubuntu/Debian)
+View and edit each token (words and features) of a sentence
 
-```bash
+🔧 What Do You Need to Install?
+✅ Tools Used in This Project
+
+Part	Tool
+Frontend	React + Material UI
+Backend	Python Flask
+Database	MongoDB
+Visualization	Graphviz + D3.js
+
+
+🖥️ Step-by-Step Installation Guide
+Works best on Ubuntu/Debian (Linux). For Windows, WSL or a Linux VM is recommended.
+
+📌 1. Install MongoDB (the database)
+Open your terminal and type:
+
+
 sudo apt update
 sudo apt install -y mongodb
 
 
-To start and enable MongoDB:
+# Start MongoDB and make it auto-start when you boot:
 
 sudo systemctl start mongodb
 sudo systemctl enable mongodb
 
-To verify it’s running:
+
+# To check if MongoDB is running:
 
 sudo systemctl status mongodb
-MongoDB should be accessible on mongodb://localhost:27017/ by default.
 
-```
 
-1. Backend Setup (Flask)
+# You should see "active (running)". That’s it! MongoDB is now ready.
 
-# Clone the repo
+📌 2. Install Graphviz (for tree diagrams)
+
+
+sudo apt install -y graphviz
+
+
+# This tool will draw the beautiful sentence trees.
+
+📌 3. Clone the Project
+In your terminal:
+
 git clone https://github.com/SashankTatavolu/English_Dependency_Tool.git
 
-cd English_Dependency_Tool/backend
+cd English_Dependency_Tool
 
-# Create virtual environment and activate
+
+📌 4. Set Up the Backend (Flask)
+
+
+cd backend
+
+
+# Create a Python virtual environment (this keeps things clean):
+
 python3 -m venv venv
+
 source venv/bin/activate
 
-# Install dependencies
+# Install the Python packages:
+
 pip install -r requirements.txt
 
-# Set environment variables (example)
+Set the environment variables (temporary for now):
+
 export FLASK_APP=app.py
 export FLASK_ENV=development
 export SECRET_KEY=your-secret-key
 export JWT_SECRET_KEY=your-jwt-secret-key
 export MONGO_URI=mongodb://localhost:27017/conllu
 
-# Run the Flask server
+
+# Start the backend server:
+
 python3 app.py
 
 
-2. Frontend Setup (React)
+You should see: Running on http://127.0.0.1:5003/
 
-cd ../frontend
+📌 5. Set Up the Frontend (React)
 
-# Install dependencies
+In a new terminal window:
+
+cd English_Dependency_Tool/frontend
+
+
+# Install Node.js packages:
+
 npm install
 
-# Start the dev server
+# Start the development server:
+
 npm start
 
-📂 Project Structure
 
-conllu-editor/
-│
-├── backend/
-│   ├── app.py
-│   ├── routes/
-│   ├── auth/
-│   ├── database/
-│   ├── models/
-│   ├── utils/
-│   └── templates/  # For Graphviz SVG rendering
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/         # Home, Login, Register, Editor
-│   │   ├── App.js
-│   │   └── index.js
-│   └── public/
-│
-├── README.md
-└── requirements.txt
+# You’ll see the app open in your browser at http://localhost:3000/
+
+📁 Project Folder Structure (Simplified)
+
+English_Dependency_Tool/
+├── backend/           → Python Flask app
+│   ├── app.py         → Main server file
+│   └── ...            → Auth, DB, routes, utils
+├── frontend/          → React web app
+│   └── src/pages/     → Login, Register, Editor
+└── requirements.txt   → Python dependencies
 
 
+🌐 How It Works
+Register or Login (JWT token is saved)
 
-📦 API Overview
-POST /register – Register a user
+Upload a CoNLL-U file
 
-POST /login – Authenticate user & return JWT
+Sentences show up one-by-one
 
-POST /upload – Upload CoNLL-U file
+You can edit words, tags, dependencies
 
-GET /sentences – Get all sentences
+Syntax trees are auto-generated using Graphviz
 
-PUT /sentence/<id> – Edit a sentence
+📡 API Summary (for tech-savvy users)
 
-📌 Notes
-Ensure Graphviz is installed (with dot binary) on the server.
-
-MongoDB must be running for user and sentence data storage.
-
-React app uses Material UI for a clean and modern design.
-
-Editor supports sentence tags like <sent_id=...> and </sent_id>.
-
+Method	Endpoint	Description
+POST	/register	Register a new user
+POST	/login	Log in and get a JWT
+POST	/upload	Upload CoNLL-U file
+GET	/sentences	Fetch stored sentences
+PUT	/sentence/<id>	Update sentence by ID
 
 
+⚠️ Important Notes
+Graphviz must be installed and accessible (use which dot to check).
 
-📬 License
-MIT License © 2025 Sashank Tatavolu/ IIITH
+MongoDB must be running before starting the backend.
+
+This app is designed to handle <sent_id=...> tags used in linguistics.
+
+🎨 UI/UX
+The app uses Material UI to give a clean, modern look and feel.
+
+📜 License
+MIT License © 2025 Sashank Tatavolu / IIITH
 
