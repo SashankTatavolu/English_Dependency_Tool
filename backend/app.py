@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, Response, json, make_response, request, jsonify
 from flask_pymongo import PyMongo
 import os
 import re
@@ -288,6 +288,88 @@ def update_token(current_user, sentence_id, token_id):
     sentence["tokens"] = updated_tokens
 
     return jsonify(sentence), 200
+
+@app.route('/api/sentences/download', methods=['GET'])
+@token_required
+def download_sentences_combined(current_user):
+    download_format = request.args.get('format', 'txt')
+    token_collection = mongo.db.sentences
+    sentences = list(token_collection.find({"user_id": str(current_user['_id'])}))
+
+    if download_format == 'json':
+        # Convert ObjectId to string
+        for sentence in sentences:
+            sentence["sentence_id"] = str(sentence["_id"])
+            del sentence["_id"]  # Optional: remove _id if you don't want it duplicated
+
+        response = make_response(json.dumps(sentences, indent=2))
+        response.headers.set('Content-Type', 'application/json')
+        response.headers.set('Content-Disposition', 'attachment', filename='sentences.json')
+        return response
+
+    elif download_format == 'txt':
+        lines = []
+        for sentence in sentences:
+            sent_id = sentence.get('sent_id', 'unknown')
+            if sentence.get("feedback"):
+                lines.append(f"# feedback={sentence['feedback']}")
+            lines.append(f"<sent_id={sent_id}>")
+            
+            for token in sentence['tokens']:
+                columns = [
+                    token.get("ID", "_"),
+                    token.get("FORM", "_"),
+                    token.get("LEMMA", "_"),
+                    token.get("UPOS", "_"),
+                    token.get("XPOS", "_"),
+                    token.get("FEATS", "_"),
+                    token.get("HEAD_PANINIAN", "_"),
+                    token.get("DEPREL_PANINIAN", "_"),
+                    token.get("HEAD_UD", "_"),
+                    token.get("DEPREL_UD", "_")
+                ]
+                lines.append("\t".join(columns))
+            lines.append(f"</sent_id>")
+            lines.append("")
+
+        content = "\n".join(lines)
+        return Response(
+            content,
+            mimetype='text/plain',
+            headers={"Content-Disposition": "attachment; filename=sentences.txt"}
+        )
+
+    else:
+        return jsonify({"error": "Invalid format. Use 'txt' or 'json'."}), 400
+    
+    
+@app.route('/api/sentences', methods=['DELETE'])
+@token_required
+def delete_all_sentences(current_user):
+    token_collection = mongo.db.sentences
+    result = token_collection.delete_many({"user_id": str(current_user['_id'])})
+    return jsonify({
+        "message": f"Deleted {result.deleted_count} sentences."
+    }), 200
+
+
+@app.route('/api/sentences/<sentence_id>/feedback', methods=['PUT'])
+@token_required
+def update_feedback(current_user, sentence_id):
+    data = request.json
+    feedback = data.get("feedback", "")
+
+    token_collection = mongo.db.sentences
+    result = token_collection.update_one(
+        {"_id": ObjectId(sentence_id), "user_id": str(current_user['_id'])},
+        {"$set": {"feedback": feedback}}
+    )
+
+    if result.matched_count == 0:
+        return jsonify({"error": "Sentence not found or unauthorized"}), 404
+
+    return jsonify({"message": "Feedback updated successfully"}), 200
+
 
 # Run the Flask app
 if __name__ == '__main__':
