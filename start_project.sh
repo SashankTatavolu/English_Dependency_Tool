@@ -17,6 +17,15 @@ cd ..
 # Step 3: Backend setup and start
 echo "🐍 Installing backend dependencies..."
 cd backend
+
+source venv/bin/activate
+if [ $? -ne 0 ]; then
+    echo "🔄 Creating virtual environment..."
+    python3 -m venv venv
+    source venv/bin/activate
+fi
+echo "📦 Installing backend dependencies..."
+
 pip install -r requirements.txt
 
 echo "🚀 Starting backend..."
