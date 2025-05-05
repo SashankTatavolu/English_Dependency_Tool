@@ -4,24 +4,30 @@
 echo "🔄 Pulling latest changes from Git..."
 git pull
 
-# Step 2: Start frontend
-echo "🚀 Starting frontend..."
+# Step 2: Frontend setup and start
+echo "📦 Installing frontend dependencies..."
 cd frontend
+npm install
+
+echo "🚀 Starting frontend..."
 npm start &
 FRONTEND_PID=$!
 cd ..
 
-# Step 3: Start backend
-echo "🚀 Starting backend..."
+# Step 3: Backend setup and start
+echo "🐍 Installing backend dependencies..."
 cd backend
+pip install -r requirements.txt
+
+echo "🚀 Starting backend..."
 python3 app.py &
 BACKEND_PID=$!
 cd ..
 
-# Optional: Wait for processes or exit
+# Info
 echo "✅ Frontend and backend started."
 echo "Frontend PID: $FRONTEND_PID"
 echo "Backend PID: $BACKEND_PID"
 
-# Uncomment the following line if you want the script to wait and keep running
+# Optional: Wait for both to finish (if needed)
 wait $FRONTEND_PID $BACKEND_PID
