@@ -24,4 +24,4 @@ echo "Frontend PID: $FRONTEND_PID"
 echo "Backend PID: $BACKEND_PID"
 
 # Uncomment the following line if you want the script to wait and keep running
-# wait $FRONTEND_PID $BACKEND_PID
+wait $FRONTEND_PID $BACKEND_PID
