@@ -444,15 +444,15 @@ const Editor = () => {
         </Button>
 
         <Tooltip title="View Annotation Guidelines">
-          <Button
-            variant="contained"
-            color="secondary"
-            startIcon={<InfoIcon />}
-            onClick={handleOpenGuidelines}
-          >
-            Guidelines
-          </Button>
-        </Tooltip>
+  <Button
+    variant="contained"
+    color="secondary"
+    startIcon={<InfoIcon />}
+    onClick={() => window.open('/dependencies_manual.pdf', '_blank')}
+  >
+    Guidelines
+  </Button>
+</Tooltip>
       
       </Stack>
 
