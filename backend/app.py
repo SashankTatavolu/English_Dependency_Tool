@@ -139,6 +139,7 @@ def get_profile(current_user):
     }
     return jsonify(user_info), 200
 
+
 @app.route('/api/tokens/upload', methods=['POST'])
 @token_required
 def upload_tokens(current_user):
@@ -150,7 +151,12 @@ def upload_tokens(current_user):
 
     # Split content into sentences based on sent_id tags
     sentences = []
-    current_sentence = {"tokens": [], "sent_id": None, "user_id": str(current_user['_id'])}
+    current_sentence = {
+        "tokens": [], 
+        "sent_id": None, 
+        "text": None,
+        "user_id": str(current_user['_id'])
+    }
 
     lines = file_content.strip().split('\n')
 
@@ -164,11 +170,29 @@ def upload_tokens(current_user):
         if sent_id_match:
             if current_sentence["tokens"]:
                 sentences.append(current_sentence)
-                current_sentence = {"tokens": [], "sent_id": None, "user_id": str(current_user['_id'])}
+                current_sentence = {
+                    "tokens": [], 
+                    "sent_id": None, 
+                    "text": None,
+                    "user_id": str(current_user['_id'])
+                }
             current_sentence["sent_id"] = sent_id_match.group(1)
             continue
 
+        # The line starting with # after <sent_id> is the sentence text
+        if current_sentence["sent_id"] and not current_sentence["text"] and line.startswith("#"):
+            current_sentence["text"] = line[1:].strip()  # Remove the # and trim whitespace
+            continue
+
         if line == "</sent_id>":
+            if current_sentence["tokens"]:
+                sentences.append(current_sentence)
+                current_sentence = {
+                    "tokens": [], 
+                    "sent_id": None, 
+                    "text": None,
+                    "user_id": str(current_user['_id'])
+                }
             continue
 
         if not line.startswith("#"):
@@ -198,8 +222,11 @@ def upload_tokens(current_user):
     # Handle case with no <sent_id> tags
     if not sentences and file_content.strip():
         tokens = []
+        text_line = None
         for line in file_content.strip().split('\n'):
-            if line.strip() and not line.startswith("#"):
+            if line.strip() and line.startswith("#"):
+                text_line = line[1:].strip()
+            elif line.strip() and not line.startswith("#"):
                 columns = line.split("\t")
                 if len(columns) >= 8:
                     while len(columns) < 10:
@@ -218,7 +245,12 @@ def upload_tokens(current_user):
                     })
 
         if tokens:
-            sentences.append({"tokens": tokens, "sent_id": "Sentence 1", "user_id": str(current_user['_id'])})
+            sentences.append({
+                "tokens": tokens, 
+                "sent_id": "Sentence 1", 
+                "text": text_line or "Unknown text",
+                "user_id": str(current_user['_id'])
+            })
 
     # Save all sentences to MongoDB
     token_collection = mongo.db.sentences
@@ -229,19 +261,6 @@ def upload_tokens(current_user):
         "sentence_ids": inserted_ids,
         "sentences": sentences
     }), 200
-
-@app.route('/api/sentences', methods=['GET'])
-@token_required
-def get_all_sentences(current_user):
-    token_collection = mongo.db.sentences
-    # Get only sentences for the current user
-    sentences = list(token_collection.find({"user_id": str(current_user['_id'])}, {"_id": 1, "sent_id": 1}))
-    
-    # Convert ObjectId to string for JSON serialization
-    for sentence in sentences:
-        sentence["_id"] = str(sentence["_id"])
-    
-    return jsonify(sentences), 200
 
 @app.route('/api/sentences/<sentence_id>', methods=['GET'])
 @token_required
@@ -315,6 +334,10 @@ def download_sentences_combined(current_user):
                 lines.append(f"# feedback={sentence['feedback']}")
             lines.append(f"<sent_id={sent_id}>")
             
+            # Add the sentence text
+            if 'text' in sentence:
+                lines.append(sentence['text'])
+            
             for token in sentence['tokens']:
                 columns = [
                     token.get("ID", "_"),
@@ -342,15 +365,31 @@ def download_sentences_combined(current_user):
     else:
         return jsonify({"error": "Invalid format. Use 'txt' or 'json'."}), 400
     
-    
 @app.route('/api/sentences', methods=['DELETE'])
 @token_required
 def delete_all_sentences(current_user):
     token_collection = mongo.db.sentences
     result = token_collection.delete_many({"user_id": str(current_user['_id'])})
+
     return jsonify({
-        "message": f"Deleted {result.deleted_count} sentences."
+        "message": f"{result.deleted_count} sentence(s) deleted successfully"
     }), 200
+
+    
+
+@app.route('/api/sentences', methods=['GET'])
+@token_required
+def get_all_sentences(current_user):
+    token_collection = mongo.db.sentences
+    sentences = list(token_collection.find(
+        {"user_id": str(current_user['_id'])}, 
+        {"_id": 1, "sent_id": 1, "feedback": 1, "tokens": 1}
+    ))
+    
+    for sentence in sentences:
+        sentence["_id"] = str(sentence["_id"])
+    
+    return jsonify(sentences), 200
 
 
 @app.route('/api/sentences/<sentence_id>/feedback', methods=['PUT'])
