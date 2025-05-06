@@ -140,6 +140,58 @@ def get_profile(current_user):
     return jsonify(user_info), 200
 
 
+@app.route('/api/auth/forgot-password', methods=['POST'])
+def forgot_password():
+    data = request.json
+    email = data.get('email')
+
+    if not email:
+        return jsonify({'error': 'Email is required'}), 400
+
+    user = mongo.db.users.find_one({'email': email})
+    if not user:
+        return jsonify({'error': 'User not found'}), 404
+
+    reset_token = jwt.encode({
+        'user_id': str(user['_id']),
+        'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=30)
+    }, app.config['SECRET_KEY'], algorithm='HS256')
+
+    # In production, send this token via email.
+    return jsonify({
+        'message': 'Password reset token generated',
+        'reset_token': reset_token  # For testing only. Don't expose this in production!
+    }), 200
+
+@app.route('/api/auth/reset-password', methods=['POST'])
+def reset_password():
+    data = request.json
+    token = data.get('token')
+    new_password = data.get('password')
+
+    if not token or not new_password:
+        return jsonify({'error': 'Token and new password are required'}), 400
+
+    try:
+        payload = jwt.decode(token, app.config['SECRET_KEY'], algorithms=['HS256'])
+        user_id = payload['user_id']
+    except jwt.ExpiredSignatureError:
+        return jsonify({'error': 'Reset token has expired'}), 400
+    except jwt.InvalidTokenError:
+        return jsonify({'error': 'Invalid reset token'}), 400
+
+    hashed_password = generate_password_hash(new_password, method='pbkdf2:sha256')
+    result = mongo.db.users.update_one(
+        {'_id': ObjectId(user_id)},
+        {'$set': {'password': hashed_password}}
+    )
+
+    if result.matched_count == 0:
+        return jsonify({'error': 'User not found'}), 404
+
+    return jsonify({'message': 'Password reset successful'}), 200
+
+
 @app.route('/api/tokens/upload', methods=['POST'])
 @token_required
 def upload_tokens(current_user):
