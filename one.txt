@@ -1,0 +1,18 @@
+<sent_id=Geo_nios_2ch_0001>
+#At Present phytogenetic classification systems based on evolutionary relationships between the varoius oraganism are acceptable.
+1	At	At	IN	IN	_	2	case	2	case
+2	Present	Present	NNP	NNP	_	15	obl:at	15	obl:at
+3	phytogenetic	phytogenetic	JJ	JJ	_	5	mod	5	amod
+4	classification	classification	NN	NN	_	5	compound	5	compound
+5	systems	systems	NNS	NNS	_	15	k1	15	nsubj
+6	based	based	VBN	VBN	_	9	case	9	case
+7	on	on	IN	IN	_	6	fixed	6	fixed
+8	evolutionary	evolutionary	JJ	JJ	_	9	mod	9	amod
+9	relationships	relationships	NNS	NNS	_	5	nmod:based_on	5	nmod:based_on
+10	between	between	IN	IN	_	13	case	13	case
+11	the	the	DT	DT	_	13	det	13	det
+12	varoius	varoius	JJ	JJ	_	13	mod	13	amod
+13	oraganism	oraganism	NN	NN	_	9	nmod:between	9	nmod:between
+14	are	are	VBP	VBP	_	15	cop	15	cop
+15	acceptable	acceptable	JJ	JJ	_	0	main	0	root
+</sent_id>

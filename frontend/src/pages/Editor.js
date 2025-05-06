@@ -135,7 +135,7 @@ const Editor = () => {
     "rcdelim", "rcelab", "rcloc", "rcprop", "rcsamAnakAla", "rd",
     "rdl", "re", "rh", "rhh", "rk", "rmeas", "rn", "rp", "rprop",
     "r6", "rpk", "rs", "rsma", "rsm", "rsk", "rt", "ru", "rv",
-    "rvks", "vIpsA", "vkvn"
+    "rvks", "vIpsA", "vkvn","nsubj"
   ];
 
   const [guidelinesOpen, setGuidelinesOpen] = useState(false);
