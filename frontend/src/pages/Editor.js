@@ -266,11 +266,12 @@ const Editor = () => {
     }
   };
 
-  const handleInputChange = (tokenId, field, value) => {
+  const handleInputChange = (tokenId, tokenForm, field, value) => {
+    const uniqueKey = `${tokenId}_${tokenForm}`; // Creates a unique key like "10_soil"
     setEditedTokens(prev => ({
       ...prev,
-      [tokenId]: {
-        ...prev[tokenId],
+      [uniqueKey]: {
+        ...prev[uniqueKey],
         [field]: value
       }
     }));
@@ -278,23 +279,21 @@ const Editor = () => {
 
   const saveChanges = async () => {
     if (!selectedSentence || Object.keys(editedTokens).length === 0) return;
-
+  
     setSaving(true);
     try {
-      const updates = Object.entries(editedTokens).map(([tokenId, changes]) => {
+      const updates = Object.entries(editedTokens).map(([uniqueKey, changes]) => {
+        const [tokenId] = uniqueKey.split('_'); // Extract the original ID
         return axios.put(
           `${API_URL}/api/tokens/${selectedSentence._id}/token/${tokenId}`,
           changes
         );
       });
-
+  
       await Promise.all(updates);
       
-      // Fetch updated sentence data
       const res = await axios.get(`${API_URL}/api/sentences/${selectedSentence._id}`);
       setSelectedSentence(res.data);
-      
-      // Clear edited tokens
       setEditedTokens({});
       showSnackbar('Changes saved successfully', 'success');
     } catch (error) {
@@ -363,12 +362,12 @@ const Editor = () => {
   };
 
   const getTokenValue = (token, field) => {
-    // Return edited value if exists, otherwise return original value
-    if (editedTokens[token.ID] && editedTokens[token.ID][field] !== undefined) {
-      return editedTokens[token.ID][field];
+    const uniqueKey = `${token.ID}_${token.FORM}`;
+    if (editedTokens[uniqueKey] && editedTokens[uniqueKey][field] !== undefined) {
+      return editedTokens[uniqueKey][field];
     }
     return token[field] || '';
-  };
+  };  
 
   const showSnackbar = (message, severity = 'success') => {
     setSnackbar({
@@ -395,13 +394,14 @@ const Editor = () => {
 
   // Preview tokens for visualization that includes unsaved changes
   const previewTokens = selectedSentence?.tokens 
-    ? selectedSentence.tokens.map(token => {
-        if (editedTokens[token.ID]) {
-          return { ...token, ...editedTokens[token.ID] };
-        }
-        return token;
-      })
-    : [];
+  ? selectedSentence.tokens.map(token => {
+      const uniqueKey = `${token.ID}_${token.FORM}`;
+      if (editedTokens[uniqueKey]) {
+        return { ...token, ...editedTokens[uniqueKey] };
+      }
+      return token;
+    })
+  : [];
 
       
 
@@ -670,7 +670,8 @@ const Editor = () => {
                                 <Select
                                   size="small"
                                   value={getTokenValue(token, 'HEAD_PANINIAN') || "0"}
-                                  onChange={(e) => handleInputChange(token.ID, 'HEAD_PANINIAN', e.target.value)}
+                                  onChange={(e) => handleInputChange(token.ID, token.FORM, 'HEAD_PANINIAN', e.target.value)}
+
                                 >
                                   {selectedSentence.tokens.map((opt) => (
                                     <MenuItem key={opt.ID} value={opt.ID}>{opt.ID}</MenuItem>
