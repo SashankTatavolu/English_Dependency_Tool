@@ -267,29 +267,49 @@ const Editor = () => {
   };
 
   const handleInputChange = (tokenId, tokenForm, field, value) => {
-    const uniqueKey = `${tokenId}_${tokenForm}`; // Creates a unique key like "10_soil"
-    setEditedTokens(prev => ({
-      ...prev,
-      [uniqueKey]: {
-        ...prev[uniqueKey],
-        [field]: value
+  // Use only tokenId as the unique key since ID should be unique per sentence
+  const uniqueKey = tokenId; // Remove the tokenForm part
+  setEditedTokens(prev => ({
+    ...prev,
+    [uniqueKey]: {
+      ...prev[uniqueKey],
+      [field]: value
       }
     }));
+    };
+
+  // Also update the getTokenValue function to match:
+  const getTokenValue = (token, field) => {
+    const uniqueKey = token.ID; // Use only token.ID
+    if (editedTokens[uniqueKey] && editedTokens[uniqueKey][field] !== undefined) {
+      return editedTokens[uniqueKey][field];
+    }
+    return token[field] || '';
   };
 
+  const previewTokens = selectedSentence?.tokens 
+    ? selectedSentence.tokens.map(token => {
+        const uniqueKey = token.ID; // Use only token.ID
+        if (editedTokens[uniqueKey]) {
+          return { ...token, ...editedTokens[uniqueKey] };
+        }
+        return token;
+      })
+    : [];
+
   const saveChanges = async () => {
-  if (!selectedSentence || Object.keys(editedTokens).length === 0) return;
+      if (!selectedSentence || Object.keys(editedTokens).length === 0) return;
 
       setSaving(true);
       try {
-        const updates = Object.entries(editedTokens).map(([uniqueKey, changes]) => {
-          const [tokenId] = uniqueKey.split('_'); // Extract the original ID
+        const updates = Object.entries(editedTokens).map(([tokenId, changes]) => {
+          // tokenId is already just the ID now, no need to split
           return axios.put(
             `${API_URL}/api/tokens/${selectedSentence._id}/token/${tokenId}`,
             changes
           ).catch(error => {
             console.error(`Error updating token ${tokenId}:`, error);
-            throw error; // Re-throw to be caught by Promise.all
+            throw error;
           });
         });
 
@@ -365,13 +385,13 @@ const Editor = () => {
     }
   };
 
-  const getTokenValue = (token, field) => {
-    const uniqueKey = `${token.ID}_${token.FORM}`;
-    if (editedTokens[uniqueKey] && editedTokens[uniqueKey][field] !== undefined) {
-      return editedTokens[uniqueKey][field];
-    }
-    return token[field] || '';
-  };  
+  // const getTokenValue = (token, field) => {
+  //   const uniqueKey = `${token.ID}_${token.FORM}`;
+  //   if (editedTokens[uniqueKey] && editedTokens[uniqueKey][field] !== undefined) {
+  //     return editedTokens[uniqueKey][field];
+  //   }
+  //   return token[field] || '';
+  // };  
 
   const showSnackbar = (message, severity = 'success') => {
     setSnackbar({
@@ -397,15 +417,15 @@ const Editor = () => {
   const hasUnsavedChanges = Object.keys(editedTokens).length > 0;
 
   // Preview tokens for visualization that includes unsaved changes
-  const previewTokens = selectedSentence?.tokens 
-  ? selectedSentence.tokens.map(token => {
-      const uniqueKey = `${token.ID}_${token.FORM}`;
-      if (editedTokens[uniqueKey]) {
-        return { ...token, ...editedTokens[uniqueKey] };
-      }
-      return token;
-    })
-  : [];
+  // const previewTokens = selectedSentence?.tokens 
+  // ? selectedSentence.tokens.map(token => {
+  //     const uniqueKey = `${token.ID}_${token.FORM}`;
+  //     if (editedTokens[uniqueKey]) {
+  //       return { ...token, ...editedTokens[uniqueKey] };
+  //     }
+  //     return token;
+  //   })
+  // : [];
 
       
 
@@ -674,7 +694,7 @@ const Editor = () => {
                                 <Select
                                   size="small"
                                   value={getTokenValue(token, 'HEAD_PANINIAN') || "0"}
-                                  onChange={(e) => handleInputChange(token.ID, token.FORM, 'HEAD_PANINIAN', e.target.value)}
+                                  onChange={(e) => handleInputChange(token.ID, 'HEAD_PANINIAN', e.target.value)}
 
                                 >
                                   {selectedSentence.tokens.map((opt) => (
@@ -689,7 +709,7 @@ const Editor = () => {
                                   options={deprelOptions}
                                   value={getTokenValue(token, 'DEPREL_PANINIAN') || ''}
                                   onChange={(e, newValue) => {
-                                    handleInputChange(token.ID, token.FORM, 'DEPREL_PANINIAN', newValue || '');
+                                    handleInputChange(token.ID, 'DEPREL_PANINIAN', newValue || '');
                                   }}
                                   renderInput={(params) => (
                                     <TextField {...params} variant="standard" placeholder="DEPREL" />

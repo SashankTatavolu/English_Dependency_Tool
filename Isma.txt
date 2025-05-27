@@ -1,0 +1,2201 @@
+<sent_id=Geo_ncert_6stnd_1ch_0001>
+#How wonderful it is to watch the sky after sunset.
+1	How	How	WRB	WRB	_	2	advmod	2	advmod
+2	wonderful	wonderful	JJ	JJ	_	4	dep	4	dep
+3	it	it	PRP	PRP	_	4	k1	4	nsubj
+3	it	it	PRP	PRP	_	6	nsubj:xsubj	6	nsubj:xsubj
+4	is	is	VBZ	VBZ	_	0	main	0	root
+5	to	to	TO	TO	_	6	mark	6	mark
+6	watch	watch	VB	VB	_	4	k2	4	xcomp
+7	the	the	DT	DT	_	8	det	8	det
+8	sky	sky	NN	NN	_	6	k2	6	obj
+9	after	after	IN	IN	_	10	case	10	case
+10	sunset	sunset	NN	NN	_	6	obl:after	6	obl:after
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0002a>
+#One would first notice one or two bright dots shining in the sky.
+1	One	One	PRP	PRP	_	4	k1	4	nsubj
+2	would	would	MD	MD	_	4	TAM	4	aux
+3	first	first	RB	RB	_	4	advmod	4	advmod
+4	notice	notice	VB	VB	_	0	main	0	root
+5	one	one	CD	CD	_	9	card	9	nummod
+6	or	or	CC	CC	_	7	cc	7	cc
+7	two	two	CD	CD	_	5	conj:or	5	conj:or
+7	two	two	CD	CD	_	9	card	9	nummod
+8	bright	bright	JJ	JJ	_	9	mod	9	amod
+9	dots	dots	NNS	NNS	_	4	k2	4	obj
+10	shining	shining	VBG	VBG	_	9	acl	9	acl
+11	in	in	IN	IN	_	13	case	13	case
+12	the	the	DT	DT	_	13	det	13	det
+13	sky	sky	NN	NN	_	10	k7	10	obl:in
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0002b>
+#Soon you would see the number increasing.
+1	Soon	Soon	RB	RB	_	4	advmod	4	advmod
+2	you	you	PRP	PRP	_	4	k1	4	nsubj
+3	would	would	MD	MD	_	4	TAM	4	aux
+4	see	see	VB	VB	_	0	main	0	root
+5	the	the	DT	DT	_	6	det	6	det
+6	number	number	NN	NN	_	4	k2	4	obj
+7	increasing	increasing	VBG	VBG	_	6	acl	6	acl
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0003>
+#You can not count them any more.
+1	You	You	PRP	PRP	_	4	k1	4	nsubj
+2	can	can	MD	MD	_	4	TAM	4	aux
+3	not	not	RB	RB	_	4	advmod	4	advmod
+4	count	count	VB	VB	_	0	main	0	root
+5	them	them	PRP	PRP	_	4	k2	4	obj
+6	any	any	DT	DT	_	7	dep	7	dep
+7	more	more	RBR	RBR	_	4	comparmore	4	advmod
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0004a>
+#The whole sky is filled with tiny shining objects.
+1	The	The	DT	DT	_	3	det	3	det
+2	whole	whole	JJ	JJ	_	3	mod	3	amod
+3	sky	sky	NN	NN	_	5	nsubj:pass	5	nsubj:pass
+4	is	is	VBZ	VBZ	_	5	aux:pass	5	aux:pass
+5	filled	filled	VBN	VBN	_	0	main	0	root
+6	with	with	IN	IN	_	9	case	9	case
+7	tiny	tiny	JJ	JJ	_	9	mod	9	amod
+8	shining	shining	VBG	VBG	_	9	mod	9	amod
+9	objects	objects	NNS	NNS	_	5	k3	5	obl:with
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0004b>
+#some are bright.
+1	some	some	DT	DT	_	3	k1	3	nsubj
+2	are	are	VBP	VBP	_	3	cop	3	cop
+3	bright	bright	JJ	JJ	_	0	main	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0004c>
+#others are dim.
+1	others	others	NNS	NNS	_	3	k1	3	nsubj
+2	are	are	VBP	VBP	_	3	cop	3	cop
+3	dim	dim	JJ	JJ	_	0	main	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0005a>
+#It seems this.
+1	It	It	PRP	PRP	_	2	k1	2	nsubj
+2	seems	seems	VBZ	VBZ	_	0	main	0	root
+3	this	this	DT	DT	_	2	k2s	2	xcomp
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0005b>
+#if the sky is studded with diamonds.
+1	if	if	IN	IN	_	5	mark	5	mark
+2	the	the	DT	DT	_	3	det	3	det
+3	sky	sky	NN	NN	_	5	nsubj:pass	5	nsubj:pass
+4	is	is	VBZ	VBZ	_	5	aux:pass	5	aux:pass
+5	studded	studded	VBN	VBN	_	0	main	0	root
+6	with	with	IN	IN	_	7	case	7	case
+7	diamonds	diamonds	NNS	NNS	_	5	k3	5	obl:with
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0006>
+#They all appear to be twinkling.
+1	They	They	PRP	PRP	_	3	k1	3	nsubj
+1	They	They	PRP	PRP	_	6	nsubj:xsubj	6	nsubj:xsubj
+2	all	all	RB	RB	_	3	advmod	3	advmod
+3	appear	appear	VBP	VBP	_	0	main	0	root
+4	to	to	TO	TO	_	6	mark	6	mark
+5	be	be	VB	VB	_	6	TAM	6	aux
+6	twinkling	twinkling	VBG	VBG	_	3	k2	3	xcomp
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0007a>
+#if you look at them carefully.
+1	if	if	IN	IN	_	3	mark	3	mark
+2	you	you	PRP	PRP	_	3	k1	3	nsubj
+3	look	look	VBP	VBP	_	0	main	0	root
+4	at	at	IN	IN	_	5	case	5	case
+5	them	them	PRP	PRP	_	3	obl:at	3	obl:at
+6	carefully	carefully	RB	RB	_	3	advmod	3	advmod
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0007b>
+#you will notice this.
+1	you	you	PRP	PRP	_	3	k1	3	nsubj
+2	will	will	MD	MD	_	3	TAM	3	aux
+3	notice	notice	VB	VB	_	0	main	0	root
+4	this	this	DT	DT	_	3	k2	3	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0007c>
+#some of them do not twinkle.
+1	some	some	DT	DT	_	6	k1	6	nsubj
+2	of	of	IN	IN	_	3	case	3	case
+3	them	them	PRP	PRP	_	1	r6	1	nmod:of
+4	do	do	VBP	VBP	_	6	TAM	6	aux
+5	not	not	RB	RB	_	6	advmod	6	advmod
+6	twinkle	twinkle	VB	VB	_	0	main	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0007d>
+#others do.
+1	others	others	NNS	NNS	_	2	k1	2	nsubj
+2	do	do	VBP	VBP	_	0	main	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0008a>
+#They simply glow without any flicker.
+1	They	They	PRP	PRP	_	3	k1	3	nsubj
+2	simply	simply	RB	RB	_	3	advmod	3	advmod
+3	glow	glow	VBP	VBP	_	0	main	0	root
+4	without	without	IN	IN	_	6	case	6	case
+5	any	any	DT	DT	_	6	det	6	det
+6	flicker	flicker	NN	NN	_	3	obl:without	3	obl:without
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0008b>
+#Just as the moon shines.
+1	Just	Just	RB	RB	_	2	advmod	2	advmod
+2	as	as	RB	RB	_	5	advmod	5	advmod
+3	the	the	DT	DT	_	4	det	4	det
+4	moon	moon	NN	NN	_	5	k1	5	nsubj
+5	shines	shines	VBZ	VBZ	_	0	main	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0009>
+#Along with these bright objects , you may also see the moon on most of the days.
+1	Along	Along	IN	IN	_	5	case	5	case
+2	with	with	IN	IN	_	1	fixed	1	fixed
+3	these	these	DT	DT	_	5	det	5	det
+4	bright	bright	JJ	JJ	_	5	mod	5	amod
+5	objects	objects	NNS	NNS	_	10	obl:along_with	10	obl:along_with
+7	you	you	PRP	PRP	_	10	k1	10	nsubj
+8	may	may	MD	MD	_	10	TAM	10	aux
+9	also	also	RB	RB	_	10	advmod	10	advmod
+10	see	see	VB	VB	_	0	main	0	root
+11	the	the	DT	DT	_	12	det	12	det
+12	moon	moon	NN	NN	_	10	k2	10	obj
+13	on	on	IN	IN	_	14	case	14	case
+14	most	most	JJS	JJS	_	10	obl:on	10	obl:on
+15	of	of	IN	IN	_	17	case	17	case
+16	the	the	DT	DT	_	17	det	17	det
+17	days	days	NNS	NNS	_	14	r6	14	nmod:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0010>
+#It may , however , appear at different times , in different shapes and at different positions.
+1	It	It	PRP	PRP	_	6	k1	6	nsubj
+2	may	may	MD	MD	_	6	TAM	6	aux
+4	however	however	RB	RB	_	6	advmod	6	advmod
+6	appear	appear	VB	VB	_	0	main	0	root
+7	at	at	IN	IN	_	9	case	9	case
+8	different	different	JJ	JJ	_	9	mod	9	amod
+9	times	times	NNS	NNS	_	6	obl:at	6	obl:at
+11	in	in	IN	IN	_	13	case	13	case
+12	different	different	JJ	JJ	_	13	mod	13	amod
+15	at	at	IN	IN	_	17	case	17	case
+16	different	different	JJ	JJ	_	17	mod	17	amod
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0011>
+#You can see the full moon only once in about a month’s time.
+1	You	You	PRP	PRP	_	3	k1	3	nsubj
+2	can	can	MD	MD	_	3	TAM	3	aux
+3	see	see	VB	VB	_	0	main	0	root
+4	the	the	DT	DT	_	6	det	6	det
+5	full	full	JJ	JJ	_	6	mod	6	amod
+6	moon	moon	NN	NN	_	3	k2	3	obj
+7	only	only	RB	RB	_	8	advmod	8	advmod
+8	once	once	RB	RB	_	3	advmod	3	advmod
+9	in	in	IN	IN	_	12	case	12	case
+10	about	about	RB	RB	_	12	advmod	12	advmod
+11	a	a	DT	DT	_	12	advmod	12	advmod
+12	month	month	NN	NN	_	8	k7	8	obl:in
+13	’s	’s	JJ	JJ	_	14	mod	14	amod
+14	time	time	NN	NN	_	12	dep	12	dep
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0012>
+#It is Full moon night or Poornima.
+1	It	It	PRP	PRP	_	2	k1	5	nsubj
+2	is	is	VBZ	VBZ	_	0	main	0	cop
+3	Full	Full	JJ	JJ	_	5	mod	5	amod
+4	moon	moon	NN	NN	_	5	compound	5	compound
+5	night	night	NN	NN	_	2	k1s	0	root
+6	or	or	CC	CC	_	7	cc	7	cc
+7	Poornima	Poornima	NNP	NNP	_	5	conj:or	5	conj:or
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0013>
+#A fortnight later , you can not see it at all.
+1	A	A	DT	DT	_	2	det	2	det
+2	fortnight	fortnight	NN	NN	_	3	obl:npmod	3	obl:npmod
+3	later	later	RB	RB	_	8	advmod	8	advmod
+5	you	you	PRP	PRP	_	8	k1	8	nsubj
+6	can	can	MD	MD	_	8	TAM	8	aux
+7	not	not	RB	RB	_	8	advmod	8	advmod
+8	see	see	VB	VB	_	0	main	0	root
+9	it	it	PRP	PRP	_	8	k2	8	obj
+10	at	at	IN	IN	_	11	case	11	case
+11	all	all	DT	DT	_	8	obl:at	8	obl:at
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0014>
+#It is a New moon night or Amavasya.
+1	It	It	PRP	PRP	_	2	k1	6	nsubj
+2	is	is	VBZ	VBZ	_	0	main	0	cop
+3	a	a	DT	DT	_	6	det	6	det
+4	New	New	NNP	NNP	_	6	compound	6	compound
+5	moon	moon	NN	NN	_	6	compound	6	compound
+6	night	night	NN	NN	_	2	k1s	0	root
+7	or	or	CC	CC	_	8	cc	8	cc
+8	Amavasya	Amavasya	NNP	NNP	_	6	conj:or	6	conj:or
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0015a>
+#On this day , you can watch the night sky best.
+1	On	On	IN	IN	_	3	case	3	case
+2	this	this	DT	DT	_	3	det	3	det
+3	day	day	NN	NN	_	7	obl:on	7	obl:on
+5	you	you	PRP	PRP	_	7	k1	7	nsubj
+6	can	can	MD	MD	_	7	TAM	7	aux
+7	watch	watch	VB	VB	_	0	main	0	root
+8	the	the	DT	DT	_	10	det	10	det
+9	night	night	NN	NN	_	10	compound	10	compound
+10	sky	sky	NN	NN	_	7	k2	7	obj
+11	best	best	RBS	RBS	_	7	advmod	7	advmod
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0015b>
+#If it is provided.
+1	If	If	IN	IN	_	4	mark	4	mark
+2	it	it	PRP	PRP	_	4	nsubj:pass	4	nsubj:pass
+3	is	is	VBZ	VBZ	_	4	aux:pass	4	aux:pass
+4	provided	provided	VBN	VBN	_	0	main	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0015c>
+#it is a clear night.
+1	it	it	PRP	PRP	_	2	k1	5	nsubj
+2	is	is	VBZ	VBZ	_	0	main	0	cop
+3	a	a	DT	DT	_	5	det	5	det
+4	clear	clear	JJ	JJ	_	5	mod	5	amod
+5	night	night	NN	NN	_	2	k1s	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0016a>
+#Do you wonder this ?.
+1	Do	Do	VBP	VBP	_	3	TAM	3	aux
+2	you	you	PRP	PRP	_	3	k1	3	nsubj
+3	wonder	wonder	VB	VB	_	0	main	0	root
+4	this	this	DT	DT	_	3	k2	3	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0016b>
+#why can’t we see the moon and all those bright tiny objects during day time.
+18	That	That	DT	DT	_	5	mark	5	mark
+1	why	why	WRB	WRB	_	3	advmod	3	advmod
+2	ca	ca	MD	MD	_	3	TAM	3	aux
+3	n’t	n’t	VB	VB	_	5	advcl	5	advcl
+4	we	we	PRP	PRP	_	5	k1	5	nsubj
+5	see	see	VBP	VBP	_	0	main	0	root
+6	the	the	DT	DT	_	7	det	7	det
+7	moon	moon	NN	NN	_	5	k2	5	obj
+8	and	and	CC	CC	_	13	cc	13	cc
+9	all	all	PDT	PDT	_	13	det:predet	13	det:predet
+10	those	those	DT	DT	_	13	det	13	det
+11	bright	bright	JJ	JJ	_	13	mod	13	amod
+12	tiny	tiny	JJ	JJ	_	13	mod	13	amod
+13	objects	objects	NNS	NNS	_	5	k2	5	obj
+13	objects	objects	NNS	NNS	_	7	conj:and	7	conj:and
+14	during	during	IN	IN	_	16	case	16	case
+15	day	day	NN	NN	_	16	compound	16	compound
+16	time	time	NN	NN	_	5	obl:during	5	obl:during
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0017a>
+#It is because this.
+1	It	It	PRP	PRP	_	2	k1	4	nsubj
+2	is	is	VBZ	VBZ	_	0	main	0	cop
+3	because	because	IN	IN	_	4	case	4	case
+4	this	this	DT	DT	_	2	k1s	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0017b>
+#the very bright light of the sun does not allow us to see all these bright objects of the night sky.
+1	the	the	DT	DT	_	4	det	4	det
+2	very	very	RB	RB	_	3	advmod	3	advmod
+3	bright	bright	JJ	JJ	_	4	mod	4	amod
+4	light	light	NN	NN	_	10	k1	10	nsubj
+5	of	of	IN	IN	_	7	case	7	case
+6	the	the	DT	DT	_	7	det	7	det
+7	sun	sun	NN	NN	_	4	r6	4	nmod:of
+8	does	does	VBZ	VBZ	_	10	TAM	10	aux
+9	not	not	RB	RB	_	10	advmod	10	advmod
+10	allow	allow	VB	VB	_	0	main	0	root
+11	us	us	PRP	PRP	_	10	k2	10	obj
+11	us	us	PRP	PRP	_	13	nsubj:xsubj	13	nsubj:xsubj
+12	to	to	TO	TO	_	13	mark	13	mark
+13	see	see	VB	VB	_	10	k2	10	xcomp
+14	all	all	PDT	PDT	_	17	det:predet	17	det:predet
+15	these	these	DT	DT	_	17	det	17	det
+16	bright	bright	JJ	JJ	_	17	mod	17	amod
+17	objects	objects	NNS	NNS	_	13	k2	13	obj
+18	of	of	IN	IN	_	21	case	21	case
+19	the	the	DT	DT	_	21	det	21	det
+20	night	night	NN	NN	_	21	compound	21	compound
+21	sky	sky	NN	NN	_	17	r6	17	nmod:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0018>
+#The sun , the moon and all those objects shining in the night sky are called celestial bodies.
+1	The	The	DT	DT	_	2	det	2	det
+2	sun	sun	NN	NN	_	16	nsubj:pass	16	nsubj:pass
+4	the	the	DT	DT	_	5	det	5	det
+5	moon	moon	NN	NN	_	2	conj:and	2	conj:and
+5	moon	moon	NN	NN	_	16	nsubj:pass	16	nsubj:pass
+6	and	and	CC	CC	_	9	cc	9	cc
+7	all	all	PDT	PDT	_	9	det:predet	9	det:predet
+8	those	those	DT	DT	_	9	det	9	det
+9	objects	objects	NNS	NNS	_	2	conj:and	2	conj:and
+9	objects	objects	NNS	NNS	_	16	nsubj:pass	16	nsubj:pass
+10	shining	shining	VBG	VBG	_	2	acl	2	acl
+11	in	in	IN	IN	_	14	case	14	case
+12	the	the	DT	DT	_	14	det	14	det
+13	night	night	NN	NN	_	14	compound	14	compound
+14	sky	sky	NN	NN	_	10	k7	10	obl:in
+15	are	are	VBP	VBP	_	16	aux:pass	16	aux:pass
+16	called	called	VBN	VBN	_	0	main	0	root
+17	celestial	celestial	JJ	JJ	_	18	mod	18	amod
+18	bodies	bodies	NNS	NNS	_	16	k2	16	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0019>
+#Some celestial bodies are very big and hot.
+1	Some	Some	DT	DT	_	3	det	3	det
+2	celestial	celestial	JJ	JJ	_	3	mod	3	amod
+3	bodies	bodies	NNS	NNS	_	6	k1	6	nsubj
+3	bodies	bodies	NNS	NNS	_	8	k1	8	nsubj
+4	are	are	VBP	VBP	_	6	cop	6	cop
+5	very	very	RB	RB	_	6	advmod	6	advmod
+6	big	big	JJ	JJ	_	0	main	0	root
+7	and	and	CC	CC	_	8	cc	8	cc
+8	hot	hot	JJ	JJ	_	6	conj:and	6	conj:and
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0020>
+#They are made up of gases.
+1	They	They	PRP	PRP	_	3	nsubj:pass	3	nsubj:pass
+2	are	are	VBP	VBP	_	3	aux:pass	3	aux:pass
+3	made	made	VBN	VBN	_	0	main	0	root
+4	up	up	RP	RP	_	3	compound:prt	3	compound:prt
+5	of	of	IN	IN	_	6	case	6	case
+6	gases	gases	NNS	NNS	_	3	obl:of	3	obl:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0021>
+#They have their own heat and light which they emit in large amounts.
+1	They	They	PRP	PRP	_	2	k1	2	nsubj
+2	have	have	VBP	VBP	_	0	main	0	root
+3	their	their	PRP$	PRP$	_	5	r6	5	nmod:poss
+4	own	own	JJ	JJ	_	5	mod	5	amod
+5	heat	heat	NN	NN	_	2	k2	2	obj
+5	heat	heat	NN	NN	_	10	k2	10	obj
+6	and	and	CC	CC	_	7	cc	7	cc
+7	light	light	NN	NN	_	2	k2	2	obj
+7	light	light	NN	NN	_	5	conj:and	5	conj:and
+7	light	light	NN	NN	_	10	k2	10	obj
+8	which	which	WDT	WDT	_	5	ref	5	ref
+9	they	they	PRP	PRP	_	10	k1	10	nsubj
+10	emit	emit	VB	VB	_	5	acl:relcl	5	acl:relcl
+11	in	in	IN	IN	_	13	case	13	case
+12	large	large	JJ	JJ	_	13	mod	13	amod
+13	amounts	amounts	NNS	NNS	_	10	k7	10	obl:in
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0022>
+#These celestial bodies are called stars.
+1	These	These	DT	DT	_	3	det	3	det
+2	celestial	celestial	JJ	JJ	_	3	mod	3	amod
+3	bodies	bodies	NNS	NNS	_	5	nsubj:pass	5	nsubj:pass
+4	are	are	VBP	VBP	_	5	aux:pass	5	aux:pass
+5	called	called	VBN	VBN	_	0	main	0	root
+6	stars	stars	NNS	NNS	_	5	k2	5	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0023>
+#The sun is a star.
+1	The	The	DT	DT	_	3	det	2	det
+2	sun	sun	NN	NN	_	5	k1	5	nsubj
+3	is	is	VBZ	VBZ	_	0	main	0	cop
+4	a	a	DT	DT	_	5	det	5	det
+5	star	star	NN	NN	_	3	k1s	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0024>
+#Countless twinkling stars in the night sky are similar to the sun.
+1	Countless	Countless	JJ	JJ	_	3	mod	3	amod
+2	twinkling	twinkling	VBG	VBG	_	3	mod	3	amod
+3	stars	stars	NNS	NNS	_	9	k1	9	nsubj
+4	in	in	IN	IN	_	7	case	7	case
+5	the	the	DT	DT	_	7	det	7	det
+6	night	night	NN	NN	_	7	compound	7	compound
+7	sky	sky	NN	NN	_	3	nmod:in	3	nmod:in
+8	are	are	VBP	VBP	_	9	cop	9	cop
+9	similar	similar	JJ	JJ	_	0	main	0	root
+10	to	to	IN	IN	_	12	case	12	case
+11	the	the	DT	DT	_	12	det	12	det
+12	sun	sun	NN	NN	_	9	obl:to	9	obl:to
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0025a>
+#we do not feel their heat or light.
+1	we	we	PRP	PRP	_	4	k1	4	nsubj
+2	do	do	VBP	VBP	_	4	TAM	4	aux
+3	not	not	RB	RB	_	4	advmod	4	advmod
+4	feel	feel	VB	VB	_	0	main	0	root
+5	their	their	PRP$	PRP$	_	6	r6	6	nmod:poss
+6	heat	heat	NN	NN	_	4	k2	4	obj
+7	or	or	CC	CC	_	8	cc	8	cc
+8	light	light	NN	NN	_	4	k2	4	obj
+8	light	light	NN	NN	_	6	conj:or	6	conj:or
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0025b>
+#they look so tiny.
+1	they	they	PRP	PRP	_	2	k1	2	nsubj
+2	look	look	VBP	VBP	_	0	main	0	root
+3	so	so	RB	RB	_	4	advmod	4	advmod
+4	tiny	tiny	JJ	JJ	_	2	k2	2	xcomp
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0025c>
+#they are very very far from us.
+1	they	they	PRP	PRP	_	7	k1	7	nsubj
+2	are	are	VBP	VBP	_	7	cop	7	cop
+3	very	very	RB	RB	_	7	advmod	7	advmod
+4	very	very	RB	RB	_	7	advmod	7	advmod
+5	far	far	JJ	JJ	_	7	case	7	case
+6	from	from	IN	IN	_	5	fixed	5	fixed
+7	us	us	PRP	PRP	_	0	main	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0026a>
+#You must have noticed this.
+1	You	You	PRP	PRP	_	4	k1	4	nsubj
+2	must	must	MD	MD	_	4	TAM	4	aux
+3	have	have	VB	VB	_	4	TAM	4	aux
+4	noticed	noticed	VBN	VBN	_	0	main	0	root
+5	this	this	DT	DT	_	4	k2	4	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0026b>
+#all objects look smaller when seen from a distance.
+11	That	That	DT	DT	_	3	mark	3	mark
+1	all	all	DT	DT	_	2	det	2	det
+2	objects	objects	NNS	NNS	_	3	k1	3	nsubj
+3	look	look	VBP	VBP	_	0	main	0	root
+4	smaller	smaller	JJR	JJR	_	3	k2	3	xcomp
+5	when	when	WRB	WRB	_	6	k7t	6	advmod
+6	seen	seen	VBN	VBN	_	3	advcl	3	advcl
+7	from	from	IN	IN	_	9	case	9	case
+8	a	a	DT	DT	_	9	det	9	det
+9	distance	distance	NN	NN	_	6	k5	6	obl:from
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0027>
+#How small an aeroplane looks then when it is flying at a great height.
+1	How	How	WRB	WRB	_	2	advmod	2	advmod
+2	small	small	JJ	JJ	_	5	dep	5	dep
+3	an	an	DT	DT	_	4	det	4	det
+4	aeroplane	aeroplane	NN	NN	_	5	k1	5	nsubj
+5	looks	looks	VBZ	VBZ	_	0	main	0	root
+6	then	then	RB	RB	_	5	advmod	5	advmod
+7	when	when	WRB	WRB	_	10	k7t	10	advmod
+8	it	it	PRP	PRP	_	10	k1	10	nsubj
+9	is	is	VBZ	VBZ	_	10	TAM	10	aux
+10	flying	flying	VBG	VBG	_	5	advcl	5	advcl
+11	at	at	IN	IN	_	14	case	14	case
+12	a	a	DT	DT	_	14	det	14	det
+13	great	great	JJ	JJ	_	14	mod	14	amod
+14	height	height	NN	NN	_	10	obl:at	10	obl:at
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0028>
+#While watching the night sky , you may notice various patterns formed by different groups of stars.
+1	While	While	IN	IN	_	2	mark	2	mark
+2	watching	watching	VBG	VBG	_	9	advcl	9	advcl
+3	the	the	DT	DT	_	5	det	5	det
+4	night	night	NN	NN	_	5	compound	5	compound
+5	sky	sky	NN	NN	_	2	k2	2	obj
+7	you	you	PRP	PRP	_	9	k1	9	nsubj
+8	may	may	MD	MD	_	9	TAM	9	aux
+9	notice	notice	VB	VB	_	0	main	0	root
+10	various	various	JJ	JJ	_	11	mod	11	amod
+11	patterns	patterns	NNS	NNS	_	9	k2	9	obj
+12	formed	formed	VBN	VBN	_	11	acl	11	acl
+13	by	by	IN	IN	_	15	case	15	case
+14	different	different	JJ	JJ	_	15	mod	15	amod
+15	groups	groups	NNS	NNS	_	12	obl:by	12	obl:by
+16	of	of	IN	IN	_	17	case	17	case
+17	stars	stars	NNS	NNS	_	15	r6	15	nmod:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0029>
+#These are called constellations.
+1	These	These	DT	DT	_	3	nsubj:pass	3	nsubj:pass
+2	are	are	VBP	VBP	_	3	aux:pass	3	aux:pass
+3	called	called	VBN	VBN	_	0	main	0	root
+4	constellations	constellations	NNS	NNS	_	3	k2	3	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0030>
+#Ursa Major or Big Bear is one such constellation.
+1	Ursa	Ursa	NNP	NNP	_	6	compound	2	compound
+2	Major	Major	NNP	NNP	_	9	k1	9	nsubj
+3	or	or	CC	CC	_	5	cc	5	cc
+4	Big	Big	NNP	NNP	_	5	compound	5	compound
+5	Bear	Bear	NNP	NNP	_	2	conj:or	2	conj:or
+5	Bear	Bear	NNP	NNP	_	9	k1	9	nsubj
+6	is	is	VBZ	VBZ	_	0	main	0	cop
+7	one	one	CD	CD	_	9	card	9	nummod
+8	such	such	JJ	JJ	_	9	mod	9	amod
+9	constellation	constellation	NN	NN	_	6	k1s	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0031H>
+#One of the most easily recognisable constellation.
+1	One	One	CD	CD	_	0	main	0	root
+2	of	of	IN	IN	_	7	case	7	case
+3	the	the	DT	DT	_	7	det	7	det
+4	most	most	RBS	RBS	_	6	advmod	6	advmod
+5	easily	easily	RB	RB	_	6	advmod	6	advmod
+6	recognisable	recognisable	JJ	JJ	_	7	mod	7	amod
+7	constellation	constellation	NN	NN	_	1	r6	1	nmod:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0032>
+#It is a group of seven stars that forms a part of Ursa Major Constellation.
+1	It	It	PRP	PRP	_	2	k1	4	nsubj
+2	is	is	VBZ	VBZ	_	0	main	0	cop
+3	a	a	DT	DT	_	4	det	4	det
+4	group	group	NN	NN	_	2	k1s	0	root
+5	of	of	IN	IN	_	7	case	7	case
+6	seven	seven	CD	CD	_	7	card	7	nummod
+7	stars	stars	NNS	NNS	_	4	r6	4	nmod:of
+7	stars	stars	NNS	NNS	_	9	k1	9	nsubj
+8	that	that	WDT	WDT	_	7	ref	7	ref
+9	forms	forms	VBZ	VBZ	_	7	acl:relcl	7	acl:relcl
+10	a	a	DT	DT	_	11	det	11	det
+11	part	part	NN	NN	_	9	k2	9	obj
+12	of	of	IN	IN	_	15	case	15	case
+13	Ursa	Ursa	NNP	NNP	_	15	compound	15	compound
+14	Major	Major	NNP	NNP	_	15	compound	15	compound
+15	Constellation	Constellation	NNP	NNP	_	11	r6	11	nmod:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0033>
+#Ask someone elder in your family or neighbourhood to show you more stars , planets and constellations in the sky.
+1	Ask	Ask	VB	VB	_	0	main	0	root
+2	someone	someone	NN	NN	_	3	compound	3	compound
+3	elder	elder	NN	NN	_	1	k2	1	obj
+3	elder	elder	NN	NN	_	10	nsubj:xsubj	10	nsubj:xsubj
+4	in	in	IN	IN	_	6	case	6	case
+5	your	your	PRP$	PRP$	_	6	r6	6	nmod:poss
+6	family	family	NN	NN	_	1	k7	1	obl:in
+7	or	or	CC	CC	_	8	cc	8	cc
+8	neighbourhood	neighbourhood	NN	NN	_	1	k7	1	obl:in
+8	neighbourhood	neighbourhood	NN	NN	_	6	conj:or	6	conj:or
+9	to	to	TO	TO	_	10	mark	10	mark
+10	show	show	VB	VB	_	1	k2	1	xcomp
+11	you	you	PRP	PRP	_	10	k4	10	iobj
+12	more	more	JJR	JJR	_	13	mod	13	amod
+13	stars	stars	NNS	NNS	_	10	k2	10	obj
+15	planets	planets	NNS	NNS	_	13	appos	13	appos
+16	and	and	CC	CC	_	17	cc	17	cc
+17	constellations	constellations	NNS	NNS	_	13	appos	13	appos
+17	constellations	constellations	NNS	NNS	_	15	conj:and	15	conj:and
+18	in	in	IN	IN	_	20	case	20	case
+19	the	the	DT	DT	_	20	det	20	det
+20	sky	sky	NN	NN	_	15	nmod:in	15	nmod:in
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0034>
+#In ancient times , people used to determine directions during the night with the help of stars.
+1	In	In	IN	IN	_	3	case	3	case
+2	ancient	ancient	JJ	JJ	_	3	mod	3	amod
+3	times	times	NNS	NNS	_	6	k7	6	obl:in
+5	people	people	NNS	NNS	_	6	k1	6	nsubj
+5	people	people	NNS	NNS	_	8	nsubj:xsubj	8	nsubj:xsubj
+6	used	used	VBD	VBD	_	0	main	0	root
+7	to	to	TO	TO	_	8	mark	8	mark
+8	determine	determine	VB	VB	_	6	k2	6	xcomp
+9	directions	directions	NNS	NNS	_	8	k2	8	obj
+10	during	during	IN	IN	_	12	case	12	case
+11	the	the	DT	DT	_	12	det	12	det
+12	night	night	NN	NN	_	8	obl:during	8	obl:during
+13	with	with	IN	IN	_	15	case	15	case
+14	the	the	DT	DT	_	15	det	15	det
+15	help	help	NN	NN	_	12	nmod:with	12	nmod:with
+16	of	of	IN	IN	_	17	case	17	case
+17	stars	stars	NNS	NNS	_	15	r6	15	nmod:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0035>
+#The North star indicates the north direction.
+1	The	The	DT	DT	_	3	det	3	det
+2	North	North	NNP	NNP	_	3	compound	3	compound
+3	star	star	NN	NN	_	4	k1	4	nsubj
+4	indicates	indicates	VBZ	VBZ	_	0	main	0	root
+5	the	the	DT	DT	_	7	det	7	det
+6	north	north	NN	NN	_	7	compound	7	compound
+7	direction	direction	NN	NN	_	4	k2	4	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0036>
+#It is also called the Pole Star.
+1	It	It	PRP	PRP	_	4	nsubj:pass	4	nsubj:pass
+2	is	is	VBZ	VBZ	_	4	aux:pass	4	aux:pass
+3	also	also	RB	RB	_	4	advmod	4	advmod
+4	called	called	VBN	VBN	_	0	main	0	root
+5	the	the	DT	DT	_	7	det	7	det
+6	Pole	Pole	NNP	NNP	_	7	compound	7	compound
+7	Star	Star	NNP	NNP	_	4	k2	4	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0037>
+#It always remains in the same position in the sky.
+1	It	It	PRP	PRP	_	3	k1	3	nsubj
+2	always	always	RB	RB	_	3	advmod	3	advmod
+3	remains	remains	VBZ	VBZ	_	0	main	0	root
+4	in	in	IN	IN	_	7	case	7	case
+5	the	the	DT	DT	_	7	det	7	det
+6	same	same	JJ	JJ	_	7	mod	7	amod
+7	position	position	NN	NN	_	3	k7	3	obl:in
+8	in	in	IN	IN	_	10	case	10	case
+9	the	the	DT	DT	_	10	det	10	det
+10	sky	sky	NN	NN	_	7	nmod:in	7	nmod:in
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0038>
+#We can locate the position of the Pole Star with the help of the Saptarishi.
+1	We	We	PRP	PRP	_	3	k1	3	nsubj
+2	can	can	MD	MD	_	3	TAM	3	aux
+3	locate	locate	VB	VB	_	0	main	0	root
+4	the	the	DT	DT	_	5	det	5	det
+5	position	position	NN	NN	_	3	k2	3	obj
+6	of	of	IN	IN	_	9	case	9	case
+7	the	the	DT	DT	_	9	det	9	det
+8	Pole	Pole	NNP	NNP	_	9	compound	9	compound
+9	Star	Star	NNP	NNP	_	5	r6	5	nmod:of
+10	with	with	IN	IN	_	12	case	12	case
+11	the	the	DT	DT	_	12	det	12	det
+12	help	help	NN	NN	_	3	k3	3	obl:with
+13	of	of	IN	IN	_	15	case	15	case
+14	the	the	DT	DT	_	15	det	15	det
+15	Saptarishi	Saptarishi	NNP	NNP	_	12	r6	12	nmod:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0039a>
+#You look at Figure.
+1	You	You	PRP	PRP	_	2	k1	2	nsubj
+2	look	look	VBP	VBP	_	0	main	0	root
+3	at	at	IN	IN	_	4	case	4	case
+4	Figure	Figure	NN	NN	_	2	obl:at	2	obl:at
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0039b>
+#You will notice this.
+1	You	You	PRP	PRP	_	3	k1	3	nsubj
+2	will	will	MD	MD	_	3	TAM	3	aux
+3	notice	notice	VB	VB	_	0	main	0	root
+4	this	this	DT	DT	_	3	k2	3	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0039c>
+#if an imaginary line is drawn joining the pointer stars.
+1	if	if	IN	IN	_	6	mark	6	mark
+2	an	an	DT	DT	_	4	det	4	det
+3	imaginary	imaginary	JJ	JJ	_	4	mod	4	amod
+4	line	line	NN	NN	_	6	nsubj:pass	6	nsubj:pass
+5	is	is	VBZ	VBZ	_	6	aux:pass	6	aux:pass
+6	drawn	drawn	VBN	VBN	_	0	main	0	root
+7	joining	joining	VBG	VBG	_	6	k2	6	xcomp
+8	the	the	DT	DT	_	10	det	10	det
+9	pointer	pointer	NN	NN	_	10	compound	10	compound
+10	stars	stars	NNS	NNS	_	7	k2	7	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0039d>
+#and if it is extended further.
+1	and	and	CC	CC	_	5	cc	5	cc
+2	if	if	IN	IN	_	5	mark	5	mark
+3	it	it	PRP	PRP	_	5	nsubj:pass	5	nsubj:pass
+4	is	is	VBZ	VBZ	_	5	aux:pass	5	aux:pass
+5	extended	extended	VBN	VBN	_	0	main	0	root
+6	further	further	RB	RB	_	5	advmod	5	advmod
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0039e>
+#it will point to the Pole Star.
+1	it	it	PRP	PRP	_	3	k1	3	nsubj
+2	will	will	MD	MD	_	3	TAM	3	aux
+3	point	point	VB	VB	_	0	main	0	root
+4	to	to	IN	IN	_	7	case	7	case
+5	the	the	DT	DT	_	7	det	7	det
+6	Pole	Pole	NNP	NNP	_	7	compound	7	compound
+7	Star	Star	NNP	NNP	_	3	obl:to	3	obl:to
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0040>
+#Some celestial bodies do not have their own heat and light.
+1	Some	Some	DT	DT	_	3	det	3	det
+2	celestial	celestial	JJ	JJ	_	3	mod	3	amod
+3	bodies	bodies	NNS	NNS	_	6	k1	6	nsubj
+4	do	do	VBP	VBP	_	6	TAM	6	aux
+5	not	not	RB	RB	_	6	advmod	6	advmod
+6	have	have	VB	VB	_	0	main	0	root
+7	their	their	PRP$	PRP$	_	9	r6	9	nmod:poss
+8	own	own	JJ	JJ	_	9	mod	9	amod
+9	heat	heat	NN	NN	_	6	k2	6	obj
+10	and	and	CC	CC	_	11	cc	11	cc
+11	light	light	NN	NN	_	6	k2	6	obj
+11	light	light	NN	NN	_	9	conj:and	9	conj:and
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0041>
+#They are lit by the light of the stars.
+1	They	They	PRP	PRP	_	3	nsubj:pass	3	nsubj:pass
+2	are	are	VBP	VBP	_	3	aux:pass	3	aux:pass
+3	lit	lit	VBN	VBN	_	0	main	0	root
+4	by	by	IN	IN	_	6	case	6	case
+5	the	the	DT	DT	_	6	det	6	det
+6	light	light	NN	NN	_	3	obl:by	3	obl:by
+7	of	of	IN	IN	_	9	case	9	case
+8	the	the	DT	DT	_	9	det	9	det
+9	stars	stars	NNS	NNS	_	6	r6	6	nmod:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0042>
+#Such bodies are called planets.
+1	Such	Such	JJ	JJ	_	2	mod	2	amod
+2	bodies	bodies	NNS	NNS	_	4	nsubj:pass	4	nsubj:pass
+3	are	are	VBP	VBP	_	4	aux:pass	4	aux:pass
+4	called	called	VBN	VBN	_	0	main	0	root
+5	planets	planets	NNS	NNS	_	4	k2	4	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0043>
+#The word ‘planet’ comes from the Greek word “ Planetai ” which means ‘ wanderers ’.
+1	The	The	DT	DT	_	4	det	4	det
+2	word	word	NN	NN	_	4	compound	4	compound
+4	planet	planet	NN	NN	_	6	k1	6	nsubj
+6	comes	comes	VBZ	VBZ	_	0	main	0	root
+7	from	from	IN	IN	_	12	case	12	case
+8	the	the	DT	DT	_	12	det	12	det
+9	Greek	Greek	JJ	JJ	_	12	mod	12	amod
+10	word	word	NN	NN	_	12	compound	12	compound
+12	Planetai	Planetai	NNP	NNP	_	6	k5	6	obl:from
+14	which	which	WDT	WDT	_	15	k1	15	nsubj
+15	means	means	VBZ	VBZ	_	6	ccomp	6	ccomp
+17	wanderers	wanderers	JJ	JJ	_	15	k2	15	xcomp
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0044>
+#The earth on which we live is a planet.
+1	The	The	DT	DT	_	7	det	2	det
+2	earth	earth	NN	NN	_	6	obl:on	6	obl:on
+2	earth	earth	NN	NN	_	9	k1	9	nsubj
+3	on	on	IN	IN	_	4	case	4	case
+4	which	which	WDT	WDT	_	2	ref	2	ref
+5	we	we	PRP	PRP	_	6	k1	6	nsubj
+6	live	live	VBP	VBP	_	2	acl:relcl	2	acl:relcl
+7	is	is	VBZ	VBZ	_	0	main	0	cop
+8	a	a	DT	DT	_	9	det	9	det
+9	planet	planet	NN	NN	_	7	k1s	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0045>
+#It gets all its heat and light from the sun which is our nearest star.
+1	It	It	PRP	PRP	_	12	k1	2	nsubj
+2	gets	gets	VBZ	VBZ	_	0	main	0	root
+3	all	all	PDT	PDT	_	5	dep	5	dep
+4	its	its	PRP$	PRP$	_	5	r6	5	nmod:poss
+5	heat	heat	NN	NN	_	2	k2	2	obj
+6	and	and	CC	CC	_	7	cc	7	cc
+7	light	light	NN	NN	_	2	k2	2	obj
+7	light	light	NN	NN	_	5	conj:and	5	conj:and
+8	from	from	IN	IN	_	10	case	10	case
+9	the	the	DT	DT	_	10	det	10	det
+10	sun	sun	NN	NN	_	2	k5	2	obl:from
+10	sun	sun	NN	NN	_	15	k1	15	nsubj
+11	which	which	WDT	WDT	_	10	ref	10	ref
+12	is	is	VBZ	VBZ	_	0	main	0	cop
+13	our	our	PRP$	PRP$	_	15	r6	15	nmod:poss
+14	nearest	nearest	JJS	JJS	_	15	mod	15	amod
+15	star	star	NN	NN	_	12	k1s	10	acl:relcl
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0046a>
+#If we look at the earth from a great distance , you say the moon.
+1	If	If	IN	IN	_	3	mark	3	mark
+2	we	we	PRP	PRP	_	3	k1	3	nsubj
+3	look	look	VBP	VBP	_	13	advcl	13	advcl
+4	at	at	IN	IN	_	6	case	6	case
+5	the	the	DT	DT	_	6	det	6	det
+6	earth	earth	NN	NN	_	3	obl:at	3	obl:at
+7	from	from	IN	IN	_	10	case	10	case
+8	a	a	DT	DT	_	10	det	10	det
+9	great	great	JJ	JJ	_	10	mod	10	amod
+10	distance	distance	NN	NN	_	6	nmod:from	6	nmod:from
+12	you	you	PRP	PRP	_	13	k1	13	nsubj
+13	say	say	VBP	VBP	_	0	main	0	root
+14	the	the	DT	DT	_	15	det	15	det
+15	moon	moon	NN	NN	_	13	k2	13	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0046b>
+#it will appear to be shining just as the moon.
+1	it	it	PRP	PRP	_	3	k1	3	nsubj
+1	it	it	PRP	PRP	_	6	nsubj:xsubj	6	nsubj:xsubj
+2	will	will	MD	MD	_	3	TAM	3	aux
+3	appear	appear	VB	VB	_	0	main	0	root
+4	to	to	TO	TO	_	6	mark	6	mark
+5	be	be	VB	VB	_	6	TAM	6	aux
+6	shining	shining	VBG	VBG	_	3	k2	3	xcomp
+7	just	just	RB	RB	_	6	advmod	6	advmod
+8	as	as	IN	IN	_	10	case	10	case
+9	the	the	DT	DT	_	10	det	10	det
+10	moon	moon	NN	NN	_	6	obl:as	6	obl:as
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0047>
+#The moon that we see in the sky is a satellite.
+1	The	The	DT	DT	_	9	det	2	det
+2	moon	moon	NN	NN	_	11	k1	11	nsubj
+3	that	that	IN	IN	_	5	mark	5	mark
+4	we	we	PRP	PRP	_	5	k1	5	nsubj
+5	see	see	VBP	VBP	_	2	dep	2	dep
+6	in	in	IN	IN	_	8	case	8	case
+7	the	the	DT	DT	_	8	det	8	det
+8	sky	sky	NN	NN	_	5	k7	5	obl:in
+9	is	is	VBZ	VBZ	_	0	main	0	cop
+10	a	a	DT	DT	_	11	det	11	det
+11	satellite	satellite	NN	NN	_	9	k1s	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0048a>
+#It is a companion of our earth.
+1	It	It	PRP	PRP	_	2	k1	4	nsubj
+2	is	is	VBZ	VBZ	_	0	main	0	cop
+3	a	a	DT	DT	_	4	det	4	det
+4	companion	companion	NN	NN	_	2	k1s	0	root
+5	of	of	IN	IN	_	7	case	7	case
+6	our	our	PRP$	PRP$	_	7	r6	7	nmod:poss
+7	earth	earth	NN	NN	_	4	r6	4	nmod:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0048b>
+#and it moves round it.
+1	and	and	CC	CC	_	3	cc	3	cc
+2	it	it	PRP	PRP	_	3	k1	3	nsubj
+3	moves	moves	VBZ	VBZ	_	0	main	0	root
+4	round	round	IN	IN	_	5	case	5	case
+5	it	it	PRP	PRP	_	3	obl:round	3	obl:round
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0049>
+#Like our earth , there are seven other planets that get heat and light from the sun.
+1	Like	Like	IN	IN	_	3	case	3	case
+2	our	our	PRP$	PRP$	_	3	r6	3	nmod:poss
+3	earth	earth	NN	NN	_	6	obl:like	6	obl:like
+5	there	there	EX	EX	_	6	expl	6	expl
+6	are	are	VBP	VBP	_	0	main	0	root
+7	seven	seven	CD	CD	_	9	card	9	nummod
+8	other	other	JJ	JJ	_	9	mod	9	amod
+9	planets	planets	NNS	NNS	_	6	k1	6	nsubj
+9	planets	planets	NNS	NNS	_	11	k1	11	nsubj
+10	that	that	WDT	WDT	_	9	ref	9	ref
+11	get	get	VBP	VBP	_	9	acl:relcl	9	acl:relcl
+12	heat	heat	NN	NN	_	11	k2	11	obj
+13	and	and	CC	CC	_	14	cc	14	cc
+14	light	light	NN	NN	_	11	k2	11	obj
+14	light	light	NN	NN	_	12	conj:and	12	conj:and
+15	from	from	IN	IN	_	17	case	17	case
+16	the	the	DT	DT	_	17	det	17	det
+17	sun	sun	NN	NN	_	11	k5	11	obl:from
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0050>
+#Some of them have their moons too.
+1	Some	Some	DT	DT	_	4	k1	4	nsubj
+2	of	of	IN	IN	_	3	case	3	case
+3	them	them	PRP	PRP	_	1	r6	1	nmod:of
+4	have	have	VBP	VBP	_	0	main	0	root
+5	their	their	PRP$	PRP$	_	6	r6	6	nmod:poss
+6	moons	moons	NNS	NNS	_	4	k2	4	obj
+7	too	too	RB	RB	_	4	advmod	4	advmod
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0051>
+#The sun , eight planets , satellites and some other celestial bodies known as asteroids and meteoroids form the solar system.
+1	The	The	DT	DT	_	2	det	2	det
+2	sun	sun	NN	NN	_	18	k1	18	nsubj
+4	eight	eight	CD	CD	_	5	card	5	nummod
+5	planets	planets	NNS	NNS	_	2	conj:and	2	conj:and
+5	planets	planets	NNS	NNS	_	18	k1	18	nsubj
+7	satellites	satellites	NNS	NNS	_	2	conj:and	2	conj:and
+7	satellites	satellites	NNS	NNS	_	18	k1	18	nsubj
+8	and	and	CC	CC	_	12	cc	12	cc
+9	some	some	DT	DT	_	12	det	12	det
+10	other	other	JJ	JJ	_	12	mod	12	amod
+11	celestial	celestial	JJ	JJ	_	12	mod	12	amod
+12	bodies	bodies	NNS	NNS	_	2	conj:and	2	conj:and
+12	bodies	bodies	NNS	NNS	_	18	k1	18	nsubj
+13	known	known	VBN	VBN	_	2	acl	2	acl
+14	as	as	IN	IN	_	15	case	15	case
+15	asteroids	asteroids	NNS	NNS	_	13	obl:as	13	obl:as
+16	and	and	CC	CC	_	17	cc	17	cc
+17	meteoroids	meteoroids	NNS	NNS	_	13	obl:as	13	obl:as
+17	meteoroids	meteoroids	NNS	NNS	_	15	conj:and	15	conj:and
+18	form	form	VBP	VBP	_	0	main	0	root
+19	the	the	DT	DT	_	21	det	21	det
+20	solar	solar	JJ	JJ	_	21	mod	21	amod
+21	system	system	NN	NN	_	18	k2	18	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0052>
+#We often call it a solar family , with the sun as its Head.
+1	We	We	PRP	PRP	_	3	k1	3	nsubj
+2	often	often	RB	RB	_	3	advmod	3	advmod
+3	call	call	VBP	VBP	_	0	main	0	root
+4	it	it	PRP	PRP	_	7	k1	7	nsubj
+5	a	a	DT	DT	_	7	det	7	det
+6	solar	solar	JJ	JJ	_	7	mod	7	amod
+7	family	family	NN	NN	_	3	k2	3	xcomp
+9	with	with	IN	IN	_	11	case	11	case
+10	the	the	DT	DT	_	11	det	11	det
+11	sun	sun	NN	NN	_	7	nmod:with	7	nmod:with
+12	as	as	IN	IN	_	14	case	14	case
+13	its	its	PRP$	PRP$	_	14	r6	14	nmod:poss
+14	Head	Head	NN	NN	_	11	nmod:as	11	nmod:as
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0053>
+#The sun is in the centre of the solar system.
+1	The	The	DT	DT	_	3	det	2	det
+2	sun	sun	NN	NN	_	6	k1	6	nsubj
+3	is	is	VBZ	VBZ	_	0	main	0	cop
+4	in	in	IN	IN	_	6	case	6	case
+5	the	the	DT	DT	_	6	det	6	det
+6	centre	centre	NN	NN	_	3	k1s	0	root
+7	of	of	IN	IN	_	10	case	10	case
+8	the	the	DT	DT	_	10	det	10	det
+9	solar	solar	JJ	JJ	_	10	mod	10	amod
+10	system	system	NN	NN	_	6	r6	6	nmod:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0054a>
+#It is huge.
+1	It	It	PRP	PRP	_	2	k1	3	nsubj
+2	is	is	VBZ	VBZ	_	0	main	0	cop
+3	huge	huge	JJ	JJ	_	2	k1s	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0054b>
+#and it is made up of extremely hot gases.
+1	and	and	CC	CC	_	4	cc	4	cc
+2	it	it	PRP	PRP	_	4	nsubj:pass	4	nsubj:pass
+3	is	is	VBZ	VBZ	_	4	aux:pass	4	aux:pass
+4	made	made	VBN	VBN	_	0	main	0	root
+5	up	up	RP	RP	_	4	compound:prt	4	compound:prt
+6	of	of	IN	IN	_	9	case	9	case
+7	extremely	extremely	RB	RB	_	8	advmod	8	advmod
+8	hot	hot	JJ	JJ	_	9	mod	9	amod
+9	gases	gases	NNS	NNS	_	4	obl:of	4	obl:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0055>
+#It provides the pulling force that binds the solar system.
+1	It	It	PRP	PRP	_	2	k1	2	nsubj
+2	provides	provides	VBZ	VBZ	_	0	main	0	root
+3	the	the	DT	DT	_	5	det	5	det
+4	pulling	pulling	VBG	VBG	_	5	mod	5	amod
+5	force	force	NN	NN	_	2	k2	2	obj
+5	force	force	NN	NN	_	7	k1	7	nsubj
+6	that	that	WDT	WDT	_	5	ref	5	ref
+7	binds	binds	VBZ	VBZ	_	5	acl:relcl	5	acl:relcl
+8	the	the	DT	DT	_	10	det	10	det
+9	solar	solar	JJ	JJ	_	10	mod	10	amod
+10	system	system	NN	NN	_	7	k2	7	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0056>
+#The sun is the ultimate source of heat and light for the solar system.
+1	The	The	DT	DT	_	3	det	2	det
+2	sun	sun	NN	NN	_	6	k1	6	nsubj
+3	is	is	VBZ	VBZ	_	0	main	0	cop
+4	the	the	DT	DT	_	6	det	6	det
+5	ultimate	ultimate	JJ	JJ	_	6	mod	6	amod
+6	source	source	NN	NN	_	3	k1s	0	root
+7	of	of	IN	IN	_	8	case	8	case
+8	heat	heat	NN	NN	_	6	r6	6	nmod:of
+9	and	and	CC	CC	_	10	cc	10	cc
+10	light	light	NN	NN	_	6	r6	6	nmod:of
+10	light	light	NN	NN	_	8	conj:and	8	conj:and
+11	for	for	IN	IN	_	14	case	14	case
+12	the	the	DT	DT	_	14	det	14	det
+13	solar	solar	JJ	JJ	_	14	mod	14	amod
+14	system	system	NN	NN	_	6	nmod:for	6	nmod:for
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0057a>
+#but the tremendous heat is not felt so much by us.
+1	but	but	CC	CC	_	7	cc	7	cc
+2	the	the	DT	DT	_	4	det	4	det
+3	tremendous	tremendous	JJ	JJ	_	4	mod	4	amod
+4	heat	heat	NN	NN	_	7	nsubj:pass	7	nsubj:pass
+5	is	is	VBZ	VBZ	_	7	aux:pass	7	aux:pass
+6	not	not	RB	RB	_	7	advmod	7	advmod
+7	felt	felt	VBN	VBN	_	0	main	0	root
+8	so	so	RB	RB	_	9	advmod	9	advmod
+9	much	much	RB	RB	_	7	advmod	7	advmod
+10	by	by	IN	IN	_	11	case	11	case
+11	us	us	PRP	PRP	_	7	obl:by	7	obl:by
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0057b>
+#because despite being our nearest star it is far away from us.
+1	because	because	RB	RB	_	8	advmod	6	advmod
+2	despite	despite	IN	IN	_	6	mark	6	mark
+3	being	being	VBG	VBG	_	6	cop	6	cop
+4	our	our	PRP$	PRP$	_	6	r6	6	nmod:poss
+5	nearest	nearest	JJS	JJS	_	6	mod	6	amod
+6	star	star	NN	NN	_	12	advcl	12	advcl
+7	it	it	PRP	PRP	_	12	k1	12	nsubj
+8	is	is	VBZ	VBZ	_	0	main	0	cop
+9	far	far	RB	RB	_	10	advmod	10	advmod
+10	away	away	RB	RB	_	12	advmod	12	advmod
+11	from	from	IN	IN	_	12	case	12	case
+12	us	us	PRP	PRP	_	8	k1s	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0058>
+#The sun is about 150 million km away from the earth.
+1	The	The	DT	DT	_	3	det	2	det
+2	sun	sun	NN	NN	_	11	k1	11	nsubj
+3	is	is	VBZ	VBZ	_	0	main	0	cop
+4	about	about	RB	RB	_	6	advmod	6	advmod
+5	150	150	CD	CD	_	6	compound	6	compound
+6	million	million	CD	CD	_	7	card	7	nummod
+7	km	km	NNS	NNS	_	8	obl:npmod	8	obl:npmod
+8	away	away	RB	RB	_	11	advmod	11	advmod
+9	from	from	IN	IN	_	11	case	11	case
+10	the	the	DT	DT	_	11	det	11	det
+11	earth	earth	NN	NN	_	3	k1s	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0059>
+#There are eight planets in our solar system.
+1	There	There	EX	EX	_	2	expl	2	expl
+2	are	are	VBP	VBP	_	0	main	0	root
+3	eight	eight	CD	CD	_	4	card	4	nummod
+4	planets	planets	NNS	NNS	_	2	k1	2	nsubj
+5	in	in	IN	IN	_	8	case	8	case
+6	our	our	PRP$	PRP$	_	8	r6	8	nmod:poss
+7	solar	solar	JJ	JJ	_	8	mod	8	amod
+8	system	system	NN	NN	_	4	nmod:in	4	nmod:in
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0060>
+#In order of their distance from the sun , they are : Mercury , Venus , Earth , Mars , Jupiter , Saturn , Uranus and Neptune.
+1	In	In	IN	IN	_	2	case	2	case
+2	order	order	NN	NN	_	13	k7	13	obl:in
+3	of	of	IN	IN	_	5	case	5	case
+4	their	their	PRP$	PRP$	_	5	r6	5	nmod:poss
+5	distance	distance	NN	NN	_	2	r6	2	nmod:of
+6	from	from	IN	IN	_	8	case	8	case
+7	the	the	DT	DT	_	8	det	8	det
+8	sun	sun	NN	NN	_	5	nmod:from	5	nmod:from
+10	they	they	PRP	PRP	_	13	k1	13	nsubj
+11	are	are	VBP	VBP	_	13	cop	13	cop
+12	:	:	SYM	SYM	_	13	dep	13	dep
+13	Mercury	Mercury	NNP	NNP	_	0	main	0	root
+15	Venus	Venus	NNP	NNP	_	13	conj:and	13	conj:and
+17	Earth	Earth	NNP	NNP	_	13	conj:and	13	conj:and
+19	Mars	Mars	NNP	NNP	_	13	conj:and	13	conj:and
+21	Jupiter	Jupiter	NNP	NNP	_	13	conj:and	13	conj:and
+23	Saturn	Saturn	NNP	NNP	_	13	conj:and	13	conj:and
+25	Uranus	Uranus	NNP	NNP	_	13	conj:and	13	conj:and
+26	and	and	CC	CC	_	27	cc	27	cc
+27	Neptune	Neptune	NNP	NNP	_	13	conj:and	13	conj:and
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0061>
+#All the eight planets of the solar system move around the sun in fixed paths.
+1	All	All	PDT	PDT	_	4	det:predet	4	det:predet
+2	the	the	DT	DT	_	4	det	4	det
+3	eight	eight	CD	CD	_	4	card	4	nummod
+4	planets	planets	NNS	NNS	_	9	k1	9	nsubj
+5	of	of	IN	IN	_	8	case	8	case
+6	the	the	DT	DT	_	8	det	8	det
+7	solar	solar	JJ	JJ	_	8	mod	8	amod
+8	system	system	NN	NN	_	4	r6	4	nmod:of
+9	move	move	VBP	VBP	_	0	main	0	root
+10	around	around	IN	IN	_	12	case	12	case
+11	the	the	DT	DT	_	12	det	12	det
+12	sun	sun	NN	NN	_	9	obl:around	9	obl:around
+13	in	in	IN	IN	_	15	case	15	case
+14	fixed	fixed	VBN	VBN	_	15	mod	15	amod
+15	paths	paths	NNS	NNS	_	12	nmod:in	12	nmod:in
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0062>
+#These paths are elongated.
+1	These	These	DT	DT	_	2	det	2	det
+2	paths	paths	NNS	NNS	_	4	k1	4	nsubj
+3	are	are	VBP	VBP	_	4	cop	4	cop
+4	elongated	elongated	JJ	JJ	_	0	main	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0063>
+#They are called orbits.
+1	They	They	PRP	PRP	_	3	nsubj:pass	3	nsubj:pass
+2	are	are	VBP	VBP	_	3	aux:pass	3	aux:pass
+3	called	called	VBN	VBN	_	0	main	0	root
+4	orbits	orbits	NNS	NNS	_	3	k2	3	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0064>
+#Mercury is nearest to the sun.
+1	Mercury	Mercury	NNP	NNP	_	2	k1	3	nsubj
+2	is	is	VBZ	VBZ	_	0	main	0	cop
+3	nearest	nearest	JJS	JJS	_	2	k1s	0	root
+4	to	to	IN	IN	_	6	case	6	case
+5	the	the	DT	DT	_	6	det	6	det
+6	sun	sun	NN	NN	_	3	nmod:to	3	nmod:to
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0065>
+#it takes only about 88 days to complete one round along its orbit.
+1	it	it	PRP	PRP	_	2	k1	2	nsubj
+2	takes	takes	VBZ	VBZ	_	0	main	0	root
+3	only	only	RB	RB	_	5	advmod	5	advmod
+4	about	about	RB	RB	_	5	advmod	5	advmod
+5	88	88	CD	CD	_	6	card	6	nummod
+6	days	days	NNS	NNS	_	2	k7t	2	obl:tmod
+7	to	to	TO	TO	_	8	mark	8	mark
+8	complete	complete	VB	VB	_	2	advcl	2	advcl
+9	one	one	CD	CD	_	10	card	10	nummod
+10	round	round	NN	NN	_	8	k2	8	obj
+11	along	along	IN	IN	_	13	case	13	case
+12	its	its	PRP$	PRP$	_	13	r6	13	nmod:poss
+13	orbit	orbit	NN	NN	_	10	nmod:along	10	nmod:along
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0066a>
+#Venus is considered as ' Earth’s-twin’.
+1	Venus	Venus	NNP	NNP	_	3	nsubj:pass	3	nsubj:pass
+2	is	is	VBZ	VBZ	_	3	aux:pass	3	aux:pass
+3	considered	considered	VBN	VBN	_	0	main	0	root
+4	as	as	IN	IN	_	7	case	7	case
+6	Earth	Earth	NN	NN	_	7	compound	7	compound
+7	’s	’s	NN	NN	_	3	obl:as	3	obl:as
+9	twin	twin	JJ	JJ	_	7	mod	7	amod
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0066b>
+#because its size and shape are very much similar to that of the earth.
+1	because	because	IN	IN	_	9	mark	9	mark
+2	its	its	PRP$	PRP$	_	3	r6	3	nmod:poss
+3	size	size	NN	NN	_	9	k1	9	nsubj
+4	and	and	CC	CC	_	5	cc	5	cc
+5	shape	shape	NN	NN	_	3	conj:and	3	conj:and
+5	shape	shape	NN	NN	_	9	k1	9	nsubj
+6	are	are	VBP	VBP	_	9	cop	9	cop
+7	very	very	RB	RB	_	9	advmod	9	advmod
+8	much	much	RB	RB	_	9	advmod	9	advmod
+9	similar	similar	JJ	JJ	_	0	main	0	root
+10	to	to	IN	IN	_	11	case	11	case
+11	that	that	DT	DT	_	9	obl:to	9	obl:to
+12	of	of	IN	IN	_	14	case	14	case
+13	the	the	DT	DT	_	14	det	14	det
+14	earth	earth	NN	NN	_	11	r6	11	nmod:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0067>
+#Till recently Pluto was also considered a planet.
+1	Till	Till	RB	RB	_	6	advmod	6	advmod
+2	recently	recently	RB	RB	_	6	advmod	6	advmod
+3	Pluto	Pluto	NNP	NNP	_	6	nsubj:pass	6	nsubj:pass
+4	was	was	VBD	VBD	_	6	aux:pass	6	aux:pass
+5	also	also	RB	RB	_	6	advmod	6	advmod
+6	considered	considered	VBN	VBN	_	0	main	0	root
+7	a	a	DT	DT	_	8	det	8	det
+8	planet	planet	NN	NN	_	6	k2	6	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0068a>
+#in a meeting of the International Astronomical Union , a decision was taken.
+1	in	in	IN	IN	_	3	case	3	case
+2	a	a	DT	DT	_	3	det	3	det
+3	meeting	meeting	NN	NN	_	13	k7	13	obl:in
+4	of	of	IN	IN	_	8	case	8	case
+5	the	the	DT	DT	_	8	det	8	det
+6	International	International	NNP	NNP	_	8	compound	8	compound
+7	Astronomical	Astronomical	NNP	NNP	_	8	compound	8	compound
+8	Union	Union	NNP	NNP	_	3	r6	3	nmod:of
+10	a	a	DT	DT	_	11	det	11	det
+11	decision	decision	NN	NN	_	13	nsubj:pass	13	nsubj:pass
+12	was	was	VBD	VBD	_	13	aux:pass	13	aux:pass
+13	taken	taken	VBN	VBN	_	0	main	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0068b>
+#Pluto like other celestial objects Ceres , 2003 discovered in recent past which may be called ` ` dwarf planets.
+1	Pluto	Pluto	NNP	NNP	_	9	k1	9	nsubj
+2	like	like	IN	IN	_	5	case	5	case
+3	other	other	JJ	JJ	_	5	mod	5	amod
+4	celestial	celestial	JJ	JJ	_	5	mod	5	amod
+5	objects	objects	NNS	NNS	_	1	nmod:like	1	nmod:like
+6	Ceres	Ceres	NNP	NNP	_	5	dep	5	dep
+8	2003	2003	CD	CD	_	6	card	6	nummod
+9	discovered	discovered	VBD	VBD	_	0	main	0	root
+10	in	in	IN	IN	_	12	case	12	case
+11	recent	recent	JJ	JJ	_	12	mod	12	amod
+12	past	past	NN	NN	_	9	k7	9	obl:in
+12	past	past	NN	NN	_	16	nsubj:pass	16	nsubj:pass
+13	which	which	WDT	WDT	_	12	ref	12	ref
+14	may	may	MD	MD	_	16	TAM	16	aux
+15	be	be	VB	VB	_	16	aux:pass	16	aux:pass
+16	called	called	VBN	VBN	_	12	acl:relcl	12	acl:relcl
+19	dwarf	dwarf	JJ	JJ	_	20	mod	20	amod
+20	planets	planets	NNS	NNS	_	16	k2	16	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0069>
+#The earth is the third nearest planet to the sun.
+1	The	The	DT	DT	_	3	det	2	det
+2	earth	earth	NN	NN	_	7	k1	7	nsubj
+3	is	is	VBZ	VBZ	_	0	main	0	cop
+4	the	the	DT	DT	_	7	det	7	det
+5	third	third	JJ	JJ	_	7	mod	7	amod
+6	nearest	nearest	JJS	JJS	_	7	mod	7	amod
+7	planet	planet	NN	NN	_	3	k1s	0	root
+8	to	to	IN	IN	_	10	case	10	case
+9	the	the	DT	DT	_	10	det	10	det
+10	sun	sun	NN	NN	_	7	nmod:to	7	nmod:to
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0070>
+#In size , it is the fifth largest planet.
+1	In	In	IN	IN	_	5	case	2	case
+2	size	size	NN	NN	_	9	k7	9	obl:in
+4	it	it	PRP	PRP	_	9	k1	9	nsubj
+5	is	is	VBZ	VBZ	_	0	main	0	cop
+6	the	the	DT	DT	_	9	det	9	det
+7	fifth	fifth	RB	RB	_	8	advmod	8	advmod
+8	largest	largest	JJS	JJS	_	9	mod	9	amod
+9	planet	planet	NN	NN	_	5	k1s	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0071>
+#it is slightly flattened at the poles.
+1	it	it	PRP	PRP	_	4	nsubj:pass	4	nsubj:pass
+2	is	is	VBZ	VBZ	_	4	aux:pass	4	aux:pass
+3	slightly	slightly	RB	RB	_	4	advmod	4	advmod
+4	flattened	flattened	VBN	VBN	_	0	main	0	root
+5	at	at	IN	IN	_	7	case	7	case
+6	the	the	DT	DT	_	7	det	7	det
+7	poles	poles	NNS	NNS	_	4	obl:at	4	obl:at
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0072>
+#is why , its shape is described as a Geoid.
+12	That	That	DT	DT	_	1	mark	1	mark
+1	is	is	VBZ	VBZ	_	0	main	0	root
+2	why	why	WRB	WRB	_	7	advmod	7	advmod
+4	its	its	PRP$	PRP$	_	5	r6	5	nmod:poss
+5	shape	shape	NN	NN	_	7	nsubj:pass	7	nsubj:pass
+6	is	is	VBZ	VBZ	_	7	aux:pass	7	aux:pass
+7	described	described	VBN	VBN	_	1	advcl	1	advcl
+8	as	as	IN	IN	_	10	case	10	case
+9	a	a	DT	DT	_	10	det	10	det
+10	Geoid	Geoid	NNP	NNP	_	7	obl:as	7	obl:as
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0073>
+#Geoid means an earth-like shape.
+1	Geoid	Geoid	NNP	NNP	_	2	k1	2	nsubj
+2	means	means	VBZ	VBZ	_	0	main	0	root
+3	an	an	DT	DT	_	7	det	7	det
+4	earth	earth	NN	NN	_	6	obl:npmod	6	obl:npmod
+6	like	like	JJ	JJ	_	7	mod	7	amod
+7	shape	shape	NN	NN	_	2	k2	2	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0074>
+#Conditions favourable to support life are probably found only on the earth.
+1	Conditions	Conditions	NNS	NNS	_	8	nsubj:pass	8	nsubj:pass
+2	favourable	favourable	JJ	JJ	_	1	mod	1	amod
+3	to	to	IN	IN	_	5	case	5	case
+4	support	support	NN	NN	_	5	compound	5	compound
+5	life	life	NN	NN	_	2	obl:to	2	obl:to
+6	are	are	VBP	VBP	_	8	aux:pass	8	aux:pass
+7	probably	probably	RB	RB	_	8	advmod	8	advmod
+8	found	found	VBN	VBN	_	0	main	0	root
+9	only	only	RB	RB	_	8	advmod	8	advmod
+10	on	on	IN	IN	_	12	case	12	case
+11	the	the	DT	DT	_	12	det	12	det
+12	earth	earth	NN	NN	_	8	obl:on	8	obl:on
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0075>
+#The earth is neither too hot nor too cold.
+1	The	The	DT	DT	_	3	det	2	det
+2	earth	earth	NN	NN	_	4	k1	4	nsubj
+2	earth	earth	NN	NN	_	9	k1	9	nsubj
+3	is	is	VBZ	VBZ	_	0	main	0	cop
+4	neither	neither	CC	CC	_	3	k1s	0	root
+5	too	too	RB	RB	_	6	advmod	6	advmod
+6	hot	hot	JJ	JJ	_	4	dep	4	dep
+7	nor	nor	CC	CC	_	8	cc	8	cc
+8	too	too	RB	RB	_	4	conj:nor	4	conj:nor
+9	cold	cold	JJ	JJ	_	4	conj:nor	4	conj:nor
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0076>
+#It has water and air which are very essential for our survival.
+1	It	It	PRP	PRP	_	2	k1	2	nsubj
+2	has	has	VBZ	VBZ	_	0	main	0	root
+3	water	water	NN	NN	_	2	k2	2	obj
+3	water	water	NN	NN	_	9	k1	9	nsubj
+4	and	and	CC	CC	_	5	cc	5	cc
+5	air	air	NN	NN	_	2	k2	2	obj
+5	air	air	NN	NN	_	3	conj:and	3	conj:and
+5	air	air	NN	NN	_	9	k1	9	nsubj
+6	which	which	WDT	WDT	_	3	ref	3	ref
+7	are	are	VBP	VBP	_	9	cop	9	cop
+8	very	very	RB	RB	_	9	advmod	9	advmod
+9	essential	essential	JJ	JJ	_	3	acl:relcl	3	acl:relcl
+10	for	for	IN	IN	_	12	case	12	case
+11	our	our	PRP$	PRP$	_	12	r6	12	nmod:poss
+12	survival	survival	NN	NN	_	9	obl:for	9	obl:for
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0077>
+#The air has life-supporting gases like oxygen.
+1	The	The	DT	DT	_	2	det	2	det
+2	air	air	NN	NN	_	3	k1	3	nsubj
+3	has	has	VBZ	VBZ	_	0	main	0	root
+4	life	life	NN	NN	_	7	compound	7	compound
+6	supporting	supporting	VBG	VBG	_	4	mod	4	amod
+7	gases	gases	NNS	NNS	_	3	k2	3	obj
+8	like	like	IN	IN	_	9	case	9	case
+9	oxygen	oxygen	NN	NN	_	7	nmod:like	7	nmod:like
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0078>
+#Because of these reasons , the earth is a unique planet in the solar system.
+1	Because	Because	IN	IN	_	8	case	4	case
+2	of	of	IN	IN	_	4	case	4	case
+3	these	these	DT	DT	_	4	det	4	det
+4	reasons	reasons	NNS	NNS	_	11	obl:of	11	obl:of
+6	the	the	DT	DT	_	7	det	7	det
+7	earth	earth	NN	NN	_	11	k1	11	nsubj
+8	is	is	VBZ	VBZ	_	0	main	0	cop
+9	a	a	DT	DT	_	11	det	11	det
+10	unique	unique	JJ	JJ	_	11	mod	11	amod
+11	planet	planet	NN	NN	_	8	k1s	0	root
+12	in	in	IN	IN	_	15	case	15	case
+13	the	the	DT	DT	_	15	det	15	det
+14	solar	solar	JJ	JJ	_	15	mod	15	amod
+15	system	system	NN	NN	_	11	nmod:in	11	nmod:in
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0079a>
+#From the outer space , the earth appears blue.
+1	From	From	IN	IN	_	4	case	4	case
+2	the	the	DT	DT	_	4	det	4	det
+3	outer	outer	JJ	JJ	_	4	mod	4	amod
+4	space	space	NN	NN	_	8	k5	8	obl:from
+6	the	the	DT	DT	_	7	det	7	det
+7	earth	earth	NN	NN	_	8	k1	8	nsubj
+8	appears	appears	VBZ	VBZ	_	0	main	0	root
+9	blue	blue	JJ	JJ	_	8	k2	8	xcomp
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0079b>
+#its two-thirds surface is covered by water.
+1	its	its	PRP$	PRP$	_	5	r6	5	nmod:poss
+2	two	two	CD	CD	_	4	card	4	nummod
+4	thirds	thirds	NNS	NNS	_	5	compound	5	compound
+5	surface	surface	NN	NN	_	7	nsubj:pass	7	nsubj:pass
+6	is	is	VBZ	VBZ	_	7	aux:pass	7	aux:pass
+7	covered	covered	VBN	VBN	_	0	main	0	root
+8	by	by	IN	IN	_	9	case	9	case
+9	water	water	NN	NN	_	7	obl:by	7	obl:by
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0080>
+#therefore , it is called a blue planet.
+1	therefore	therefore	RB	RB	_	5	advmod	5	advmod
+3	it	it	PRP	PRP	_	5	nsubj:pass	5	nsubj:pass
+4	is	is	VBZ	VBZ	_	5	aux:pass	5	aux:pass
+5	called	called	VBN	VBN	_	0	main	0	root
+6	a	a	DT	DT	_	8	det	8	det
+7	blue	blue	JJ	JJ	_	8	mod	8	amod
+8	planet	planet	NN	NN	_	5	k2	5	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0081a>
+#Our earth has only one satellite.
+1	Our	Our	PRP$	PRP$	_	2	r6	2	nmod:poss
+2	earth	earth	NN	NN	_	3	k1	3	nsubj
+3	has	has	VBZ	VBZ	_	0	main	0	root
+4	only	only	RB	RB	_	6	advmod	6	advmod
+5	one	one	CD	CD	_	6	card	6	nummod
+6	satellite	satellite	NN	NN	_	3	k2	3	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0081b>
+#is , the moon.
+6	that	that	DT	DT	_	1	mark	1	mark
+1	is	is	VBZ	VBZ	_	0	main	0	cop
+3	the	the	DT	DT	_	4	det	4	det
+4	moon	moon	NN	NN	_	1	k1s	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0082>
+#Its diametre is only one-quarter that of the earth.
+1	Its	Its	PRP$	PRP$	_	3	r6	2	nmod:poss
+2	diametre	diametre	NN	NN	_	7	k1	7	nsubj
+3	is	is	VBZ	VBZ	_	0	main	0	cop
+4	only	only	RB	RB	_	7	advmod	7	advmod
+5	one	one	CD	CD	_	7	compound	7	compound
+7	quarter	quarter	NN	NN	_	3	k1s	0	root
+8	that	that	DT	DT	_	7	dep	7	dep
+9	of	of	IN	IN	_	11	case	11	case
+10	the	the	DT	DT	_	11	det	11	det
+11	earth	earth	NN	NN	_	7	r6	7	nmod:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0083a>
+#It appears so big.
+1	It	It	PRP	PRP	_	2	k1	2	nsubj
+2	appears	appears	VBZ	VBZ	_	0	main	0	root
+3	so	so	RB	RB	_	4	advmod	4	advmod
+4	big	big	JJ	JJ	_	2	k2	2	xcomp
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0083b>
+#it is nearer to our planet than other celestial bodies.
+1	it	it	PRP	PRP	_	2	k1	3	nsubj
+2	is	is	VBZ	VBZ	_	0	main	0	cop
+3	nearer	nearer	JJR	JJR	_	2	k1s	0	root
+4	to	to	IN	IN	_	6	case	6	case
+5	our	our	PRP$	PRP$	_	6	r6	6	nmod:poss
+6	planet	planet	NN	NN	_	3	obl:to	3	obl:to
+7	than	than	IN	IN	_	10	case	10	case
+8	other	other	JJ	JJ	_	10	mod	10	amod
+9	celestial	celestial	JJ	JJ	_	10	mod	10	amod
+10	bodies	bodies	NNS	NNS	_	6	nmod:than	6	nmod:than
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0084>
+#It is about 3 , 84 , 400 km away from us.
+1	It	It	PRP	PRP	_	2	k1	9	nsubj
+2	is	is	VBZ	VBZ	_	0	main	0	cop
+3	about	about	IN	IN	_	9	case	9	case
+4	3	3	CD	CD	_	8	card	8	nummod
+6	84	84	CD	CD	_	8	card	8	nummod
+8	400	400	CD	CD	_	9	compound	9	compound
+9	km	km	NNS	NNS	_	2	k1s	0	root
+10	away	away	RB	RB	_	12	case	12	case
+11	from	from	IN	IN	_	10	fixed	10	fixed
+12	us	us	PRP	PRP	_	9	obl:away_from	9	obl:away_from
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0085>
+#The moon moves around the earth in about 27 days.
+1	The	The	DT	DT	_	2	det	2	det
+2	moon	moon	NN	NN	_	3	k1	3	nsubj
+3	moves	moves	VBZ	VBZ	_	0	main	0	root
+4	around	around	IN	IN	_	6	case	6	case
+5	the	the	DT	DT	_	6	det	6	det
+6	earth	earth	NN	NN	_	3	obl:around	3	obl:around
+7	in	in	IN	IN	_	10	case	10	case
+8	about	about	RB	RB	_	9	advmod	9	advmod
+9	27	27	CD	CD	_	10	card	10	nummod
+10	days	days	NNS	NNS	_	6	nmod:in	6	nmod:in
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0086>
+#It takes exactly the same time to complete one spin.
+1	It	It	PRP	PRP	_	2	k1	2	nsubj
+2	takes	takes	VBZ	VBZ	_	0	main	0	root
+3	exactly	exactly	RB	RB	_	6	advmod	6	advmod
+4	the	the	DT	DT	_	6	det	6	det
+5	same	same	JJ	JJ	_	6	mod	6	amod
+6	time	time	NN	NN	_	2	k2	2	obj
+7	to	to	TO	TO	_	8	mark	8	mark
+8	complete	complete	VB	VB	_	2	advcl	2	advcl
+9	one	one	CD	CD	_	10	card	10	nummod
+10	spin	spin	NN	NN	_	8	k2	8	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0087>
+#only one side of the moon is visible to us on the earth.
+1	only	only	RB	RB	_	7	advmod	3	advmod
+2	one	one	CD	CD	_	3	card	3	nummod
+3	side	side	NN	NN	_	8	k1	8	nsubj
+4	of	of	IN	IN	_	6	case	6	case
+5	the	the	DT	DT	_	6	det	6	det
+6	moon	moon	NN	NN	_	3	r6	3	nmod:of
+7	is	is	VBZ	VBZ	_	0	main	0	cop
+8	visible	visible	JJ	JJ	_	7	k1s	0	root
+9	to	to	IN	IN	_	10	case	10	case
+10	us	us	PRP	PRP	_	8	obl:to	8	obl:to
+11	on	on	IN	IN	_	13	case	13	case
+12	the	the	DT	DT	_	13	det	13	det
+13	earth	earth	NN	NN	_	8	obl:on	8	obl:on
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0088>
+#Now you can compare the distance of the earth from the sun and that from the moon.
+1	Now	Now	RB	RB	_	4	advmod	4	advmod
+2	you	you	PRP	PRP	_	4	k1	4	nsubj
+3	can	can	MD	MD	_	4	TAM	4	aux
+4	compare	compare	VB	VB	_	0	main	0	root
+5	the	the	DT	DT	_	6	det	6	det
+6	distance	distance	NN	NN	_	4	k2	4	obj
+7	of	of	IN	IN	_	9	case	9	case
+8	the	the	DT	DT	_	9	det	9	det
+9	earth	earth	NN	NN	_	6	r6	6	nmod:of
+10	from	from	IN	IN	_	12	case	12	case
+11	the	the	DT	DT	_	12	det	12	det
+12	sun	sun	NN	NN	_	9	nmod:from	9	nmod:from
+13	and	and	CC	CC	_	14	cc	14	cc
+14	that	that	DT	DT	_	9	nmod:from	9	nmod:from
+14	that	that	DT	DT	_	12	conj:and	12	conj:and
+15	from	from	IN	IN	_	17	case	17	case
+16	the	the	DT	DT	_	17	det	17	det
+17	moon	moon	NN	NN	_	4	k5	4	obl:from
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0089>
+#The moon does not have conditions favourable for life.
+1	The	The	DT	DT	_	2	det	2	det
+2	moon	moon	NN	NN	_	5	k1	5	nsubj
+3	does	does	VBZ	VBZ	_	5	TAM	5	aux
+4	not	not	RB	RB	_	5	advmod	5	advmod
+5	have	have	VB	VB	_	0	main	0	root
+6	conditions	conditions	NNS	NNS	_	7	k1	7	nsubj
+7	favourable	favourable	JJ	JJ	_	5	k2	5	xcomp
+8	for	for	IN	IN	_	9	case	9	case
+9	life	life	NN	NN	_	5	obl:for	5	obl:for
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0090a>
+#It has mountains , plains and depressions on its surface.
+1	It	It	PRP	PRP	_	2	k1	2	nsubj
+2	has	has	VBZ	VBZ	_	0	main	0	root
+3	mountains	mountains	NNS	NNS	_	2	k2	2	obj
+5	plains	plains	NNS	NNS	_	2	k2	2	obj
+5	plains	plains	NNS	NNS	_	3	conj:and	3	conj:and
+6	and	and	CC	CC	_	7	cc	7	cc
+7	depressions	depressions	NNS	NNS	_	2	k2	2	obj
+7	depressions	depressions	NNS	NNS	_	3	conj:and	3	conj:and
+8	on	on	IN	IN	_	10	case	10	case
+9	its	its	PRP$	PRP$	_	10	r6	10	nmod:poss
+10	surface	surface	NN	NN	_	3	nmod:on	3	nmod:on
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0090b>
+#These cast shadows on the moon’s surface.
+1	These	These	DT	DT	_	2	k1	2	nsubj
+2	cast	cast	VBD	VBD	_	0	main	0	root
+3	shadows	shadows	NNS	NNS	_	2	k2	2	obj
+4	on	on	IN	IN	_	8	case	8	case
+5	the	the	DT	DT	_	8	det	8	det
+6	moon	moon	NN	NN	_	8	compound	8	compound
+7	’s	’s	NN	NN	_	8	compound	8	compound
+8	surface	surface	NN	NN	_	2	obl:on	2	obl:on
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0091a>
+#you look at the full moon.
+1	you	you	PRP	PRP	_	2	k1	2	nsubj
+2	look	look	VBP	VBP	_	0	main	0	root
+3	at	at	IN	IN	_	6	case	6	case
+4	the	the	DT	DT	_	6	det	6	det
+5	full	full	JJ	JJ	_	6	mod	6	amod
+6	moon	moon	NN	NN	_	2	obl:at	2	obl:at
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0091b>
+#and you observe these shadows.
+1	and	and	CC	CC	_	3	cc	3	cc
+2	you	you	PRP	PRP	_	3	k1	3	nsubj
+3	observe	observe	VBP	VBP	_	0	main	0	root
+4	these	these	DT	DT	_	5	det	5	det
+5	shadows	shadows	NNS	NNS	_	3	k2	3	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0092>
+#Apart from the stars , planets and satellites , there are numerous tiny bodies which also move around the sun.
+1	Apart	Apart	RB	RB	_	4	case	4	case
+2	from	from	IN	IN	_	1	fixed	1	fixed
+3	the	the	DT	DT	_	4	det	4	det
+4	stars	stars	NNS	NNS	_	11	obl:apart_from	11	obl:apart_from
+6	planets	planets	NNS	NNS	_	4	conj:and	4	conj:and
+6	planets	planets	NNS	NNS	_	11	obl:apart_from	11	obl:apart_from
+7	and	and	CC	CC	_	8	cc	8	cc
+8	satellites	satellites	NNS	NNS	_	4	conj:and	4	conj:and
+8	satellites	satellites	NNS	NNS	_	11	obl:apart_from	11	obl:apart_from
+10	there	there	EX	EX	_	11	expl	11	expl
+11	are	are	VBP	VBP	_	0	main	0	root
+12	numerous	numerous	JJ	JJ	_	14	mod	14	amod
+13	tiny	tiny	JJ	JJ	_	14	mod	14	amod
+14	bodies	bodies	NNS	NNS	_	11	k1	11	nsubj
+14	bodies	bodies	NNS	NNS	_	17	k1	17	nsubj
+15	which	which	WDT	WDT	_	14	ref	14	ref
+16	also	also	RB	RB	_	17	advmod	17	advmod
+17	move	move	VBP	VBP	_	14	acl:relcl	14	acl:relcl
+18	around	around	IN	IN	_	20	case	20	case
+19	the	the	DT	DT	_	20	det	20	det
+20	sun	sun	NN	NN	_	17	obl:around	17	obl:around
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0093>
+#These bodies are called asteroids.
+1	These	These	DT	DT	_	2	det	2	det
+2	bodies	bodies	NNS	NNS	_	4	nsubj:pass	4	nsubj:pass
+3	are	are	VBP	VBP	_	4	aux:pass	4	aux:pass
+4	called	called	VBN	VBN	_	0	main	0	root
+5	asteroids	asteroids	NNS	NNS	_	4	k2	4	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0094>
+#They are found between the orbits of Mars and Jupiter.
+1	They	They	PRP	PRP	_	3	nsubj:pass	3	nsubj:pass
+2	are	are	VBP	VBP	_	3	aux:pass	3	aux:pass
+3	found	found	VBN	VBN	_	0	main	0	root
+4	between	between	IN	IN	_	6	case	6	case
+5	the	the	DT	DT	_	6	det	6	det
+6	orbits	orbits	NNS	NNS	_	3	obl:between	3	obl:between
+7	of	of	IN	IN	_	8	case	8	case
+8	Mars	Mars	NNP	NNP	_	6	r6	6	nmod:of
+9	and	and	CC	CC	_	10	cc	10	cc
+10	Jupiter	Jupiter	NNP	NNP	_	6	r6	6	nmod:of
+10	Jupiter	Jupiter	NNP	NNP	_	8	conj:and	8	conj:and
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0095a>
+#Scientists are of the view.
+1	Scientists	Scientists	NNS	NNS	_	5	k1	5	nsubj
+2	are	are	VBP	VBP	_	5	cop	5	cop
+3	of	of	IN	IN	_	5	case	5	case
+4	the	the	DT	DT	_	5	det	5	det
+5	view	view	NN	NN	_	0	main	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0095b>
+#asteroids are parts of a planet which exploded many years back.
+13	that	that	DT	DT	_	3	mark	3	mark
+1	asteroids	asteroids	NNS	NNS	_	3	k1	3	nsubj
+2	are	are	VBP	VBP	_	3	cop	3	cop
+3	parts	parts	NNS	NNS	_	0	main	0	root
+4	of	of	IN	IN	_	6	case	6	case
+5	a	a	DT	DT	_	6	det	6	det
+6	planet	planet	NN	NN	_	3	r6	3	nmod:of
+6	planet	planet	NN	NN	_	8	k1	8	nsubj
+7	which	which	WDT	WDT	_	6	ref	6	ref
+8	exploded	exploded	VBD	VBD	_	6	acl:relcl	6	acl:relcl
+9	many	many	JJ	JJ	_	10	mod	10	amod
+10	years	years	NNS	NNS	_	8	k7t	8	obl:tmod
+11	back	back	RB	RB	_	8	advmod	8	advmod
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0096>
+#The small pieces of rocks which move around the sun are called meteoroids.
+1	The	The	DT	DT	_	3	det	3	det
+2	small	small	JJ	JJ	_	3	mod	3	amod
+3	pieces	pieces	NNS	NNS	_	12	nsubj:pass	12	nsubj:pass
+4	of	of	IN	IN	_	5	case	5	case
+5	rocks	rocks	NNS	NNS	_	3	r6	3	nmod:of
+5	rocks	rocks	NNS	NNS	_	7	k1	7	nsubj
+6	which	which	WDT	WDT	_	5	ref	5	ref
+7	move	move	VBP	VBP	_	5	acl:relcl	5	acl:relcl
+8	around	around	IN	IN	_	10	case	10	case
+9	the	the	DT	DT	_	10	det	10	det
+10	sun	sun	NN	NN	_	7	obl:around	7	obl:around
+11	are	are	VBP	VBP	_	12	aux:pass	12	aux:pass
+12	called	called	VBN	VBN	_	0	main	0	root
+13	meteoroids	meteoroids	NNS	NNS	_	12	k2	12	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0097a>
+#Sometimes these meteoroids come near the earth.
+1	Sometimes	Sometimes	RB	RB	_	4	advmod	4	advmod
+2	these	these	DT	DT	_	3	det	3	det
+3	meteoroids	meteoroids	NNS	NNS	_	4	k1	4	nsubj
+4	come	come	VBP	VBP	_	0	main	0	root
+5	near	near	IN	IN	_	7	case	7	case
+6	the	the	DT	DT	_	7	det	7	det
+7	earth	earth	NN	NN	_	4	obl:near	4	obl:near
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0097b>
+#And they tend to drop upon it.
+1	And	And	CC	CC	_	3	cc	3	cc
+2	they	they	PRP	PRP	_	3	k1	3	nsubj
+2	they	they	PRP	PRP	_	5	nsubj:xsubj	5	nsubj:xsubj
+3	tend	tend	VBP	VBP	_	0	main	0	root
+4	to	to	TO	TO	_	5	mark	5	mark
+5	drop	drop	VB	VB	_	3	k2	3	xcomp
+6	upon	upon	IN	IN	_	7	case	7	case
+7	it	it	PRP	PRP	_	5	obl:upon	5	obl:upon
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0098a>
+#During this process due to friction with the air they get heated up.
+1	During	During	IN	IN	_	3	case	3	case
+2	this	this	DT	DT	_	3	det	3	det
+3	process	process	NN	NN	_	12	obl:during	12	obl:during
+4	due	due	JJ	JJ	_	6	case	6	case
+5	to	to	IN	IN	_	4	fixed	4	fixed
+6	friction	friction	NN	NN	_	3	nmod:due_to	3	nmod:due_to
+7	with	with	IN	IN	_	9	case	9	case
+8	the	the	DT	DT	_	9	det	9	det
+9	air	air	NN	NN	_	6	nmod:with	6	nmod:with
+10	they	they	PRP	PRP	_	12	nsubj:pass	12	nsubj:pass
+11	get	get	VBP	VBP	_	12	aux:pass	12	aux:pass
+12	heated	heated	VBN	VBN	_	0	main	0	root
+13	up	up	RP	RP	_	12	compound:prt	12	compound:prt
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0098b>
+#and they burn.
+1	and	and	CC	CC	_	3	cc	3	cc
+2	they	they	PRP	PRP	_	3	k1	3	nsubj
+3	burn	burn	VBP	VBP	_	0	main	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0099>
+#It causes a flash of light.
+1	It	It	PRP	PRP	_	2	k1	2	nsubj
+2	causes	causes	VBZ	VBZ	_	0	main	0	root
+3	a	a	DT	DT	_	4	det	4	det
+4	flash	flash	NN	NN	_	2	k2	2	obj
+5	of	of	IN	IN	_	6	case	6	case
+6	light	light	NN	NN	_	4	r6	4	nmod:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0100a>
+#Sometimes , a meteor without being completely burnt , falls on the earth.
+1	Sometimes	Sometimes	RB	RB	_	10	advmod	10	advmod
+3	a	a	DT	DT	_	4	det	4	det
+4	meteor	meteor	NN	NN	_	10	k1	10	nsubj
+5	without	without	IN	IN	_	8	mark	8	mark
+6	being	being	VBG	VBG	_	8	cop	8	cop
+7	completely	completely	RB	RB	_	8	advmod	8	advmod
+8	burnt	burnt	JJ	JJ	_	4	acl	4	acl
+10	falls	falls	VBZ	VBZ	_	0	main	0	root
+11	on	on	IN	IN	_	13	case	13	case
+12	the	the	DT	DT	_	13	det	13	det
+13	earth	earth	NN	NN	_	10	obl:on	10	obl:on
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0100b>
+#And it creates a hollow.
+1	And	And	CC	CC	_	3	cc	3	cc
+2	it	it	PRP	PRP	_	3	k1	3	nsubj
+3	creates	creates	VBZ	VBZ	_	0	main	0	root
+4	a	a	DT	DT	_	5	det	5	det
+5	hollow	hollow	JJ	JJ	_	3	k2	3	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0101>
+#Do you see a whitish broad band , like a white glowing path across the sky on a clear starry night ?.
+1	Do	Do	VBP	VBP	_	3	TAM	3	aux
+2	you	you	PRP	PRP	_	3	k1	3	nsubj
+3	see	see	VB	VB	_	0	main	0	root
+4	a	a	DT	DT	_	7	det	7	det
+5	whitish	whitish	JJ	JJ	_	6	advmod	6	advmod
+6	broad	broad	JJ	JJ	_	7	mod	7	amod
+7	band	band	NN	NN	_	3	k2	3	obj
+9	like	like	IN	IN	_	13	case	13	case
+10	a	a	DT	DT	_	13	det	13	det
+11	white	white	JJ	JJ	_	13	mod	13	amod
+12	glowing	glowing	VBG	VBG	_	13	mod	13	amod
+13	path	path	NN	NN	_	3	obl:like	3	obl:like
+14	across	across	IN	IN	_	16	case	16	case
+15	the	the	DT	DT	_	16	det	16	det
+16	sky	sky	NN	NN	_	13	nmod:across	13	nmod:across
+17	on	on	IN	IN	_	21	case	21	case
+18	a	a	DT	DT	_	21	det	21	det
+19	clear	clear	JJ	JJ	_	21	mod	21	amod
+20	starry	starry	JJ	JJ	_	21	mod	21	amod
+21	night	night	NN	NN	_	16	nmod:on	16	nmod:on
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0102>
+#It is a cluster of millions of stars.
+1	It	It	PRP	PRP	_	2	k1	4	nsubj
+2	is	is	VBZ	VBZ	_	0	main	0	cop
+3	a	a	DT	DT	_	4	det	4	det
+4	cluster	cluster	NN	NN	_	2	k1s	0	root
+5	of	of	IN	IN	_	6	case	6	case
+6	millions	millions	NNS	NNS	_	4	r6	4	nmod:of
+7	of	of	IN	IN	_	8	case	8	case
+8	stars	stars	NNS	NNS	_	6	r6	6	nmod:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0103>
+#This band is the Milky.
+1	This	This	DT	DT	_	3	det	2	det
+2	band	band	NN	NN	_	5	k1	5	nsubj
+3	is	is	VBZ	VBZ	_	0	main	0	cop
+4	the	the	DT	DT	_	5	det	5	det
+5	Milky	Milky	NNP	NNP	_	3	k1s	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0104>
+#Our solar system is a part of this galaxy.
+1	Our	Our	PRP$	PRP$	_	4	r6	3	nmod:poss
+2	solar	solar	JJ	JJ	_	3	mod	3	amod
+3	system	system	NN	NN	_	6	k1	6	nsubj
+4	is	is	VBZ	VBZ	_	0	main	0	cop
+5	a	a	DT	DT	_	6	det	6	det
+6	part	part	NN	NN	_	4	k1s	0	root
+7	of	of	IN	IN	_	9	case	9	case
+8	this	this	DT	DT	_	9	det	9	det
+9	galaxy	galaxy	NN	NN	_	6	r6	6	nmod:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0105>
+#In ancient India , it was imagined to be a river of light flowing in the sky.
+1	In	In	IN	IN	_	3	case	3	case
+2	ancient	ancient	JJ	JJ	_	3	mod	3	amod
+3	India	India	NNP	NNP	_	7	k7	7	obl:in
+5	it	it	PRP	PRP	_	7	nsubj:pass	7	nsubj:pass
+5	it	it	PRP	PRP	_	11	nsubj:xsubj	11	nsubj:xsubj
+6	was	was	VBD	VBD	_	7	aux:pass	7	aux:pass
+7	imagined	imagined	VBN	VBN	_	0	main	0	root
+8	to	to	TO	TO	_	11	mark	11	mark
+9	be	be	VB	VB	_	11	cop	11	cop
+10	a	a	DT	DT	_	11	det	11	det
+11	river	river	NN	NN	_	7	k2	7	xcomp
+12	of	of	IN	IN	_	13	case	13	case
+13	light	light	NN	NN	_	11	r6	11	nmod:of
+14	flowing	flowing	VBG	VBG	_	13	acl	13	acl
+15	in	in	IN	IN	_	17	case	17	case
+16	the	the	DT	DT	_	17	det	17	det
+17	sky	sky	NN	NN	_	14	k7	14	obl:in
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0106>
+#It was named Akash Ganga.
+1	It	It	PRP	PRP	_	3	nsubj:pass	3	nsubj:pass
+2	was	was	VBD	VBD	_	3	aux:pass	3	aux:pass
+3	named	named	VBN	VBN	_	0	main	0	root
+4	Akash	Akash	NNP	NNP	_	5	compound	5	compound
+5	Ganga	Ganga	NNP	NNP	_	3	k2	3	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0107>
+#A galaxy is a huge system of billions of stars , and clouds of dust and gases.
+1	A	A	DT	DT	_	3	det	2	det
+2	galaxy	galaxy	NN	NN	_	6	k1	6	nsubj
+3	is	is	VBZ	VBZ	_	0	main	0	cop
+4	a	a	DT	DT	_	6	det	6	det
+5	huge	huge	JJ	JJ	_	6	mod	6	amod
+6	system	system	NN	NN	_	3	k1s	0	root
+7	of	of	IN	IN	_	8	case	8	case
+8	billions	billions	NNS	NNS	_	6	r6	6	nmod:of
+9	of	of	IN	IN	_	10	case	10	case
+10	stars	stars	NNS	NNS	_	8	r6	8	nmod:of
+12	and	and	CC	CC	_	13	cc	13	cc
+13	clouds	clouds	NNS	NNS	_	6	conj:and	6	conj:and
+14	of	of	IN	IN	_	15	case	15	case
+15	dust	dust	NN	NN	_	13	r6	13	nmod:of
+16	and	and	CC	CC	_	17	cc	17	cc
+17	gases	gases	NNS	NNS	_	13	r6	13	nmod:of
+17	gases	gases	NNS	NNS	_	15	conj:and	15	conj:and
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0108>
+#There are millions of such galaxies that make the Universe.
+1	There	There	EX	EX	_	2	expl	2	expl
+2	are	are	VBP	VBP	_	0	main	0	root
+3	millions	millions	NNS	NNS	_	2	k1	2	nsubj
+4	of	of	IN	IN	_	6	case	6	case
+5	such	such	JJ	JJ	_	6	mod	6	amod
+6	galaxies	galaxies	NNS	NNS	_	3	r6	3	nmod:of
+6	galaxies	galaxies	NNS	NNS	_	8	k1	8	nsubj
+7	that	that	WDT	WDT	_	6	ref	6	ref
+8	make	make	VBP	VBP	_	6	acl:relcl	6	acl:relcl
+9	the	the	DT	DT	_	10	det	10	det
+10	Universe	Universe	NNP	NNP	_	8	k2	8	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0109a>
+#It is difficult to imagine this.
+1	It	It	PRP	PRP	_	2	k1	3	nsubj
+1	It	It	PRP	PRP	_	5	nsubj:xsubj	5	nsubj:xsubj
+2	is	is	VBZ	VBZ	_	0	main	0	cop
+3	difficult	difficult	JJ	JJ	_	2	k1s	0	root
+4	to	to	TO	TO	_	5	mark	5	mark
+5	imagine	imagine	VB	VB	_	3	k2	3	xcomp
+6	this	this	DT	DT	_	5	k2	5	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0109b>
+#how big the universe is.
+7	That	That	DT	DT	_	5	mark	5	mark
+1	how	how	WRB	WRB	_	2	advmod	2	advmod
+2	big	big	JJ	JJ	_	5	dep	5	dep
+3	the	the	DT	DT	_	4	det	4	det
+4	universe	universe	NN	NN	_	5	k1	5	nsubj
+5	is	is	VBZ	VBZ	_	0	main	0	root
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0110>
+#Scientists are still trying to find out more and more about it.
+1	Scientists	Scientists	NNS	NNS	_	4	k1	4	nsubj
+1	Scientists	Scientists	NNS	NNS	_	6	nsubj:xsubj	6	nsubj:xsubj
+2	are	are	VBP	VBP	_	4	TAM	4	aux
+3	still	still	RB	RB	_	4	advmod	4	advmod
+4	trying	trying	VBG	VBG	_	0	main	0	root
+5	to	to	TO	TO	_	6	mark	6	mark
+6	find	find	VB	VB	_	4	k2	4	xcomp
+7	out	out	RP	RP	_	6	compound:prt	6	compound:prt
+8	more	more	RBR	RBR	_	6	comparmore	6	advmod
+9	and	and	CC	CC	_	10	cc	10	cc
+10	more	more	RBR	RBR	_	6	comparmore	6	advmod
+10	more	more	RBR	RBR	_	8	conj:and	8	conj:and
+11	about	about	IN	IN	_	12	case	12	case
+12	it	it	PRP	PRP	_	6	obl:about	6	obl:about
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0111a>
+#We are not certain about its size.
+1	We	We	PRP	PRP	_	4	k1	4	nsubj
+2	are	are	VBP	VBP	_	4	cop	4	cop
+3	not	not	RB	RB	_	4	advmod	4	advmod
+4	certain	certain	JJ	JJ	_	0	main	0	root
+5	about	about	IN	IN	_	7	case	7	case
+6	its	its	PRP$	PRP$	_	7	r6	7	nmod:poss
+7	size	size	NN	NN	_	4	obl:about	4	obl:about
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0111b>
+#we know this.
+1	we	we	PRP	PRP	_	2	k1	2	nsubj
+2	know	know	VBP	VBP	_	0	main	0	root
+3	this	this	DT	DT	_	2	k2	2	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0111c>
+#all of us – you and I belong to this universe.
+13	That	That	DT	DT	_	8	mark	8	mark
+1	all	all	DT	DT	_	8	k1	8	nsubj
+2	of	of	IN	IN	_	3	case	3	case
+3	us	us	PRP	PRP	_	1	r6	1	nmod:of
+4	–	–	SYM	SYM	_	5	dep	5	dep
+5	you	you	PRP	PRP	_	1	nmod	1	nmod
+6	and	and	CC	CC	_	7	cc	7	cc
+7	I	I	PRP	PRP	_	1	nmod	1	nmod
+7	I	I	PRP	PRP	_	5	conj:and	5	conj:and
+8	belong	belong	VBP	VBP	_	0	main	0	root
+9	to	to	IN	IN	_	11	case	11	case
+10	this	this	DT	DT	_	11	det	11	det
+11	universe	universe	NN	NN	_	8	obl:to	8	obl:to
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0112>
+#How does a planet differ from a star ?.
+1	How	How	WRB	WRB	_	5	advmod	5	advmod
+2	does	does	VBZ	VBZ	_	5	TAM	5	aux
+3	a	a	DT	DT	_	4	det	4	det
+4	planet	planet	NN	NN	_	5	k1	5	nsubj
+5	differ	differ	VB	VB	_	0	main	0	root
+6	from	from	IN	IN	_	8	case	8	case
+7	a	a	DT	DT	_	8	det	8	det
+8	star	star	NN	NN	_	5	k5	5	obl:from
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0113>
+#What is meant by the ‘Solar System ' ?.
+1	What	What	WP	WP	_	3	nsubj:pass	3	nsubj:pass
+2	is	is	VBZ	VBZ	_	3	aux:pass	3	aux:pass
+3	meant	meant	VBN	VBN	_	0	main	0	root
+4	by	by	IN	IN	_	8	case	8	case
+5	the	the	DT	DT	_	8	det	8	det
+7	Solar	Solar	NNP	NNP	_	8	compound	8	compound
+8	System	System	NNP	NNP	_	3	obl:by	3	obl:by
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0114>
+#You name all the planets according to their distance from the sun.
+1	You	You	PRP	PRP	_	2	k1	2	nsubj
+2	name	name	VBP	VBP	_	0	main	0	root
+3	all	all	PDT	PDT	_	5	det:predet	5	det:predet
+4	the	the	DT	DT	_	5	det	5	det
+5	planets	planets	NNS	NNS	_	2	k2	2	obj
+6	according	according	VBG	VBG	_	9	case	9	case
+7	to	to	IN	IN	_	6	fixed	6	fixed
+8	their	their	PRP$	PRP$	_	9	r6	9	nmod:poss
+9	distance	distance	NN	NN	_	2	obl:according_to	2	obl:according_to
+10	from	from	IN	IN	_	12	case	12	case
+11	the	the	DT	DT	_	12	det	12	det
+12	sun	sun	NN	NN	_	9	nmod:from	9	nmod:from
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0115>
+#Why is the Earth called a unique planet ?.
+1	Why	Why	WRB	WRB	_	5	advmod	5	advmod
+2	is	is	VBZ	VBZ	_	5	aux:pass	5	aux:pass
+3	the	the	DT	DT	_	4	det	4	det
+4	Earth	Earth	NNP	NNP	_	5	nsubj:pass	5	nsubj:pass
+5	called	called	VBN	VBN	_	0	main	0	root
+6	a	a	DT	DT	_	8	det	8	det
+7	unique	unique	JJ	JJ	_	8	mod	8	amod
+8	planet	planet	NN	NN	_	5	k2	5	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0116>
+#Why do we see only one side of the moon always ?.
+1	Why	Why	WRB	WRB	_	4	advmod	4	advmod
+2	do	do	VBP	VBP	_	4	TAM	4	aux
+3	we	we	PRP	PRP	_	4	k1	4	nsubj
+4	see	see	VB	VB	_	0	main	0	root
+5	only	only	RB	RB	_	7	advmod	7	advmod
+6	one	one	CD	CD	_	7	card	7	nummod
+7	side	side	NN	NN	_	4	k2	4	obj
+8	of	of	IN	IN	_	10	case	10	case
+9	the	the	DT	DT	_	10	det	10	det
+10	moon	moon	NN	NN	_	7	r6	7	nmod:of
+11	always	always	RB	RB	_	4	advmod	4	advmod
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0117>
+#What is the Universe ?.
+1	What	What	WP	WP	_	2	k1s	0	root
+2	is	is	VBZ	VBZ	_	0	main	0	cop
+3	the	the	DT	DT	_	4	det	4	det
+4	Universe	Universe	NNP	NNP	_	1	k1	1	nsubj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0118>
+#Which planet is known as the “Earth’s Twin " ?.
+1	Which	Which	WDT	WDT	_	2	det	2	det
+2	planet	planet	NN	NN	_	4	nsubj:pass	4	nsubj:pass
+3	is	is	VBZ	VBZ	_	4	aux:pass	4	aux:pass
+4	known	known	VBN	VBN	_	0	main	0	root
+5	as	as	IN	IN	_	10	case	10	case
+6	the	the	DT	DT	_	10	det	10	det
+8	Earth	Earth	NNP	NNP	_	10	compound	10	compound
+9	’s	’s	NNP	NNP	_	10	compound	10	compound
+10	Twin	Twin	NNP	NNP	_	4	obl:as	4	obl:as
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0119>
+#Which is the third nearest planet to the sun ?.
+1	Which	Which	WP	WP	_	2	k1s	0	root
+2	is	is	VBZ	VBZ	_	0	main	0	cop
+3	the	the	DT	DT	_	6	det	6	det
+4	third	third	JJ	JJ	_	6	mod	6	amod
+5	nearest	nearest	JJS	JJS	_	6	mod	6	amod
+6	planet	planet	NN	NN	_	1	k1	1	nsubj
+7	to	to	IN	IN	_	9	case	9	case
+8	the	the	DT	DT	_	9	det	9	det
+9	sun	sun	NN	NN	_	6	nmod:to	6	nmod:to
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0120>
+#All the planets move around the sun in which path ?.
+1	All	All	PDT	PDT	_	3	det:predet	3	det:predet
+2	the	the	DT	DT	_	3	det	3	det
+3	planets	planets	NNS	NNS	_	4	k1	4	nsubj
+4	move	move	VBP	VBP	_	0	main	0	root
+5	around	around	IN	IN	_	7	case	7	case
+6	the	the	DT	DT	_	7	det	7	det
+7	sun	sun	NN	NN	_	4	obl:around	4	obl:around
+8	in	in	IN	IN	_	10	case	10	case
+9	which	which	WDT	WDT	_	10	det	10	det
+10	path	path	NN	NN	_	4	advcl	4	advcl
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0121>
+#The Pole Star indicates which direction ?.
+1	The	The	DT	DT	_	3	det	3	det
+2	Pole	Pole	NNP	NNP	_	3	compound	3	compound
+3	Star	Star	NNP	NNP	_	4	k1	4	nsubj
+4	indicates	indicates	VBZ	VBZ	_	0	main	0	root
+5	which	which	WDT	WDT	_	6	det	6	det
+6	direction	direction	NN	NN	_	4	k2	4	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0122>
+#Asteroids are found between orbits in which planet ?.
+1	Asteroids	Asteroids	NNS	NNS	_	3	nsubj:pass	3	nsubj:pass
+2	are	are	VBP	VBP	_	3	aux:pass	3	aux:pass
+3	found	found	VBN	VBN	_	0	main	0	root
+4	between	between	IN	IN	_	5	case	5	case
+5	orbits	orbits	NNS	NNS	_	3	obl:between	3	obl:between
+6	in	in	IN	IN	_	8	case	8	case
+7	which	which	WDT	WDT	_	8	det	8	det
+8	planet	planet	NN	NN	_	3	advcl	3	advcl
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0123>
+#You prepare a chart of the solar system.
+1	You	You	PRP	PRP	_	2	k1	2	nsubj
+2	prepare	prepare	VBP	VBP	_	0	main	0	root
+3	a	a	DT	DT	_	4	det	4	det
+4	chart	chart	NN	NN	_	2	k2	2	obj
+5	of	of	IN	IN	_	8	case	8	case
+6	the	the	DT	DT	_	8	det	8	det
+7	solar	solar	JJ	JJ	_	8	mod	8	amod
+8	system	system	NN	NN	_	4	r6	4	nmod:of
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0124a>
+#During a vacation visit a planetarium.
+1	During	During	IN	IN	_	3	case	3	case
+2	a	a	DT	DT	_	3	det	3	det
+3	vacation	vacation	NN	NN	_	4	obl:during	4	obl:during
+4	visit	visit	VB	VB	_	0	main	0	root
+5	a	a	DT	DT	_	6	det	6	det
+6	planetarium	planetarium	NN	NN	_	4	k2	4	obj
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0124b>
+#And you describe your experience in the class.
+1	And	And	CC	CC	_	3	cc	3	cc
+2	you	you	PRP	PRP	_	3	k1	3	nsubj
+3	describe	describe	VBP	VBP	_	0	main	0	root
+4	your	your	PRP$	PRP$	_	5	r6	5	nmod:poss
+5	experience	experience	NN	NN	_	3	k2	3	obj
+6	in	in	IN	IN	_	8	case	8	case
+7	the	the	DT	DT	_	8	det	8	det
+8	class	class	NN	NN	_	3	k7	3	obl:in
+</sent_id>
+
+<sent_id=Geo_ncert_6stnd_1ch_0125>
+#Organise a quiz contest on the earth and the solar system.
+1	Organise	Organise	VB	VB	_	0	main	0	root
+2	a	a	DT	DT	_	4	det	4	det
+3	quiz	quiz	NN	NN	_	4	compound	4	compound
+4	contest	contest	NN	NN	_	1	k2	1	obj
+5	on	on	IN	IN	_	7	case	7	case
+6	the	the	DT	DT	_	7	det	7	det
+7	earth	earth	NN	NN	_	1	obl:on	1	obl:on
+8	and	and	CC	CC	_	11	cc	11	cc
+9	the	the	DT	DT	_	11	det	11	det
+10	solar	solar	JJ	JJ	_	11	mod	11	amod
+11	system	system	NN	NN	_	1	obl:on	1	obl:on
+11	system	system	NN	NN	_	7	conj:and	7	conj:and
+</sent_id>
