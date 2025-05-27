@@ -332,7 +332,7 @@ def get_sentence(current_user, sentence_id):
 @app.route('/api/tokens/<sentence_id>/token/<token_id>', methods=['PUT'])
 @token_required
 def update_token(current_user, sentence_id, token_id):
-    data = request.json  # e.g., { "HEAD": "3" } or { "DEPREL": "nsubj" }
+    data = request.json
 
     token_collection = mongo.db.sentences
     sentence = token_collection.find_one({
@@ -343,22 +343,31 @@ def update_token(current_user, sentence_id, token_id):
     if not sentence:
         return jsonify({"error": "Sentence not found or unauthorized"}), 404
 
-    updated_tokens = []
+    # Find and update the specific token
+    updated = False
     for token in sentence['tokens']:
         if token['ID'] == token_id:
             token.update(data)
-        updated_tokens.append(token)
+            updated = True
+            break
 
-    token_collection.update_one(
+    if not updated:
+        return jsonify({"error": "Token not found"}), 404
+
+    # Update the entire sentence
+    result = token_collection.update_one(
         { "_id": ObjectId(sentence_id) },
-        { "$set": { "tokens": updated_tokens } }
+        { "$set": { "tokens": sentence['tokens'] } }
     )
-    
-    # Convert ObjectId to string for response
-    sentence["_id"] = str(sentence["_id"])
-    sentence["tokens"] = updated_tokens
 
+    if result.modified_count == 0:
+        return jsonify({"error": "Update failed"}), 500
+
+    # Return the updated sentence
+    sentence["_id"] = str(sentence["_id"])
     return jsonify(sentence), 200
+
+
 
 @app.route('/api/sentences/download', methods=['GET'])
 @token_required

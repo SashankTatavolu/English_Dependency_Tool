@@ -278,31 +278,35 @@ const Editor = () => {
   };
 
   const saveChanges = async () => {
-    if (!selectedSentence || Object.keys(editedTokens).length === 0) return;
-  
-    setSaving(true);
-    try {
-      const updates = Object.entries(editedTokens).map(([uniqueKey, changes]) => {
-        const [tokenId] = uniqueKey.split('_'); // Extract the original ID
-        return axios.put(
-          `${API_URL}/api/tokens/${selectedSentence._id}/token/${tokenId}`,
-          changes
-        );
-      });
-  
-      await Promise.all(updates);
-      
-      const res = await axios.get(`${API_URL}/api/sentences/${selectedSentence._id}`);
-      setSelectedSentence(res.data);
-      setEditedTokens({});
-      showSnackbar('Changes saved successfully', 'success');
-    } catch (error) {
-      console.error('Error saving changes:', error);
-      showSnackbar('Failed to save changes', 'error');
-    } finally {
-      setSaving(false);
-    }
-  };
+  if (!selectedSentence || Object.keys(editedTokens).length === 0) return;
+
+      setSaving(true);
+      try {
+        const updates = Object.entries(editedTokens).map(([uniqueKey, changes]) => {
+          const [tokenId] = uniqueKey.split('_'); // Extract the original ID
+          return axios.put(
+            `${API_URL}/api/tokens/${selectedSentence._id}/token/${tokenId}`,
+            changes
+          ).catch(error => {
+            console.error(`Error updating token ${tokenId}:`, error);
+            throw error; // Re-throw to be caught by Promise.all
+          });
+        });
+
+        await Promise.all(updates);
+        
+        // Refresh the sentence data
+        const res = await axios.get(`${API_URL}/api/sentences/${selectedSentence._id}`);
+        setSelectedSentence(res.data);
+        setEditedTokens({});
+        showSnackbar('Changes saved successfully', 'success');
+      } catch (error) {
+        console.error('Error saving changes:', error);
+        showSnackbar('Failed to save some changes', 'error');
+      } finally {
+        setSaving(false);
+      }
+    };
 
   const handleOpenFeedbackDialog = (sentenceId, currentFeedback = '') => {
     setCurrentFeedback({
@@ -683,9 +687,9 @@ const Editor = () => {
                                 <Autocomplete
                                   size="small"
                                   options={deprelOptions}
-                                  value={getTokenValue(token, 'DEPREL_PANINIAN')}
+                                  value={getTokenValue(token, 'DEPREL_PANINIAN') || ''}
                                   onChange={(e, newValue) => {
-                                    handleInputChange(token.ID, 'DEPREL_PANINIAN', newValue || '');
+                                    handleInputChange(token.ID, token.FORM, 'DEPREL_PANINIAN', newValue || '');
                                   }}
                                   renderInput={(params) => (
                                     <TextField {...params} variant="standard" placeholder="DEPREL" />

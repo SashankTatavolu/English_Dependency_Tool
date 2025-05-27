@@ -16,3 +16,56 @@
 14	are	are	VBP	VBP	_	15	cop	15	cop
 15	acceptable	acceptable	JJ	JJ	_	0	main	0	root
 </sent_id>
+
+
+<sent_id=Geo_nios_2ch_0011>
+#They are also partly responsible for the formation of soil which is very important for us.
+1	They	They	PRP	PRP	_	12	k1	5	nsubj
+2	are	are	VBP	VBP	_	5	cop	5	cop
+3	also	also	RB	RB	_	5	advmod	5	advmod
+4	partly	partly	RB	RB	_	5	advmod	5	advmod
+5	responsible	responsible	JJ	JJ	_	0	main	0	root
+6	for	for	IN	IN	_	8	case	8	case
+7	the	the	DT	DT	_	8	det	8	det
+8	formation	formation	NN	NN	_	5	obl:for	5	obl:for
+9	of	of	IN	IN	_	10	case	10	case
+10	soil	soil	NN	NN	_	8	r6	8	nmod:of
+10	soil	soil	NN	NN	_	14	k1	14	nsubj
+11	which	which	WDT	WDT	_	10	ref	10	ref
+12	is	is	VBZ	VBZ	_	0	main	0	cop
+13	very	very	RB	RB	_	14	advmod	14	advmod
+14	important	important	JJ	JJ	_	12	k1s	10	acl:relcl
+15	for	for	IN	IN	_	16	case	16	case
+16	us	us	PRP	PRP	_	14	obl:for	14	obl:for
+</sent_id>
+
+
+<sent_id=Geo_nios_2ch_0012>
+#In this lesson , we will study about the earth ’ s interior and the materials that form the upper portion of the earth ’ s crust.
+1	In	In	IN	IN	_	3	case	3	case
+2	this	this	DT	DT	_	3	det	3	det
+3	lesson	lesson	NN	NN	_	7	k7	7	obl:in
+5	we	we	PRP	PRP	_	7	k1	7	nsubj
+6	will	will	MD	MD	_	7	TAM	7	aux
+7	study	study	VB	VB	_	0	main	0	root
+8	about	about	IN	IN	_	13	case	13	case
+9	the	the	DT	DT	_	13	det	13	det
+10	earth	earth	NN	NN	_	13	compound	13	compound
+12	s	s	NN	NN	_	13	compound	13	compound
+13	interior	interior	NN	NN	_	7	obl:about	7	obl:about
+14	and	and	CC	CC	_	16	cc	16	cc
+15	the	the	DT	DT	_	16	det	16	det
+16	materials	materials	NNS	NNS	_	7	obl:about	7	obl:about
+16	materials	materials	NNS	NNS	_	13	conj:and	13	conj:and
+16	materials	materials	NNS	NNS	_	18	k1	18	nsubj
+17	that	that	WDT	WDT	_	16	ref	16	ref
+18	form	form	VBP	VBP	_	16	acl:relcl	16	acl:relcl
+19	the	the	DT	DT	_	21	det	21	det
+20	upper	upper	JJ	JJ	_	21	mod	21	amod
+21	portion	portion	NN	NN	_	18	k2	18	obj
+22	of	of	IN	IN	_	27	case	27	case
+23	the	the	DT	DT	_	27	det	27	det
+24	earth	earth	NN	NN	_	27	compound	27	compound
+26	s	s	NN	NN	_	27	compound	27	compound
+27	crust	crust	NN	NN	_	21	r6	21	nmod:of
+</sent_id>
