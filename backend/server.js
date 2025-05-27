@@ -20,7 +20,7 @@ mongoose.connect('mongodb://localhost:27017/conllu-editor', {
 
 app.use('/api/tokens', tokensRoute);
 
-const PORT = 5000;
+const PORT = 5003;
 app.listen(PORT, () => {
   console.log(`🚀 Backend is running on http://localhost:${PORT}`);
 });

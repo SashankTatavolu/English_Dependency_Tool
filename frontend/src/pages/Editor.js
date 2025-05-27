@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
@@ -266,67 +267,72 @@ const Editor = () => {
     }
   };
 
-  const handleInputChange = (tokenId, tokenForm, field, value) => {
-  // Use only tokenId as the unique key since ID should be unique per sentence
-  const uniqueKey = tokenId; // Remove the tokenForm part
-  setEditedTokens(prev => ({
-    ...prev,
-    [uniqueKey]: {
-      ...prev[uniqueKey],
-      [field]: value
-      }
-    }));
+    const handleInputChange = (token, field, value, index) => {
+  // Use ID, FORM, and index as the unique key
+      const uniqueKey = `${token.ID}-${token.FORM}-${index}`;
+      
+      setEditedTokens(prev => ({
+        ...prev,
+        [uniqueKey]: {
+          ...prev[uniqueKey],
+          [field]: value
+        }
+      }));
     };
 
-  // Also update the getTokenValue function to match:
-  const getTokenValue = (token, field) => {
-    const uniqueKey = token.ID; // Use only token.ID
-    if (editedTokens[uniqueKey] && editedTokens[uniqueKey][field] !== undefined) {
-      return editedTokens[uniqueKey][field];
-    }
-    return token[field] || '';
-  };
+    const getTokenValue = (token, field, index) => {
+      const uniqueKey = `${token.ID}-${token.FORM}-${index}`;
+      if (editedTokens[uniqueKey] && editedTokens[uniqueKey][field] !== undefined) {
+        return editedTokens[uniqueKey][field];
+      }
+      return token[field] || '';
+    };
 
   const previewTokens = selectedSentence?.tokens 
-    ? selectedSentence.tokens.map(token => {
-        const uniqueKey = token.ID; // Use only token.ID
-        if (editedTokens[uniqueKey]) {
-          return { ...token, ...editedTokens[uniqueKey] };
-        }
-        return token;
-      })
-    : [];
+  ? selectedSentence.tokens.map(token => {
+      const uniqueKey = `${token.ID}_${token.FORM}`;
+      if (editedTokens[uniqueKey]) {
+        return { ...token, ...editedTokens[uniqueKey] };
+      }
+      return token;
+    })
+  : [];
 
   const saveChanges = async () => {
-      if (!selectedSentence || Object.keys(editedTokens).length === 0) return;
+    if (!selectedSentence || Object.keys(editedTokens).length === 0) return;
 
-      setSaving(true);
-      try {
-        const updates = Object.entries(editedTokens).map(([tokenId, changes]) => {
-          // tokenId is already just the ID now, no need to split
-          return axios.put(
-            `${API_URL}/api/tokens/${selectedSentence._id}/token/${tokenId}`,
-            changes
-          ).catch(error => {
-            console.error(`Error updating token ${tokenId}:`, error);
-            throw error;
-          });
-        });
-
-        await Promise.all(updates);
+    setSaving(true);
+    try {
+      const updates = Object.entries(editedTokens).map(([tokenKey, changes]) => {
+        // Extract the original ID from the key (it's the part before the first hyphen)
+        const tokenId = tokenKey.split('-')[0];
         
-        // Refresh the sentence data
-        const res = await axios.get(`${API_URL}/api/sentences/${selectedSentence._id}`);
-        setSelectedSentence(res.data);
-        setEditedTokens({});
-        showSnackbar('Changes saved successfully', 'success');
-      } catch (error) {
-        console.error('Error saving changes:', error);
-        showSnackbar('Failed to save some changes', 'error');
-      } finally {
-        setSaving(false);
-      }
-    };
+        return axios.put(
+          `${API_URL}/api/tokens/${selectedSentence._id}/token/${tokenId}`,
+          {
+            ...changes,
+            tokenIndex: parseInt(tokenKey.split('-')[2]) // Pass the index to backend
+          }
+        ).catch(error => {
+          console.error(`Error updating token ${tokenId}:`, error);
+          throw error;
+        });
+      });
+
+      await Promise.all(updates);
+      
+      // Refresh the sentence data
+      const res = await axios.get(`${API_URL}/api/sentences/${selectedSentence._id}`);
+      setSelectedSentence(res.data);
+      setEditedTokens({});
+      showSnackbar('Changes saved successfully', 'success');
+    } catch (error) {
+      console.error('Error saving changes:', error);
+      showSnackbar('Failed to save some changes', 'error');
+    } finally {
+      setSaving(false);
+    }
+  };
 
   const handleOpenFeedbackDialog = (sentenceId, currentFeedback = '') => {
     setCurrentFeedback({
@@ -673,17 +679,17 @@ const Editor = () => {
                         </TableRow>
                       </TableHead>
                       <TableBody>
-                        {selectedSentence.tokens && selectedSentence.tokens.map((token) => {
+                        {selectedSentence.tokens && selectedSentence.tokens.map((token, index) => {
                           // Check if token has been edited
                           const isEdited = editedTokens[token.ID] !== undefined;
                           
                           return (
                             <TableRow 
-                              key={token.ID} 
-                              sx={{ 
-                                backgroundColor: isEdited ? 'rgba(255, 243, 224, 0.4)' : 'inherit' 
-                              }}
-                            >
+                                 key={`${token.ID}-${token.FORM}-${index}`}
+                                sx={{ 
+        backgroundColor: editedTokens[`${token.ID}-${token.FORM}-${index}`] !== undefined ? 'rgba(255, 243, 224, 0.4)' : 'inherit' 
+      }}
+                                >
                               <TableCell align="center">{token.ID}</TableCell>
                               <TableCell align="center">{token.FORM}</TableCell>
                               <TableCell align="center">{token.LEMMA}</TableCell>
@@ -693,24 +699,22 @@ const Editor = () => {
                               <TableCell align="center">
                                 <Select
                                   size="small"
-                                  value={getTokenValue(token, 'HEAD_PANINIAN') || "0"}
-                                  onChange={(e) => handleInputChange(token.ID, 'HEAD_PANINIAN', e.target.value)}
+                                  value={getTokenValue(token, 'HEAD_PANINIAN',index) || "0"}
+                                  onChange={(e) => handleInputChange(token, 'HEAD_PANINIAN', e.target.value,index)}
 
                                 >
-                                  {selectedSentence.tokens.map((opt) => (
-                                    <MenuItem key={opt.ID} value={opt.ID}>{opt.ID}</MenuItem>
-                                  ))}
+                                  {selectedSentence.tokens.map((opt, optIndex) => (
+            <MenuItem key={`${opt.ID}-${optIndex}`} value={opt.ID}>{opt.ID}</MenuItem>
+          ))}
                                   <MenuItem value="0">0 (root)</MenuItem>
                                 </Select>
                               </TableCell>
-                              <TableCell align="center">
+                               <TableCell align="center">
                                 <Autocomplete
                                   size="small"
                                   options={deprelOptions}
-                                  value={getTokenValue(token, 'DEPREL_PANINIAN') || ''}
-                                  onChange={(e, newValue) => {
-                                    handleInputChange(token.ID, 'DEPREL_PANINIAN', newValue || '');
-                                  }}
+                                  value={getTokenValue(token, 'DEPREL_PANINIAN', index) || ''}
+                                  onChange={(e, newValue) => handleInputChange(token, 'DEPREL_PANINIAN', newValue || '', index)}
                                   renderInput={(params) => (
                                     <TextField {...params} variant="standard" placeholder="DEPREL" />
                                   )}

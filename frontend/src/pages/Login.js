@@ -130,7 +130,7 @@ const Login = () => {
     setForgotPasswordSuccess('');
 
     try {
-      const response = await fetch('http://10.2.8.12:5003/api/auth/forgot-password', {
+      const response = await fetch('http://localhost:5000/api/auth/forgot-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -207,7 +207,7 @@ const Login = () => {
     setResetPasswordSuccess('');
 
     try {
-      const response = await fetch('http://10.2.8.12:5003/api/auth/reset-password', {
+      const response = await fetch('http://localhost:5000/api/auth/reset-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

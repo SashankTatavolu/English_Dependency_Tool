@@ -1,3 +1,4 @@
+from django import db
 from flask import Flask, Response, json, make_response, request, jsonify
 from flask_pymongo import PyMongo
 import os
@@ -332,43 +333,62 @@ def get_sentence(current_user, sentence_id):
 @app.route('/api/tokens/<sentence_id>/token/<token_id>', methods=['PUT'])
 @token_required
 def update_token(current_user, sentence_id, token_id):
-    data = request.json
-
-    token_collection = mongo.db.sentences
-    sentence = token_collection.find_one({
-        "_id": ObjectId(sentence_id),
-        "user_id": str(current_user['_id'])
-    })
-
-    if not sentence:
-        return jsonify({"error": "Sentence not found or unauthorized"}), 404
-
-    # Find and update the specific token
-    updated = False
-    for token in sentence['tokens']:
-        if token['ID'] == token_id:
-            token.update(data)
-            updated = True
-            break
-
-    if not updated:
-        return jsonify({"error": "Token not found"}), 404
-
-    # Update the entire sentence
-    result = token_collection.update_one(
-        { "_id": ObjectId(sentence_id) },
-        { "$set": { "tokens": sentence['tokens'] } }
-    )
-
-    if result.modified_count == 0:
-        return jsonify({"error": "Update failed"}), 500
-
-    # Return the updated sentence
-    sentence["_id"] = str(sentence["_id"])
-    return jsonify(sentence), 200
-
-
-
+    try:
+        data = request.get_json()
+        token_index = data.pop('token_index', None)
+        
+        # Validate input
+        if not data:
+            return jsonify({"error": "No data provided"}), 400
+            
+        # Find the specific token using both ID and position
+        sentence = mongo.db.sentences.find_one({
+            "_id": ObjectId(sentence_id),
+            "user_id": str(current_user['_id'])
+        })
+        
+        if not sentence:
+            return jsonify({"error": "Sentence not found or unauthorized"}), 404
+            
+        # Find the specific token to update
+        tokens = sentence['tokens']
+        token_to_update = None
+        update_index = None
+        
+        if token_index is not None:
+            # Update by index if provided
+            if 0 <= token_index < len(tokens) and tokens[token_index]['ID'] == token_id:
+                update_index = token_index
+        else:
+            # Fallback: find first matching token (old behavior)
+            for i, token in enumerate(tokens):
+                if token['ID'] == token_id:
+                    update_index = i
+                    break
+        
+        if update_index is None:
+            return jsonify({"error": "Token not found"}), 404
+            
+        # Build the update operation
+        update_fields = {}
+        for field, value in data.items():
+            update_fields[f"tokens.{update_index}.{field}"] = value
+        
+        # Perform the update
+        result = mongo.db.sentences.update_one(
+            {"_id": ObjectId(sentence_id), "user_id": str(current_user['_id'])},
+            {"$set": update_fields}
+        )
+        
+        if result.matched_count == 0:
+            return jsonify({"error": "Update failed"}), 500
+            
+        return jsonify({"success": True}), 200
+        
+    except Exception as e:
+        print(f"Error updating token: {str(e)}")
+        return jsonify({"error": str(e)}), 500
+    
 @app.route('/api/sentences/download', methods=['GET'])
 @token_required
 def download_sentences_combined(current_user):
